@@ -1,13 +1,13 @@
 {
   "vtex.menu@2.x:menu#websites": {
     "children": [
-      "menu-item#shop",
-      "menu-item#about-us"
+      "menu-item#atendimento",
+      "menu-item#lojas"
     ]
   },
-  "menu-item#shop": {
+  "menu-item#atendimento": {
     "props": {
-      "id": "menu-item-shop",
+      "id": "menu-item-atendimento",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -15,28 +15,45 @@
         "type": "internal",
         "href": "#",
         "noFollow": false,
-        "tagTitle": "Shop",
-        "text": "Shop"
+        "tagTitle": "Atendimento",
+        "text": "Atendimento"
       }
     }
   },
-  "vtex.menu@2.x:menu#institutional": {
-    "children": [
-      "menu-item#vtex-website"
-    ]
-  },
-  "menu-item#vtex-website": {
+
+  "menu-item#lojas": {
     "props": {
-      "id": "menu-item-vtex-website",
+      "id": "menu-item-lojas",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
-        "type": "external",
-        "href": "http://vtex.com",
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Nossas lojas",
+        "text": "Nossas lojas"
+      }
+    }
+  },
+
+  "vtex.menu@2.x:menu#institutional": {
+    "children": [
+      "menu-item#pedidos"
+    ]
+  },
+  "menu-item#pedidos": {
+    "props": {
+      "id": "menu-item-pedidos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
         "noFollow": false,
-        "tagTitle": "visit vtex.com",
-        "text": "visit vtex.com"
+        "tagTitle": "Meus pedidos",
+        "text": "Meus pedidos"
       }
     }
   }
