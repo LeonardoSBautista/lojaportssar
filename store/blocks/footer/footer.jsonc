@@ -1,0 +1,438 @@
+{
+  "footer": {
+    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+  },
+  "footer-layout.desktop": {
+    "children": [
+      "flex-layout.row#newsletter-desktop",
+      "flex-layout.row#footer-content-desktop",
+      "flex-layout.row#footer-copyright-desktop"
+    ]
+  },
+
+  // NEWSLETTER
+
+  "flex-layout.row#newsletter-desktop": {
+    "children": ["flex-layout.col#newsletter-icon", "flex-layout.col#text-newsletter", "flex-layout.col#newsletter-content"],
+    "props": {
+      "blockClass": "newsletter",
+      "paddingTop": 6,
+      "paddingBottom": 6
+    }
+  },
+
+  "flex-layout.col#newsletter-icon": {
+    "children": ["image#icon-newsletter"],
+    "props": {
+      "blockClass": "newsletter-icon",
+      "width": "8%"
+    }
+  },
+
+  "image#icon-newsletter": {
+    "props": {
+      "src": "assets/images/icon-newsletter.png",
+      "blockClass": "icon-newsletter"
+    }
+  },
+
+  "flex-layout.col#text-newsletter": {
+    "children": ["rich-text#newsletter-title", "rich-text#newsletter-subtitle"],
+    "props": {
+      "blockClass": "text-newsletter",
+      "rowGap": 2,
+      "width": "50%"
+    }
+  },
+
+  "rich-text#newsletter-title": {
+    "props": {
+      "text": "Inscreva-se e receba artigos, dicas e novidades",
+      "blockClass": "newsletter-title"
+    }
+  },
+
+  "rich-text#newsletter-subtitle": {
+    "props": {
+      "text": "Novidades para quem vive fotografia",
+      "blockClass": "newsletter-subtitle"
+    }
+  },
+
+
+  "flex-layout.col#newsletter-content": {
+    "children": ["newsletter-form"],
+    "props": {
+      "blockClass": "newsletter-form",
+      "width": "60%"
+    }
+  },
+
+  "rich-text#newsletter-form": {
+    "props": {
+      "text": "Inscreva-se em nossa Newsletter:",
+      "blockClass": "newsletter-form-title"
+    }
+  },
+
+
+  "newsletter-form": {
+    "children": [
+      "newsletter-input-email",
+      "newsletter-submit"
+    ]
+  },
+
+  "newsletter-input-email": {
+    "props": {
+      "placeholderText": "Digite seu E-mail"
+    }
+  },
+
+  "newsletter-submit": {
+    "props": {
+      "submitButtonLabel": "Assinar",
+      "blockClass": "newsletter-submit-button"
+    }
+  },
+
+
+
+
+
+  // NEWSLETTER
+
+  "flex-layout.row#footer-content-desktop": {
+    "children": [
+      "flex-layout.col#footer-content-desktop"
+    ],
+    "props": {
+      "blockClass": "footer-content"
+    }
+  },
+
+  "flex-layout.col#footer-content-desktop": {
+    "children": [
+      "flex-layout.row#footer-1-desktop",
+      "flex-layout.row#footer-2-desktop"
+    ]
+  },
+
+  "flex-layout.row#footer-1-desktop": {
+    "children": [
+      "vtex.menu@2.x:menu#Institucional",
+      "vtex.menu@2.x:menu#Ajuda",
+      "vtex.menu@2.x:menu#Atendimento1",
+      "vtex.menu@2.x:menu#Atendimento2"
+    ],
+    "props": {
+      "blockClass": "menu-row",
+      "paddingTop": 6,
+      "paddingBottom": 3
+    }
+  },
+
+  "social-networks": {
+    "props": {
+      "socialNetworks": [{
+          "name": "Facebook",
+          "url": "https://www.facebook.com/vtexonline/"
+        },
+        {
+          "name": "Instagram",
+          "url": "https://www.instagram.com/vtextruecloud/"
+        },
+        {
+          "name": "Twitter",
+          "url": "https://twitter.com/vtexonline"
+        },
+        {
+          "name": "Youtube",
+          "url": "https://www.youtube.com/user/VTEXTV"
+        }
+      ]
+    }
+  },
+
+  "flex-layout.row#footer-2-desktop": {
+    "children": ["flex-layout.col#payment-methods", "flex-layout.col#security", "flex-layout.col#social", "vtex.menu@2.x:menu#Articles"],
+    "props": {
+      "blockClass": "payment-methods"
+    }
+  },
+
+  "flex-layout.col#payment-methods": {
+    "children": ["rich-text#payment-methods-title", "flex-layout.row#payment-methods1", "flex-layout.row#payment-methods2"],
+    "props": {
+      "blockClass": "payment-methods",
+      "paddingTop": 4,
+      "paddingBottom": 4
+    }
+  },
+
+  "rich-text#payment-methods-title": {
+    "props": {
+      "text": "Pagamento",
+      "blockClass": ["footer-title", "footer-title-title-show"]
+    }
+  },
+
+  "flex-layout.row#payment-methods1": {
+    "children": ["image#flag-master", "image#flag-visa", "image#flag-diners", "image#flag-elo"],
+    "props": {
+      "blockClass": "payment-methods-row"
+    }
+  },
+
+  "flex-layout.row#payment-methods2": {
+    "children": ["image#flag-hiper", "image#flag-amex", "image#flag-boleto", "image#flag-pix"],
+    "props": {
+      "blockClass": "payment-methods-row"
+    }
+  },
+
+  "image#flag-master": {
+    "props": {
+      "src": "assets/images/flag-master.png",
+      "maxHeight": 24
+    }
+  },
+
+  "image#flag-visa": {
+    "props": {
+      "src": "assets/images/flag-visa.png",
+      "maxHeight": 24
+    }
+  },
+
+  "image#flag-diners": {
+    "props": {
+      "src": "assets/images/flag-diner.png",
+      "maxHeight": 24
+    }
+  },
+
+  "image#flag-elo": {
+    "props": {
+      "src": "assets/images/flag-elo.png",
+      "maxHeight": 24
+    }
+  },
+
+  "image#flag-amex": {
+    "props": {
+      "src": "assets/images/flag-amex.png",
+      "maxHeight": 24
+    }
+  },
+
+  "image#flag-hiper": {
+    "props": {
+      "src": "assets/images/flag-hiper.png",
+      "maxHeight": 24
+    }
+  },
+
+  "image#flag-boleto": {
+    "props": {
+      "src": "assets/images/flag-boleto.png",
+      "maxHeight": 24
+    }
+  },
+
+  "image#flag-pix": {
+    "props": {
+      "src": "assets/images/flag-pix.png",
+      "maxHeight": 24
+    }
+  },
+
+  "accepted-payment-methods": {
+    "props": {
+      "paymentMethods": ["MasterCard", "Visa", "Diners Club"]
+    }
+  },
+
+
+  "flex-layout.col#security": {
+    "children": ["rich-text#security-title", "flex-layout.row#security-flags"],
+    "props": {
+      "blockClass": "security-flags",
+      "paddingTop": 4,
+      "paddingBottom": 4
+    }
+  },
+
+  "rich-text#security-title": {
+    "props": {
+      "text": "Segurança",
+      "blockClass": ["footer-title", "footer-title-title-show"]
+    }
+  },
+
+  "flex-layout.row#security-flags": {
+    "children": ["image#pci", "image#lets-encrypt"],
+    "props": {
+      "blockClass": "security-flags-row"
+    }
+  },
+
+  "image#pci": {
+    "props": {
+      "src": "assets/images/flag-pci.png",
+      "maxHeight": 40
+    }
+  },
+
+  "image#lets-encrypt": {
+    "props": {
+      "src": "assets/images/flag-lets.png",
+      "maxHeight": 40
+    }
+  },
+
+  "flex-layout.col#social": {
+    "children": ["rich-text#footer-title-social", "vtex.menu@2.x:menu#Social"],
+    "props": {
+      "blockClass": "social",
+      "paddingTop": 4,
+      "paddingBottom": 4
+    }
+  },
+
+
+
+  "flex-layout.row#footer-copyright-desktop": {
+    "children": ["flex-layout.row#footer-copyright-content-desktop"],
+    "props": {
+      "blockClass": "credits"
+    }
+  },
+
+  "flex-layout.row#footer-copyright-content-desktop": {
+    "children": ["rich-text#footer", "flex-layout.row#development"],
+    "props": {
+      "blockClass": "credits-content",
+      "paddingTop": 3,
+      "paddingBottom": 3
+    }
+  },
+
+  "rich-text#footer": {
+    "props": {
+      "text": "© Copyright 2026 - Portssar Comercio de Equipamentos Fotograficos LTDA\nCNPJ 16.470.999/0001-72",
+      "blockClass": "footer-copyright",
+      "width": "45%"
+    }
+  },
+
+  "flex-layout.row#development": {
+    "children": ["image#logo-aplicah", "image#logo-vtex"],
+    "props": {
+      "blockClass": "development",
+      "width": "26%"
+    }
+  },
+
+  "image#logo-aplicah": {
+    "props": {
+      "src": "assets/images/logo-aplicah.svg",
+      "maxHeight": 21
+    }
+  },
+
+  "image#logo-vtex": {
+    "props": {
+      "src": "assets/images/logo-vtex.svg",
+      "maxHeight": 21
+    }
+  },
+
+  "footer-layout.mobile": {
+    "children": [
+      "flex-layout.row#newsletter-desktop",
+      "flex-layout.row#footer-content-mobile",
+      "flex-layout.row#footer-copyright-desktop"
+    ]
+  },
+
+  "flex-layout.row#footer-content-mobile": {
+    "children": [
+      "flex-layout.col#footer-content-mobile"
+    ],
+    "props": {
+      "blockClass": "footer-content"
+    }
+  },
+
+  "flex-layout.col#footer-content-mobile": {
+    "children": [
+      "flex-layout.row#menu-mobile",
+      "flex-layout.row#payment-methods-mobile",
+      "flex-layout.row#security-mobile",
+      "flex-layout.col#social",
+      "vtex.menu@2.x:menu#Articles"
+
+    ]
+  },
+
+
+
+  "flex-layout.row#payment-methods-mobile": {
+    "children": ["flex-layout.col#payment-methods"]
+  },
+
+  "flex-layout.row#security-mobile": {
+    "children": ["flex-layout.col#security"]
+  },
+
+  "flex-layout.row#menu-mobile": {
+    "children": [
+      "flex-layout.col#menu-mobile"
+    ],
+    "props": {
+      "blockClass": ["footer-menu-row"]
+    }
+  },
+
+  "flex-layout.col#menu-mobile": {
+    "children": [
+      "disclosure-layout-group#mobile-menu-mobile"
+    ]
+  },
+
+  "flex-layout.row#2-footer-mobile": {
+    "children": ["flex-layout.col#footer-1-mobile"],
+    "props": {
+      "blockClass": "payment-methods",
+      "paddingTop": 4,
+      "paddingBottom": 4
+    }
+  },
+  "flex-layout.col#footer-1-mobile": {
+    "children": [
+      "accepted-payment-methods",
+      "social-networks",
+      "rich-text#footer-mobile"
+    ],
+    "props": {
+      "blockClass": "payment-methods",
+      "paddingTop": 4,
+      "paddingBottom": 4,
+      "rowGap": 4
+    }
+  },
+  "flex-layout.row#1-footer-mobile": {
+    "props": {
+      "paddingTop": 4,
+      "paddingBottom": 4
+    },
+    "children": ["vtex.menu@2.x:menu#footer-mobile"]
+  },
+  "rich-text#footer-mobile": {
+    "props": {
+      "text": "All stock and product photos are from photos.icons8.com",
+      "blockClass": "footer"
+    }
+  }
+}

@@ -3,6 +3,7 @@
     "blocks": ["search-result-layout"],
     "props": {
       "context": {
+        "maxItemsPerPage": 20,
         "skusFilter": "ALL",
         "simulationBehavior": "skip"
       }
@@ -26,6 +27,7 @@
     "blocks": ["search-result-layout"],
     "props": {
       "context": {
+        "maxItemsPerPage": 20,
         "skusFilter": "ALL",
         "simulationBehavior": "skip"
       }
@@ -36,6 +38,7 @@
     "blocks": ["search-result-layout"],
     "props": {
       "context": {
+        "maxItemsPerPage": 20,
         "skusFilter": "ALL",
         "simulationBehavior": "skip"
       }
@@ -46,6 +49,7 @@
     "blocks": ["search-result-layout"],
     "props": {
       "context": {
+        "maxItemsPerPage": 20,
         "skusFilter": "ALL",
         "simulationBehavior": "skip"
       }
@@ -63,7 +67,6 @@
   "search-result-layout.desktop": {
     "children": [
       "flex-layout.row#searchbread",
-      "flex-layout.row#searchtitle",
       "flex-layout.row#result"
     ],
     "props": {
@@ -75,40 +78,79 @@
   "flex-layout.row#searchbread": {
     "children": ["breadcrumb.search"],
     "props": {
-      "preserveLayoutOnMobile": true,
-      "fullWidth": true
+      "fullWidth": true,
+      "blockClass": "breadcrumb-search"
     }
   },
+
+  "breadcrumb.search": {
+    "props": {
+      "showOnMobile": true
+    }
+  },
+
   "flex-layout.row#searchtitle": {
     "children": ["search-title.v2"]
   },
   "flex-layout.row#result": {
     "children": ["flex-layout.col#filter", "flex-layout.col#content"],
     "props": {
-      "preventHorizontalStretch": true,
-      "fullWidth": true
+      "fullWidth": true,
+      "blockClass": "search-content"
     }
   },
   "flex-layout.col#filter": {
-    "children": ["filter-navigator.v3"],
+    "children": ["flex-layout.row#searchtitle", "flex-layout.row#searchfilter"],
     "props": {
-      "blockClass": "filterCol"
+      "blockClass": "filterCol",
+      "width": "20%"
     }
   },
+
+  "flex-layout.row#searchfilter": {
+    "children": ["filter-navigator.v3"],
+    "props": {
+      "blockClass": "filter-container"
+    }
+  },
+
+  "filter-navigator.v3": {
+    "props": {
+      "initiallyCollapsed": false,
+      "facetOrdering": [{
+          "key": "brand",
+          "orderBy": "name",
+          "order": "ASC"
+        },
+        {
+          "key": "Autor",
+          "orderBy": "name",
+          "order": "ASC"
+        }
+      ]
+    }
+  },
+
+
+
+
+
+
   "flex-layout.col#content": {
     "children": [
       "flex-layout.row#searchinfo",
-      "flex-layout.row#fetchprevious",
       "flex-layout.row#products",
       "flex-layout.row#fetchmore"
     ],
     "props": {
-      "width": "grow",
-      "preventVerticalStretch": true
+      "width": "80%"
     }
   },
   "flex-layout.row#searchinfo": {
-    "children": ["flex-layout.col#productCount", "flex-layout.row#orderByAndSwitcher"]
+    "children": ["flex-layout.col#productCount", "flex-layout.row#orderByAndSwitcher"],
+    "props": {
+      "blockClass": ["search-info-desktop"]
+    }
   },
   "flex-layout.row#orderByAndSwitcher": {
     "children": ["order-by.v2", "gallery-layout-switcher"],
@@ -156,10 +198,9 @@
 
   "search-result-layout.mobile": {
     "children": [
-      "flex-layout.row#searchinfomobile",
       "flex-layout.row#searchbread",
-      "flex-layout.row#productCountMobile",
-      "flex-layout.row#fetchprevious",
+      "flex-layout.row#titleandcount",
+      "flex-layout.row#searchinfomobile",
       "flex-layout.row#contentmobile",
       "flex-layout.row#fetchmore"
     ],
@@ -179,14 +220,27 @@
     }
   },
 
+  "flex-layout.row#titleandcount": {
+    "children": [
+      "flex-layout.row#searchtitle",
+      "flex-layout.row#productCountMobile"
+    ],
+    "props": {
+      "blockClass": ["titleandcount"]
+    }
+  },
+
+
+
   "flex-layout.row#searchinfomobile": {
     "children": [
       "flex-layout.col#orderByMobile",
-      "flex-layout.col#filterMobile",
-      "flex-layout.col#switcherMobile"
+      "flex-layout.col#switcherMobile",
+      "flex-layout.col#filterMobile"
     ],
     "props": {
       "preserveLayoutOnMobile": true,
+      "blockClass": ["search-tools-mobile"],
       "colSizing": "auto",
       "colJustify": "around"
     }
@@ -195,7 +249,8 @@
   "flex-layout.col#orderByMobile": {
     "children": ["order-by.v2"],
     "props": {
-      "blockClass": "orderByMobileCol"
+      "blockClass": "orderByMobileCol",
+      "width": "40%"
     }
   },
 
@@ -209,13 +264,15 @@
   "flex-layout.col#filterMobile": {
     "children": ["filter-navigator.v3"],
     "props": {
-      "blockClass": "filterMobileCol"
+      "blockClass": "filterMobileCol",
+      "width": "40%"
     }
   },
   "flex-layout.col#switcherMobile": {
     "children": ["gallery-layout-switcher"],
     "props": {
-      "verticalAlign": "middle"
+      "verticalAlign": "middle",
+      "width": "30%"
     }
   },
   "search-not-found-layout": {
@@ -223,7 +280,7 @@
   },
 
   "flex-layout.row#notfound": {
-    "children": ["not-found"],
+    "children": ["flex-layout.row#emptysearch-not-found"],
     "props": {
       "fullWidth": true
     }
@@ -237,14 +294,13 @@
 
   "gallery": {
     "props": {
-      "layouts": [
-        {
+      "layouts": [{
           "name": "grid",
           "component": "GridSummary",
           "itemsPerRow": {
             "(min-width:1300px)": 4,
-            "desktop": 3,
-            "tablet": 3,
+            "desktop": 4,
+            "tablet": 4,
             "phone": 2
           }
         },

@@ -1,0 +1,153 @@
+{
+  "store.custom#nossas-lojas": {
+    "blocks": ["flex-layout.row#nossas-lojas-titles", "flex-layout.row#nossas-lojas-content"]
+  },
+
+  "flex-layout.row#nossas-lojas-titles": {
+    "children": [
+      "flex-layout.row#title-institucional",
+      "flex-layout.row#title-nossas-lojas"
+    ],
+    "props": {
+      "blockClass": "titles-institucional",
+      "colGap": 2,
+      "fullWidth": true,
+      "horizontalAlign": "left",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "flex-layout.row#nossas-lojas-content": {
+    "children": [
+      "flex-layout.col#institucional-nav-bar",
+      "flex-layout.col#nossas-lojas"
+    ],
+    "props": {
+      "blockClass": "conteudo-institucional",
+      "colGap": 2,
+      "fullWidth": true,
+      "horizontalAlign": "left",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "flex-layout.row#title-institucional": {
+    "children": ["rich-text#title-institucional"],
+    "props": {
+      "width": "25%",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "flex-layout.row#title-nossas-lojas": {
+    "children": ["rich-text#title-nossas-lojas"],
+    "props": {
+      "width": "70%",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#title-institucional": {
+    "props": {
+      "blockClass": ["titulo-institucional", "titulo-nossas-lojas"],
+      "text": "# Institucional"
+    }
+  },
+
+  "rich-text#title-nossas-lojas": {
+    "props": {
+      "blockClass": ["titulo-institucional", "titulo-nossas-lojas"],
+      "text": "# Nossas Lojas"
+    }
+  },
+
+  "rich-text#content-nossas-lojas": {
+    "props": {
+      "blockClass": ["texto-institucional", "texto-nossas-lojas"],
+      "text": "Nossas Lojas em São Paulo\n\nA Portssar possui duas lojas físicas no centro de São Paulo, prontas para atender você com a estrutura e o conhecimento técnico de quem vive a fotografia há décadas.\n\n## Loja 1 — República\n\n**Endereço:**\n\nRua 7 de Abril, 97 — 3º Andar, República, São Paulo/SP — CEP 01043-000\n\n**Telefones:**\n\n(11) 3255-6067 | (11) 3257-1632 | (11) 3258-3922\n\n**Horário de funcionamento:**\n\nSegunda:08:30–17:30\nTerça: 08:30–17:30\nQuarta: 08:30–17:30\nQuinta: 08:30–17:30\nSexta: 08:30–17:30\nSábado: 08:30–12:00\nDomingo: Fechado\n\nObservação: horários podem sofrer alterações.\n\n## Loja 2 — Centro\n\n**Endereço:**\n\nRua 7 de Abril, 125 — Loja 28, Centro, São Paulo/SP — CEP 01043-000\n\n**Telefones:**\n\n(11) 3255-6131 | (11) 3255-2697\n\n**Horário de funcionamento:**\n\nSegunda: 09:00–18:00\nTerça: 09:00–18:00\nQuarta: 09:00–18:00\nQuinta: 09:00–18:00\nSexta: 09:00–18:00\nSábado: 09:00–13:30\nDomingo: Fechado\n\nObservação: horários podem sofrer alterações."
+    }
+  },
+
+
+
+
+
+
+  "flex-layout.col#nossas-lojas": {
+  "children": [
+    "flex-layout.row#lojas-row"
+  ],
+  "props": {
+    "width": "70%",
+    "preventVerticalStretch": true
+  }
+},
+
+"flex-layout.row#lojas-row": {
+  "children": [
+    "flex-layout.col#loja1",
+    "flex-layout.col#loja2"
+  ],
+  "props": {
+    "blockClass": "lojas-row",
+    "colGap": 4,
+    "fullWidth": true,
+    "horizontalAlign": "left",
+    "preventVerticalStretch": true
+  }
+},
+
+"flex-layout.col#loja1": {
+  "children": [
+    "image#loja1",
+    "rich-text#loja1"
+  ],
+  "props": {
+    "width": "auto",
+    "preventVerticalStretch": true,
+    "blockClass": "coluna-loja"
+  }
+},
+
+"flex-layout.col#loja2": {
+  "children": [
+    "image#loja2",
+    "rich-text#loja2"
+  ],
+  "props": {
+    "width": "auto",
+    "preventVerticalStretch": true,
+    "blockClass": "coluna-loja"
+  }
+},
+
+"image#loja1": {
+  "props": {
+    "src": "assets/images/loja1.png",
+    "maxWidth": "100%",
+    "blockClass": "imagem-loja"
+  }
+},
+
+"image#loja2": {
+  "props": {
+    "src": "assets/images/loja2.png",
+    "maxWidth": "100%",
+    "blockClass": "imagem-loja"
+  }
+},
+
+"rich-text#loja1": {
+  "props": {
+    "blockClass": ["texto-institucional", "texto-nossas-lojas", "texto-loja"],
+    "text": "## Loja 1 — República\n\n**Endereço:**\n\nRua 7 de Abril, 97 — 3º Andar, República, São Paulo/SP — CEP 01043-000\n\n**Telefones:**\n\n(11) 3255-6067 | (11) 3257-1632 | (11) 3258-3922\n\n**Horário de funcionamento:**\n\n| Dia | Horário |\n|---|---|\n| Segunda | 08:30–17:30 |\n| Terça | 08:30–17:30 |\n| Quarta | 08:30–17:30 |\n| Quinta | 08:30–17:30 |\n| Sexta | 08:30–17:30 |\n| Sábado | 08:30–12:00 |\n| Domingo | Fechado |\n\nObservação: horários podem sofrer alterações."
+  }
+},
+
+"rich-text#loja2": {
+  "props": {
+    "blockClass": ["texto-institucional", "texto-nossas-lojas", "texto-loja"],
+    "text": "## Loja 2 — Centro\n\n**Endereço:**\n\nRua 7 de Abril, 125 — Loja 28, Centro, São Paulo/SP — CEP 01043-000\n\n**Telefones:**\n\n(11) 3255-6131 | (11) 3255-2697\n\n**Horário de funcionamento:**\n\n| Dia | Horário |\n|---|---|\n| Segunda | 09:00–18:00 |\n| Terça | 09:00–18:00 |\n| Quarta | 09:00–18:00 |\n| Quinta | 09:00–18:00 |\n| Sexta | 09:00–18:00 |\n| Sábado | 09:00–13:30 |\n| Domingo | Fechado |\n\nObservação: horários podem sofrer alterações."
+  }
+}
+}

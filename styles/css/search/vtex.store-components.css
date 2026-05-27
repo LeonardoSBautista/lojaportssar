@@ -1,12 +1,15 @@
 .productBrandName--summaryListDesktop {
-  text-decoration: none;
+  color: #8F8F8F;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
   font-weight: 500;
-  color: #0067C7;
-  font-size: .875rem;
+  text-transform: lowercase;
 }
 
 .productBrandName--summaryListMobile {
-  text-decoration: none;
-  color: #0067C7;
-  font-size: .875rem;
+  color: #8F8F8F;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: lowercase;
 }

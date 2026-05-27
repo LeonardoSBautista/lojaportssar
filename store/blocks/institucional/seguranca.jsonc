@@ -1,0 +1,77 @@
+{
+  "store.custom#seguranca": {
+    "blocks": ["flex-layout.row#seguranca-titles", "flex-layout.row#seguranca-content"]
+  },
+  "flex-layout.row#seguranca-titles": {
+    "children": [
+      "flex-layout.row#title-institucional",
+      "flex-layout.row#title-seguranca"
+    ],
+    "props": {
+      "blockClass": "titles-institucional",
+      "colGap": 2,
+      "fullWidth": true,
+      "horizontalAlign": "left",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "flex-layout.row#seguranca-content": {
+    "children": [
+      "flex-layout.col#institucional-nav-bar",
+      "flex-layout.col#seguranca"
+    ],
+    "props": {
+      "blockClass": "conteudo-institucional",
+      "colGap": 2,
+      "fullWidth": true,
+      "horizontalAlign": "left",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "flex-layout.col#seguranca": {
+    "children": ["rich-text#content-seguranca"],
+    "props": {
+      "width": "70%",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "flex-layout.row#title-institucional": {
+    "children": ["rich-text#title-institucional"],
+    "props": {
+      "width": "25%",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "flex-layout.row#title-seguranca": {
+    "children": ["rich-text#title-seguranca"],
+    "props": {
+      "width": "70%",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#title-institucional": {
+    "props": {
+      "blockClass": ["titulo-institucional", "titulo-seguranca"],
+      "text": "# Institucional"
+    }
+  },
+
+  "rich-text#title-seguranca": {
+    "props": {
+      "blockClass": ["titulo-institucional", "titulo-seguranca"],
+      "text": "# Segurança"
+    }
+  },
+
+  "rich-text#content-seguranca": {
+    "props": {
+      "blockClass": ["texto-institucional", "texto-seguranca"],
+      "text": "Compre com Segurança na Portssar\n\nSua privacidade e a proteção dos seus dados são prioridades na Portssar. Todas as informações transmitidas durante o processo de compra são criptografadas por sistema avançado de segurança, garantindo que nenhum dado sensível trafegue de forma exposta.\n\n## Criptografia SSL e Certificado Digital\n\nA Portssar utiliza certificado digital SSL da Let's Encrypt para encriptação de dados. Essa tecnologia garante que a comunicação entre o seu navegador e nossos servidores é autêntica e que as informações estão protegidas contra acessos não autorizados.\n\nDurante a finalização do pedido, observe o ícone do cadeado fechado na barra do seu navegador: ele é o símbolo visual de que sua navegação está em ambiente seguro.\n\n## Segurança nos Pagamentos com Cartão de Crédito\n\nPara compras realizadas com cartão de crédito, adotamos uma camada adicional de proteção: além da criptografia, o processamento é realizado integralmente por sistemas automatizados, sem nenhuma intervenção humana.\n\nA Portssar não armazena dados de cartão de crédito. O número do cartão é utilizado exclusivamente para a autorização da compra e é destruído automaticamente em nossos sistemas após a confirmação pela administradora."
+    }
+  }
+}

@@ -9,7 +9,8 @@
     "children": [
       "flex-layout.row#1-desktop",
       "flex-layout.row#3-desktop",
-      "sticky-layout#4-desktop"
+      "sticky-layout#4-desktop",
+      "flex-layout.row#5-desktop"
     ]
   },
 
@@ -19,7 +20,7 @@
       "fullWidth": true
     }
   },
-  
+
   "flex-layout.row#3-desktop": {
     "props": {
       "blockClass": "menu-link",
@@ -41,7 +42,8 @@
   },
   "sticky-layout#4-desktop": {
     "props": {
-      "blockClass": "sticky-header"
+      "blockClass": "sticky-header",
+      "width": "100%"
     },
     "children": ["flex-layout.row#4-desktop"]
   },
@@ -50,22 +52,20 @@
       "blockClass": "main-header",
       "horizontalAlign": "center",
       "verticalAlign": "center",
-      "preventHorizontalStretch": true,
+      "preventHorizontalStretch": false,
       "preventVerticalStretch": true,
       "fullWidth": true
     },
     "children": [
       "flex-layout.col#logo-desktop",
-      "flex-layout.col#category-menu",
+      "flex-layout.row#searchbar",
       "flex-layout.col#spacer",
-      "search-bar",
-      "locale-switcher",
-      "login",
-      "minicart.v2"
+      "flex-layout.row#top-tools"
     ]
   },
   "flex-layout.col#logo-desktop": {
     "props": {
+      "width": "18%",
       "verticalAlign": "middle"
     },
     "children": ["logo#desktop"]
@@ -81,13 +81,131 @@
       "title": "Logo",
       "href": "/",
       "url": "assets/images/logo-portssar.png",
-      "width": "180",
-      "height": "12"
+      "width": "142",
+      "height": "69"
     }
   },
-  "header-layout.mobile": {
-    "children": ["sticky-layout#1-mobile"]
+
+  "flex-layout.row#searchbar": {
+    "props": {
+      "width": "55%",
+      "margin": "0 20px",
+      "verticalAlign": "middle",
+      "blockClass": "searchbar-header"
+    },
+    "children": ["search-bar"]
   },
+
+  "flex-layout.row#top-tools": {
+    "props": {
+      "margin": "0 10px",
+      "verticalAlign": "middle",
+      "horizontalAlign": "right",
+      "width": "35%",
+      "blockClass": "top-tools"
+    },
+    "children": [
+      "link#wishlist-link",
+      "login",
+      "minicart.v2"
+    ]
+  },
+
+  "flex-layout.row#top-tools-mobile": {
+    "props": {
+      "margin": "0 10px",
+      "verticalAlign": "middle",
+      "horizontalAlign": "right",
+      "width": "35%",
+      "blockClass": "top-tools"
+    },
+    "children": [
+      "link#wishlist-link-mobile",
+      "login#mobile",
+      "minicart.v2"
+    ]
+  },
+
+  "search-bar": {
+    "props": {
+      "blockClass": "search-bar-header",
+      "showVoiceSearch": true,
+      "placeholder": "Buscar câmeras, lentes, acessórios..."
+    }
+  },
+
+  "link#wishlist-link": {
+    "props": {
+      "href": "/wishlist",
+      "label": "Meus Favoritos",
+      "blockClass": "wishlist-link",
+      "width": "40%"
+    }
+  },
+
+   "link#wishlist-link-mobile": {
+    "props": {
+      "href": "/wishlist",
+      "label": "Meus Favoritos",
+      "blockClass": "wishlist-link",
+      "width": "10%"
+    }
+  },
+
+  "login": {
+    "props": {
+      "emailAndPasswordTitle": "LOG-IN",
+      "accessCodeTitle": "Receber Código de Acesso",
+      "emailPlaceholder": "e-mail",
+      "passwordPlaceholder": "senha",
+      "showPasswordVerificationIntoTooltip": true,
+      "optionsTitle": "Use uma das opções abaixo",
+      "showIconProfile": true,
+      "iconLabel": "Entre ou Cadastre-se",
+      "hideIconLabel": false,
+      "mirrorTooltipToRight": true,
+      "blockClass": "login-header",
+      "width": "50%"
+    }
+  },
+
+   "login#mobile": {
+    "props": {
+      "emailAndPasswordTitle": "LOG-IN",
+      "accessCodeTitle": "Receber Código de Acesso",
+      "emailPlaceholder": "e-mail",
+      "passwordPlaceholder": "senha",
+      "showPasswordVerificationIntoTooltip": true,
+      "optionsTitle": "Use uma das opções abaixo",
+      "showIconProfile": true,
+      "iconLabel": "Entre ou Cadastre-se",
+      "hideIconLabel": false,
+      "mirrorTooltipToRight": true,
+      "blockClass": "login-header",
+      "width": "20%"
+    }
+  },
+
+
+  "header-layout.mobile": {
+    "children": ["flex-layout.row#topbar-mobile", "sticky-layout#1-mobile", "flex-layout.row#searchbar"]
+  },
+
+  "flex-layout.row#topbar-mobile": {
+    "props": {
+      "blockClass": "topbar-mobile",
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "vtex.menu@2.x:menu#websites",
+      "flex-layout.col#spacer",
+      "vtex.menu@2.x:menu#institutional"
+    ]
+  },
+
   "sticky-layout#1-mobile": {
     "children": ["flex-layout.row#1-mobile"]
   },
@@ -96,8 +214,7 @@
       "drawer",
       "logo#mobile",
       "flex-layout.col#spacer",
-      "login",
-      "minicart.v2"
+      "flex-layout.row#top-tools-mobile"
     ],
     "props": {
       "blockClass": "main-header-mobile",
@@ -112,22 +229,41 @@
 
   "menu#drawer": {
     "children": [
-      "menu-item#category-apparel",
-      "menu-item#category-home",
-      "menu-item#more"
+      "rich-text#menu-mobile-title",
+      "disclosure-layout-group#category-menu-mobile",
+      "menu-item#item-1",
+      "menu-item#item-2",
+      "menu-item#item-3",
+      "menu-item#item-4"
     ],
     "props": {
       "orientation": "vertical"
     }
   },
 
+
   "logo#mobile": {
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo-mobile.png",
-      "width": "77.5",
-      "height": "27.5"
+      "url": "assets/images/logo-portssar.png",
+      "width": "142",
+      "height": "69"
     }
+  },
+
+  "flex-layout.row#5-desktop": {
+    "props": {
+      "blockClass": "category-menu",
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#category-menu"
+    ]
   }
+
+
 }

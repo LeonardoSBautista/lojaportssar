@@ -1,0 +1,18 @@
+.trigger--footer-mobile-menu-trigger {
+  background-color: transparent;
+  box-shadow: none;
+  width: 100%;
+  border-bottom: 1px solid hsla(0, 0%, 100%, .14) !important;
+  border: none;
+}
+
+
+@media only screen and (max-width: 1000px) {
+  .trigger--department-mobile-menu-trigger {
+    border-bottom: 1px solid #d7d7d7!important;
+  }
+
+  .content--footer-mobile-menu-content--visible {
+    margin-bottom: 25px;
+  }
+}

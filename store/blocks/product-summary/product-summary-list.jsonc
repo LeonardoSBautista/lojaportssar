@@ -36,7 +36,7 @@
     ]
   },
   "flex-layout.row#summaryListDesktop": {
-    "props":{
+    "props": {
       "fullWidth": true,
       "colSizing": "auto",
       "blockClass": "summaryListDesktop"
@@ -59,13 +59,16 @@
   },
   "flex-layout.col#summaryDetailsListDesktop": {
     "props": {
-      "preventVerticalStretch": true
+      "preventVerticalStretch": true,
+      "width": 60
     },
     "children": [
       "vtex.store-components:product-brand#summaryListDesktop",
       "product-summary-name#summaryListDesktop",
-      "flex-layout.col#productRating",
-      "flex-layout.row#productSpecifications"
+      "condition-layout.product#hasBestPrice",
+      "flex-layout.row#selling-price-savings",
+      "flex-layout.row#pix-price"
+
     ]
   },
   "flex-layout.row#productSpecifications": {
@@ -90,8 +93,7 @@
       "preventVerticalStretch": true
     },
     "children": [
-      "flex-layout.row#savingsSummaryListDesktop",
-      "flex-layout.col#priceSummaryListDesktop",
+      "add-to-list-btn",
       "flex-layout.row#buyButtonsSummaryListDesktop"
     ]
   },
@@ -101,31 +103,14 @@
       "colGap": 5
     },
     "children": [
-      "add-to-cart-button",
-      "flex-layout.row#buyNowButton"
+      "add-to-cart-button"
     ]
-  },
-  "flex-layout.row#buyNowButton": {
-    "props": {
-      "blockClass": "buyNowButton"
-    },
-    "children": [
-      "add-to-cart-button#buyNow"
-    ]
-  },
-
-  "add-to-cart-button#buyNow": {
-    "props": {
-      "text": "BUY NOW",
-      "isOneClickBuy": true,
-      "onClickEventPropagation": "enabled",
-      "blockClass": "buyNow"
-    }
   },
   "flex-layout.col#priceSummaryListDesktop": {
     "children": [
-      "product-selling-price#summary",
-      "product-list-price#summary"
+      "product-list-price#summary",
+      "product-selling-price#summary"
+
     ]
   },
   "stack-layout#summaryListDesktop": {
@@ -144,7 +129,7 @@
     }
   },
   "flex-layout.row#summaryListMobile": {
-    "props":{
+    "props": {
       "preserveLayoutOnMobile": true,
       "colSizing": "auto",
       "blockClass": "summaryListMobile",
@@ -188,8 +173,7 @@
     },
     "children": [
       "vtex.store-components:product-brand#summaryListMobile",
-      "product-summary-name#summaryListMobile",
-      "product-rating-inline"
+      "product-summary-name#summaryListMobile"
     ]
   },
   "flex-layout.col#summaryDownDetailsListMobile": {
@@ -198,7 +182,9 @@
     },
     "children": [
       "product-selling-price#summary",
-      "product-installments#summary"
+      "product-installments#summary",
+      "flex-layout.row#pix-price",
+      "add-to-cart-button"
     ]
   },
   "vtex.store-components:product-brand#summaryListMobile": {

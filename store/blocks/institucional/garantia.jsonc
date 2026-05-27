@@ -1,0 +1,78 @@
+{
+  "store.custom#garantia": {
+    "blocks": ["flex-layout.row#garantia-titles", "flex-layout.row#garantia-content"]
+  },
+  "flex-layout.row#garantia-titles": {
+    "children": [
+      "flex-layout.row#title-institucional",
+      "flex-layout.row#title-garantia"
+    ],
+    "props": {
+      "blockClass": "titles-institucional",
+      "colGap": 2,
+      "fullWidth": true,
+      "horizontalAlign": "left",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "flex-layout.row#garantia-content": {
+    "children": [
+      "flex-layout.col#institucional-nav-bar",
+      "flex-layout.col#garantia"
+    ],
+    "props": {
+      "blockClass": "conteudo-institucional",
+      "colGap": 2,
+      "fullWidth": true,
+      "horizontalAlign": "left",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "flex-layout.col#garantia": {
+    "children": ["rich-text#content-garantia"],
+    "props": {
+      "width": "70%",
+      "preventVerticalStretch": true
+    }
+  },
+
+
+  "flex-layout.row#title-institucional": {
+    "children": ["rich-text#title-institucional"],
+    "props": {
+      "width": "25%",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "flex-layout.row#title-garantia": {
+    "children": ["rich-text#title-garantia"],
+    "props": {
+      "width": "70%",
+      "preventVerticalStretch": true
+    }
+  },
+
+
+  "rich-text#title-institucional": {
+    "props": {
+      "blockClass": ["titulo-institucional", "titulo-garantia"],
+      "text": "# Institucional"
+    }
+  },
+
+  "rich-text#title-garantia": {
+    "props": {
+      "blockClass": ["titulo-institucional", "titulo-garantia"],
+      "text": "# Garantia"
+    }
+  },
+"rich-text#content-garantia": {
+  "props": {
+    "blockClass": ["texto-institucional", "texto-garantia"],
+    "text": "**A Portssar trabalha com produtos originais, adquiridos diretamente de fabricantes e fornecedores oficiais, garantindo qualidade, procedência e segurança em todas as compras realizadas em nosso site.**\n\nEsta Política de Garantia tem o objetivo de esclarecer os direitos do consumidor e os procedimentos em casos de defeitos ou problemas relacionados aos produtos adquiridos.\n\n---\n\n**1. Garantia Legal**\nTodos os produtos comercializados pela Portssar seguem a garantia legal prevista no Código de Defesa do Consumidor (CDC).\nPara produtos duráveis, o prazo para reclamar de defeitos é de **90 (noventa) dias** a partir da data de recebimento.\n\n---\n\n**2. O que é considerado defeito?**\nSão considerados defeitos cobertos pela garantia:\n• Produto com peças faltando ou incorretas\n• Falhas de fabricação visíveis\n• Funcionamento inadequado na primeira utilização\n• Danos estruturais de origem fabril\n• Material em desacordo com o anunciado\n• Problemas que comprometam o uso do produto\n\n---\n\n**3. O que não é coberto pela garantia?**\nA garantia não cobre:\n• Danos causados por mau uso, queda, umidade ou armazenamento inadequado\n• Desgaste natural pelo uso prolongado\n• Avarias decorrentes de transporte quando o cliente opta por aceitar embalagem já violada\n• Danos causados por instalação ou manuseio incorretos\n• Produtos danificados por terceiros após a entrega registrada\n\n---\n\n**4. Como solicitar análise de garantia**\nSe o produto apresentar defeito dentro do prazo legal, o cliente deve entrar em contato com nosso SAC pelos seguintes canais:\n**WhatsApp / SAC:** (11) 98915-4342\n**E-mail:** contato@portssar.com.br\n\n**Informações necessárias:**\n• Nome completo\n• Número do pedido\n• Fotos ou vídeos que mostrem o defeito\n• Descrição do problema\n\nNossa equipe fará uma análise inicial e orientará sobre o processo de troca ou devolução.\n\n---\n\n**5. Troca por defeito de fabricação**\nConfirmado o defeito, o cliente poderá escolher entre:\n• Substituição por outro exemplar do mesmo produto\n• Vale-crédito para utilizar no site\n• Reembolso do valor pago\n\nO prazo para conclusão do processo pode variar conforme disponibilidade em estoque e logística.\n\n---\n\n**6. Custos de envio**\nSe o defeito for confirmado:\n• A Portssar assume os custos de postagem (ida e volta).\n• Será enviado um código de postagem dos Correios ou instruções de coleta.\n\nSe não houver constatação de defeito, o cliente será informado e a devolução ocorrerá mediante pagamento do frete de retorno.\n\n---\n\n**7. Recebimento com Avarias**\nSe no momento da entrega o cliente notar embalagem violada, molhada ou danificada, recomendamos:\n• Recusar a entrega no ato; ou\n• Registrar o problema imediatamente com fotos e contatar o SAC.\n\nIsso agiliza a reposição e evita transtornos.\n\n---\n\n**8. Produtos com Garantia Adicional do Fabricante**\nCaso algum produto possua garantia estendida do fabricante, as condições estarão descritas na página do produto.\nO atendimento nesses casos deve seguir as orientações e prazos definidos pelo fabricante.\n\n---\n\n**9. Suporte**\nPara dúvidas ou suporte, nossos canais são:\n**E-mail:** [contato@portssar.com.br](mailto:contato@portssar.com.br)  \n**WhatsApp/Telefone:** [(11) 98915-4342](https://wa.me/5511989154342?text=Ol%C3%A1!%20Acessei%20a%20loja%20online%20da%20Portssar%20e%20gostaria%20de%20falar%20com%20um%20atendente.)"
+  }
+}
+}

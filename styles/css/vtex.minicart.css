@@ -1,0 +1,8 @@
+.minicartContainer:hover {
+  opacity: 0.6;
+}
+
+.minicartTitle {
+  font-family: "Open Sans", sans-serif;
+  color: black;
+}

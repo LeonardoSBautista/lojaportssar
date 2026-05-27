@@ -1,0 +1,77 @@
+{
+  "store.custom#sobre-a-portssar": {
+    "blocks": ["flex-layout.row#sobre-titles", "flex-layout.row#sobre-content"]
+  },
+  "flex-layout.row#sobre-titles": {
+    "children": [
+      "flex-layout.row#title-institucional",
+      "flex-layout.row#title-sobre"
+    ],
+    "props": {
+      "blockClass": "titles-institucional",
+      "colGap": 2,
+      "fullWidth": true,
+      "horizontalAlign": "left",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "flex-layout.row#sobre-content": {
+    "children": [
+      "flex-layout.col#institucional-nav-bar",
+      "flex-layout.col#sobre"
+    ],
+    "props": {
+      "blockClass": "conteudo-institucional",
+      "colGap": 2,
+      "fullWidth": true,
+      "horizontalAlign": "left",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "flex-layout.col#sobre": {
+    "children": ["rich-text#content-sobre"],
+    "props": {
+      "width": "70%",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "flex-layout.row#title-institucional": {
+    "children": ["rich-text#title-institucional"],
+    "props": {
+      "width": "25%",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "flex-layout.row#title-sobre": {
+    "children": ["rich-text#title-sobre"],
+    "props": {
+      "width": "70%",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#title-institucional": {
+    "props": {
+      "blockClass": ["titulo-institucional", "titulo-sobre"],
+      "text": "# Institucional"
+    }
+  },
+
+  "rich-text#title-sobre": {
+    "props": {
+      "blockClass": ["titulo-institucional", "titulo-sobre"],
+      "text": "# Sobre a Portssar"
+    }
+  },
+
+"rich-text#content-sobre": {
+  "props": {
+    "blockClass": ["texto-institucional", "texto-sobre"],
+    "text": "Desde 1997, a Portssar é reconhecida como uma das lojas de equipamentos fotográficos mais confiáveis do mercado brasileiro. Nascemos da mesma paixão que move fotógrafos: o compromisso com a imagem, a precisão técnica e a entrega de experiências que fazem a diferença.\n\nAqui você compra ou vende câmeras, lentes e acessórios fotográficos novos ou seminovos com a segurança de quem entende do assunto. Nosso atendimento é feito de fotógrafo para fotógrafo.\n\n## Quem Somos\n\nA Portssar é especializada na venda e revenda de equipamentos fotográficos, atendendo fotógrafos iniciantes e profissionais em todo o Brasil. Com mais de duas décadas de atuação, construímos uma rede de distribuição e comunicação capaz de alcançar milhões de brasileiros, combinando experiência de mercado, processos eficientes e inteligência no atendimento.\n\nNossa estrutura permite alocação ágil de equipe e uma ampla variedade de soluções, garantindo a melhor experiência de compra para cada perfil de cliente.\n\n## Nossa Missão\n\nAtender com excelência às demandas dos clientes, por meio do desenvolvimento e oferta de produtos e serviços que contribuam para a qualidade de vida das pessoas, gerando valor de forma sustentável.\n\n## Nossa Visão\n\nSer a empresa de referência no segmento fotográfico, reconhecida como a melhor opção por clientes, colaboradores, comunidade, fornecedores e investidores, pela qualidade dos nossos produtos, serviços e relacionamentos.\n\n## Nossos Valores\n\n* **Qualidade:** em cada produto, serviço e interação\n* **Empreendedorismo:** na busca contínua por soluções inovadoras\n* **Dinamismo:** agilidade para atender um mercado em constante evolução\n* **Relacionamentos:** pessoas no centro de tudo o que fazemos"
+  }
+}
+}

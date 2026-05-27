@@ -4,14 +4,25 @@
       "experimentalOptimizeRendering": true
     },
     "children": [
-      "menu-item#category-apparel",
-      "menu-item#category-home",
-      "menu-item#more"
+      "menu-item#item-all",
+      "menu-item#item-1",
+      "menu-item#item-2",
+      "menu-item#item-3",
+      "menu-item#item-4",
+      "menu-item#item-5",
+      "menu-item#item-6",
+      "menu-item#item-7",
+      "menu-item#item-8",
+      "menu-item#item-9",
+      "menu-item#item-10",
+      "menu-item#item-11"
     ]
   },
-  "menu-item#category-apparel": {
+
+  "menu-item#item-all": {
     "props": {
       "id": "menu-item-category-apparel",
+      "blockClass": ["menu-principal-item", "todos-os-departamentos"],
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -19,185 +30,2288 @@
         "type": "internal",
         "href": "/apparel---accessories/",
         "noFollow": false,
-        "tagTitle": "Apparel & Accessories",
-        "text": "Apparel & Accessories"
+        "tagTitle": "Mais departamentos",
+        "text": "Mais departamentos"
       }
     },
-    "blocks": [
-      "vtex.menu@2.x:submenu#category-apparel"
-    ]
+    "blocks": ["vtex.menu@2.x:submenu#mais-departamentos"]
   },
-  "vtex.menu@2.x:submenu#category-apparel": {
-    "props": {
-      "width": "auto"
-    },
-    "children": [
-      "vtex.menu@2.x:menu#category-apparel"
-    ]
+
+  "vtex.menu@2.x:submenu#mais-departamentos": {
+    "children": ["vtex.menu@2.x:menu#mais-departamentos"]
   },
-  "vtex.menu@2.x:menu#category-apparel": {
+
+  "vtex.menu@2.x:menu#mais-departamentos": {
     "props": {
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#category-apparel-clothing",
-      "menu-item#category-apparel-accessories",
-      "menu-item#category-apparel-eyeglasses"
+      "menu-item#dept-cameras",
+      "menu-item#dept-objetivas",
+      "menu-item#dept-seminovos",
+      "menu-item#dept-tripes",
+      "menu-item#dept-iluminacao",
+      "menu-item#dept-filtros",
+      "menu-item#dept-bolsas",
+      "menu-item#dept-audio",
+      "menu-item#dept-video",
+      "menu-item#dept-acessorios",
+      "menu-item#dept-analogicos"
     ]
   },
-  "menu-item#category-apparel-clothing": {
+
+  "menu-item#dept-cameras": {
     "props": {
-      "id": "menu-item-category-apparel-clothing",
+      "blockClass": "menu-principal-item-all",
       "type": "custom",
-      "iconId": null,
-      "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/apparel---accessories/clothing/",
+        "href": "/cameras",
         "noFollow": false,
-        "tagTitle": "Clothing",
-        "text": "Clothing"
-      }
-    }
-  },
-  "menu-item#category-apparel-accessories": {
-    "props": {
-      "id": "menu-item-category-apparel-accessories",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/apparel---accessories/accessories/",
-        "noFollow": false,
-        "tagTitle": "Accessories",
-        "text": "Accessories"
-      }
-    }
-  },
-  "menu-item#category-apparel-eyeglasses": {
-    "props": {
-      "id": "menu-item-category-apparel-eyeglasses",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/apparel---accessories/eyeglasses/",
-        "noFollow": false,
-        "tagTitle": "Eyeglasses",
-        "text": "Eyeglasses"
-      }
-    }
-  },
-  "menu-item#category-home": {
-    "props": {
-      "id": "menu-item-category-home",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/home---decor/",
-        "noFollow": false,
-        "tagTitle": "Home & Decor",
-        "text": "Home & Decor"
-      }
-    }
-  },
-  "menu-item#more": {
-    "props": {
-      "id": "menu-item-custom-sale",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": true,
-        "tagTitle": "More",
-        "text": "More"
+        "tagTitle": "Câmeras",
+        "text": "Câmeras"
       }
     },
-    "blocks": [
-      "vtex.menu@2.x:submenu#more"
-    ]
+    "blocks": ["vtex.menu@2.x:submenu#dept-cameras"]
   },
-  "vtex.menu@2.x:submenu#more": {
+
+  "vtex.menu@2.x:submenu#dept-cameras": {
+    "children": ["vtex.menu@2.x:menu#dept-cameras-submenu"],
     "props": {
-      "width": "100%"
-    },
-    "children": [
-      "flex-layout.row#menu-more"
-    ]
+      "blockClass": "sub-all-departments"
+    }
   },
-  "flex-layout.row#menu-more": {
-    "children": [
-      "flex-layout.col#menu-more-1",
-      "flex-layout.col#menu-more-2"
-    ]
-  },
-  "flex-layout.col#menu-more-1": {
-    "children": [
-      "vtex.menu@2.x:menu#more"
-    ]
-  },
-  "flex-layout.col#menu-more-2": {
-    "children": [
-      "info-card#home"
-    ]
-  },
-  "vtex.menu@2.x:menu#more": {
+
+  "vtex.menu@2.x:menu#dept-cameras-submenu": {
     "props": {
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#about-us",
-      "menu-item#faq"
+      "menu-item#cameras-canon",
+      "menu-item#cameras-descartavel",
+      "menu-item#cameras-fujifilm",
+      "menu-item#cameras-gopro",
+      "menu-item#cameras-nikon",
+      "menu-item#cameras-polaroid",
+      "menu-item#cameras-sony",
+      "menu-item#cameras-panasonic",
+      "menu-item#cameras-olympus",
+      "menu-item#cameras-kodak"
     ]
   },
-  "menu-item#about-us": {
+
+  "menu-item#dept-objetivas": {
     "props": {
-      "id": "menu-item-about-us",
+      "blockClass": "menu-principal-item-all",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/objetivas",
+        "noFollow": false,
+        "tagTitle": "Objetivas",
+        "text": "Objetivas"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#dept-objetivas"]
+  },
+
+  "vtex.menu@2.x:submenu#dept-objetivas": {
+    "children": ["vtex.menu@2.x:menu#dept-objetivas-submenu"],
+    "props": {
+      "blockClass": "sub-all-departments"
+    }
+  },
+
+  "vtex.menu@2.x:menu#dept-objetivas-submenu": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#objetivas-tokina",
+      "menu-item#objetivas-canon",
+      "menu-item#objetivas-fujifilm",
+      "menu-item#objetivas-nikon",
+      "menu-item#objetivas-telescopio",
+      "menu-item#objetivas-sony",
+      "menu-item#objetivas-panasonic"
+    ]
+  },
+
+  "menu-item#dept-seminovos": {
+    "props": {
+      "blockClass": "menu-principal-item-all",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/seminovos",
+        "noFollow": false,
+        "tagTitle": "Seminovos",
+        "text": "Seminovos"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#dept-seminovos"]
+  },
+
+  "vtex.menu@2.x:submenu#dept-seminovos": {
+    "children": ["vtex.menu@2.x:menu#dept-seminovos-submenu"],
+    "props": {
+      "blockClass": "sub-all-departments"
+    }
+  },
+
+  "vtex.menu@2.x:menu#dept-seminovos-submenu": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#seminovos-teleconversores",
+      "menu-item#seminovos-fotometros",
+      "menu-item#seminovos-cabecas",
+      "menu-item#seminovos-battery-grip",
+      "menu-item#seminovos-objetivas",
+      "menu-item#seminovos-flashes",
+      "menu-item#seminovos-cameras",
+      "menu-item#seminovos-tripe",
+      "menu-item#seminovos-binoculos",
+      "menu-item#seminovos-radio-flash",
+      "menu-item#seminovos-visores",
+      "menu-item#seminovos-bolsas",
+      "menu-item#seminovos-estabilizadores",
+      "menu-item#seminovos-microfone",
+      "menu-item#seminovos-acessorios"
+    ]
+  },
+
+
+  "menu-item#dept-tripes": {
+    "props": {
+      "blockClass": "menu-principal-item-all",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/tripes",
+        "noFollow": false,
+        "tagTitle": "Tripés",
+        "text": "Tripés"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#dept-tripes"]
+  },
+
+  "vtex.menu@2.x:submenu#dept-tripes": {
+    "children": ["vtex.menu@2.x:menu#dept-tripes-submenu"],
+    "props": {
+      "blockClass": "sub-all-departments"
+    }
+  },
+
+  "vtex.menu@2.x:menu#dept-tripes-submenu": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": ["menu-item#tripes-iluminacao", "menu-item#tripes-monope", "menu-item#tripes-lista-completa"]
+  },
+
+  "menu-item#dept-iluminacao": {
+    "props": {
+      "blockClass": "menu-principal-item-all",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/iluminacao",
+        "noFollow": false,
+        "tagTitle": "Iluminação",
+        "text": "Iluminação"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#dept-iluminacao"]
+  },
+
+  "vtex.menu@2.x:submenu#dept-iluminacao": {
+    "children": ["vtex.menu@2.x:menu#dept-iluminacao-submenu"],
+    "props": {
+      "blockClass": "sub-all-departments"
+    }
+  },
+
+  "vtex.menu@2.x:menu#dept-iluminacao-submenu": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#iluminacao-acessorios",
+      "menu-item#iluminacao-flashes",
+      "menu-item#iluminacao-fotometros",
+      "menu-item#iluminacao-led",
+      "menu-item#iluminacao-kit",
+      "menu-item#iluminacao-radio-flash",
+      "menu-item#iluminacao-softbox"
+    ]
+  },
+
+
+  "menu-item#dept-filtros": {
+    "props": {
+      "blockClass": "menu-principal-item-all",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/filtros",
+        "noFollow": false,
+        "tagTitle": "Filtros",
+        "text": "Filtros"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#dept-filtros"]
+  },
+
+  "vtex.menu@2.x:submenu#dept-filtros": {
+    "children": ["vtex.menu@2.x:menu#dept-filtros-submenu"],
+    "props": {
+      "blockClass": "sub-all-departments"
+    }
+  },
+
+  "vtex.menu@2.x:menu#dept-filtros-submenu": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#filtros-bw",
+      "menu-item#filtros-fujifilm",
+      "menu-item#filtros-hoya",
+      "menu-item#filtros-kenko",
+      "menu-item#filtros-marumi",
+      "menu-item#filtros-nd-variavel"
+    ]
+  },
+
+
+  "menu-item#dept-bolsas": {
+    "props": {
+      "blockClass": "menu-principal-item-all",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/bolsas-e-mochilas",
+        "noFollow": false,
+        "tagTitle": "Bolsas e Mochilas",
+        "text": "Bolsas e Mochilas"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#dept-bolsas"]
+  },
+
+  "vtex.menu@2.x:submenu#dept-bolsas": {
+    "children": ["vtex.menu@2.x:menu#dept-bolsas-submenu"],
+    "props": {
+      "blockClass": "sub-all-departments"
+    }
+  },
+
+  "vtex.menu@2.x:menu#dept-bolsas-submenu": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": ["menu-item#bolsas-estojo-lentes", "menu-item#bolsas-lista-completa"]
+  },
+
+  "menu-item#dept-audio": {
+    "props": {
+      "blockClass": "menu-principal-item-all",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/audio",
+        "noFollow": false,
+        "tagTitle": "Áudio",
+        "text": "Áudio"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#dept-audio"]
+  },
+
+  "vtex.menu@2.x:submenu#dept-audio": {
+    "children": ["vtex.menu@2.x:menu#dept-audio-submenu"],
+    "props": {
+      "blockClass": "sub-all-departments"
+    }
+  },
+
+  "vtex.menu@2.x:menu#dept-audio-submenu": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": ["menu-item#audio-gravadores", "menu-item#audio-microfones"]
+  },
+
+  "menu-item#dept-video": {
+    "props": {
+      "blockClass": "menu-principal-item-all",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/video",
+        "noFollow": false,
+        "tagTitle": "Vídeo",
+        "text": "Vídeo"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#dept-video"]
+  },
+
+  "vtex.menu@2.x:submenu#dept-video": {
+    "children": ["vtex.menu@2.x:menu#dept-video-submenu"],
+    "props": {
+      "blockClass": "sub-all-departments"
+    }
+  },
+
+  "vtex.menu@2.x:menu#dept-video-submenu": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": ["menu-item#video-estabilizadores"]
+  },
+
+
+
+  "menu-item#dept-acessorios": {
+    "props": {
+      "blockClass": "menu-principal-item-all",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/acessorios",
+        "noFollow": false,
+        "tagTitle": "Acessórios",
+        "text": "Acessórios"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#dept-acessorios"]
+  },
+
+  "vtex.menu@2.x:submenu#dept-acessorios": {
+    "children": ["vtex.menu@2.x:menu#dept-acessorios-submenu"],
+    "props": {
+      "blockClass": "sub-all-departments"
+    }
+  },
+
+  "vtex.menu@2.x:menu#dept-acessorios-submenu": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#acessorios-adaptadores",
+      "menu-item#acessorios-limpeza",
+      "menu-item#acessorios-midia",
+      "menu-item#acessorios-pilhas",
+      "menu-item#acessorios-outros"
+    ]
+  },
+
+  "menu-item#dept-analogicos": {
+    "props": {
+      "blockClass": "menu-principal-item-all",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/analogicos",
+        "noFollow": false,
+        "tagTitle": "Analógicos",
+        "text": "Analógicos"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#dept-analogicos"]
+  },
+
+  "vtex.menu@2.x:submenu#dept-analogicos": {
+    "children": ["vtex.menu@2.x:menu#dept-analogicos-submenu"],
+    "props": {
+      "blockClass": "sub-all-departments"
+    }
+  },
+
+  "vtex.menu@2.x:menu#dept-analogicos-submenu": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#analogicos-120-colorido",
+      "menu-item#analogicos-120-pb",
+      "menu-item#analogicos-135-colorido",
+      "menu-item#analogicos-135-pb",
+      "menu-item#analogicos-4x5",
+      "menu-item#analogicos-instantaneo",
+      "menu-item#analogicos-papel",
+      "menu-item#analogicos-print-120",
+      "menu-item#analogicos-print-135",
+      "menu-item#analogicos-quimicos"
+    ]
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "menu-item#main": {
+    "props": {
+      "id": "menu-item-category-apparel",
+      "blockClass": "menu-principal-item",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/about-us",
-        "noFollow": true,
-        "tagTitle": "About us",
-        "text": "About us"
+        "href": "/apparel---accessories/",
+        "noFollow": false,
+        "tagTitle": "Pré-Vendas",
+        "text": "Pré-Vendas"
       }
     }
   },
-  "menu-item#faq": {
+
+
+  "rich-text#menu-mobile-title": {
     "props": {
-      "id": "menu-item-faq",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "Departamentos",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5",
+      "blockClass": [
+        "shelf-title",
+        "menu-title"
+      ]
+    }
+  },
+"disclosure-layout-group#category-menu-mobile": {
+  "children": [
+    "flex-layout.col#department-mobile-cameras",
+    "flex-layout.col#department-mobile-objetivas",
+    "flex-layout.col#department-mobile-seminovos",
+    "flex-layout.col#department-mobile-tripes",
+    "flex-layout.col#department-mobile-iluminacao",
+    "flex-layout.col#department-mobile-filtros",
+    "flex-layout.col#department-mobile-bolsas",
+    "flex-layout.col#department-mobile-audio",
+    "flex-layout.col#department-mobile-video",
+    "flex-layout.col#department-mobile-acessorios",
+    "flex-layout.col#department-mobile-analogicos"
+  ],
+  "props": {
+    "animated": true,
+    "blockClass": "department-mobile-menu-wrapper"
+  }
+},
+
+"flex-layout.col#department-mobile-cameras": {
+  "children": [
+    "disclosure-layout#department-mobile-cameras"
+  ]
+},
+"disclosure-layout#department-mobile-cameras": {
+  "children": [
+    "disclosure-trigger#department-mobile-cameras",
+    "disclosure-content#department-mobile-cameras"
+  ],
+  "props": {
+    "blockClass": "department-mobile-menu-item"
+  }
+},
+"disclosure-trigger#department-mobile-cameras": {
+  "children": [
+    "rich-text#department-mobile-cameras-titulo"
+  ],
+  "props": {
+    "blockClass": "department-mobile-menu-trigger"
+  }
+},
+"rich-text#department-mobile-cameras-titulo": {
+  "props": {
+    "text": "[Câmeras](/cameras)",
+    "blockClass": "department-mobile-menu-title"
+  }
+},
+"disclosure-content#department-mobile-cameras": {
+  "children": [
+    "vtex.menu@2.x:menu#department-mobile-cameras"
+  ],
+  "props": {
+    "blockClass": "department-mobile-menu-content"
+  }
+},
+"vtex.menu@2.x:menu#department-mobile-cameras": {
+  "props": {
+    "orientation": "vertical"
+  },
+  "children": [
+    "menu-item#cameras-canon",
+    "menu-item#cameras-descartavel",
+    "menu-item#cameras-fujifilm",
+    "menu-item#cameras-gopro",
+    "menu-item#cameras-nikon",
+    "menu-item#cameras-polaroid",
+    "menu-item#cameras-sony",
+    "menu-item#cameras-panasonic",
+    "menu-item#cameras-olympus",
+    "menu-item#cameras-kodak"
+  ]
+},
+
+"flex-layout.col#department-mobile-objetivas": {
+  "children": [
+    "disclosure-layout#department-mobile-objetivas"
+  ]
+},
+"disclosure-layout#department-mobile-objetivas": {
+  "children": [
+    "disclosure-trigger#department-mobile-objetivas",
+    "disclosure-content#department-mobile-objetivas"
+  ],
+  "props": {
+    "blockClass": "department-mobile-menu-item"
+  }
+},
+"disclosure-trigger#department-mobile-objetivas": {
+  "children": [
+    "rich-text#department-mobile-objetivas-titulo"
+  ],
+  "props": {
+    "blockClass": "department-mobile-menu-trigger"
+  }
+},
+"rich-text#department-mobile-objetivas-titulo": {
+  "props": {
+    "text": "[Objetivas](/objetivas)",
+    "blockClass": "department-mobile-menu-title"
+  }
+},
+"disclosure-content#department-mobile-objetivas": {
+  "children": [
+    "vtex.menu@2.x:menu#department-mobile-objetivas"
+  ],
+  "props": {
+    "blockClass": "department-mobile-menu-content"
+  }
+},
+"vtex.menu@2.x:menu#department-mobile-objetivas": {
+  "props": {
+    "orientation": "vertical"
+  },
+  "children": [
+    "menu-item#objetivas-tokina",
+    "menu-item#objetivas-canon",
+    "menu-item#objetivas-fujifilm",
+    "menu-item#objetivas-nikon",
+    "menu-item#objetivas-telescopio",
+    "menu-item#objetivas-sony",
+    "menu-item#objetivas-panasonic"
+  ]
+},
+
+"flex-layout.col#department-mobile-seminovos": {
+  "children": [
+    "disclosure-layout#department-mobile-seminovos"
+  ]
+},
+"disclosure-layout#department-mobile-seminovos": {
+  "children": [
+    "disclosure-trigger#department-mobile-seminovos",
+    "disclosure-content#department-mobile-seminovos"
+  ],
+  "props": {
+    "blockClass": "department-mobile-menu-item"
+  }
+},
+"disclosure-trigger#department-mobile-seminovos": {
+  "children": [
+    "rich-text#department-mobile-seminovos-titulo"
+  ],
+  "props": {
+    "blockClass": "department-mobile-menu-trigger"
+  }
+},
+"rich-text#department-mobile-seminovos-titulo": {
+  "props": {
+    "text": "[Seminovos](/seminovos)",
+    "blockClass": "department-mobile-menu-title"
+  }
+},
+"disclosure-content#department-mobile-seminovos": {
+  "children": [
+    "vtex.menu@2.x:menu#department-mobile-seminovos"
+  ],
+  "props": {
+    "blockClass": "department-mobile-menu-content"
+  }
+},
+"vtex.menu@2.x:menu#department-mobile-seminovos": {
+  "props": {
+    "orientation": "vertical"
+  },
+  "children": [
+    "menu-item#seminovos-teleconversores",
+    "menu-item#seminovos-fotometros",
+    "menu-item#seminovos-cabecas",
+    "menu-item#seminovos-battery-grip",
+    "menu-item#seminovos-objetivas",
+    "menu-item#seminovos-flashes",
+    "menu-item#seminovos-cameras",
+    "menu-item#seminovos-tripe",
+    "menu-item#seminovos-binoculos",
+    "menu-item#seminovos-radio-flash",
+    "menu-item#seminovos-visores",
+    "menu-item#seminovos-bolsas",
+    "menu-item#seminovos-estabilizadores",
+    "menu-item#seminovos-microfone",
+    "menu-item#seminovos-acessorios"
+  ]
+},
+
+"flex-layout.col#department-mobile-tripes": {
+  "children": [
+    "disclosure-layout#department-mobile-tripes"
+  ]
+},
+"disclosure-layout#department-mobile-tripes": {
+  "children": [
+    "disclosure-trigger#department-mobile-tripes",
+    "disclosure-content#department-mobile-tripes"
+  ],
+  "props": {
+    "blockClass": "department-mobile-menu-item"
+  }
+},
+"disclosure-trigger#department-mobile-tripes": {
+  "children": [
+    "rich-text#department-mobile-tripes-titulo"
+  ],
+  "props": {
+    "blockClass": "department-mobile-menu-trigger"
+  }
+},
+"rich-text#department-mobile-tripes-titulo": {
+  "props": {
+    "text": "[Tripés](/tripes)",
+    "blockClass": "department-mobile-menu-title"
+  }
+},
+"disclosure-content#department-mobile-tripes": {
+  "children": [
+    "vtex.menu@2.x:menu#department-mobile-tripes"
+  ],
+  "props": {
+    "blockClass": "department-mobile-menu-content"
+  }
+},
+"vtex.menu@2.x:menu#department-mobile-tripes": {
+  "props": {
+    "orientation": "vertical"
+  },
+  "children": [
+    "menu-item#tripes-iluminacao",
+    "menu-item#tripes-monope",
+    "menu-item#tripes-lista-completa"
+  ]
+},
+
+"flex-layout.col#department-mobile-iluminacao": {
+  "children": [
+    "disclosure-layout#department-mobile-iluminacao"
+  ]
+},
+"disclosure-layout#department-mobile-iluminacao": {
+  "children": [
+    "disclosure-trigger#department-mobile-iluminacao",
+    "disclosure-content#department-mobile-iluminacao"
+  ],
+  "props": {
+    "blockClass": "department-mobile-menu-item"
+  }
+},
+"disclosure-trigger#department-mobile-iluminacao": {
+  "children": [
+    "rich-text#department-mobile-iluminacao-titulo"
+  ],
+  "props": {
+    "blockClass": "department-mobile-menu-trigger"
+  }
+},
+"rich-text#department-mobile-iluminacao-titulo": {
+  "props": {
+    "text": "[Iluminação](/iluminacao)",
+    "blockClass": "department-mobile-menu-title"
+  }
+},
+"disclosure-content#department-mobile-iluminacao": {
+  "children": [
+    "vtex.menu@2.x:menu#department-mobile-iluminacao"
+  ],
+  "props": {
+    "blockClass": "department-mobile-menu-content"
+  }
+},
+"vtex.menu@2.x:menu#department-mobile-iluminacao": {
+  "props": {
+    "orientation": "vertical"
+  },
+  "children": [
+    "menu-item#iluminacao-acessorios",
+    "menu-item#iluminacao-flashes",
+    "menu-item#iluminacao-fotometros",
+    "menu-item#iluminacao-led",
+    "menu-item#iluminacao-kit",
+    "menu-item#iluminacao-radio-flash",
+    "menu-item#iluminacao-softbox"
+  ]
+},
+
+"flex-layout.col#department-mobile-filtros": {
+  "children": [
+    "disclosure-layout#department-mobile-filtros"
+  ]
+},
+"disclosure-layout#department-mobile-filtros": {
+  "children": [
+    "disclosure-trigger#department-mobile-filtros",
+    "disclosure-content#department-mobile-filtros"
+  ],
+  "props": {
+    "blockClass": "department-mobile-menu-item"
+  }
+},
+"disclosure-trigger#department-mobile-filtros": {
+  "children": [
+    "rich-text#department-mobile-filtros-titulo"
+  ],
+  "props": {
+    "blockClass": "department-mobile-menu-trigger"
+  }
+},
+"rich-text#department-mobile-filtros-titulo": {
+  "props": {
+    "text": "[Filtros](/filtros)",
+    "blockClass": "department-mobile-menu-title"
+  }
+},
+"disclosure-content#department-mobile-filtros": {
+  "children": [
+    "vtex.menu@2.x:menu#department-mobile-filtros"
+  ],
+  "props": {
+    "blockClass": "department-mobile-menu-content"
+  }
+},
+"vtex.menu@2.x:menu#department-mobile-filtros": {
+  "props": {
+    "orientation": "vertical"
+  },
+  "children": [
+    "menu-item#filtros-bw",
+    "menu-item#filtros-fujifilm",
+    "menu-item#filtros-hoya",
+    "menu-item#filtros-kenko",
+    "menu-item#filtros-marumi",
+    "menu-item#filtros-nd-variavel"
+  ]
+},
+
+"flex-layout.col#department-mobile-bolsas": {
+  "children": [
+    "disclosure-layout#department-mobile-bolsas"
+  ]
+},
+"disclosure-layout#department-mobile-bolsas": {
+  "children": [
+    "disclosure-trigger#department-mobile-bolsas",
+    "disclosure-content#department-mobile-bolsas"
+  ],
+  "props": {
+    "blockClass": "department-mobile-menu-item"
+  }
+},
+"disclosure-trigger#department-mobile-bolsas": {
+  "children": [
+    "rich-text#department-mobile-bolsas-titulo"
+  ],
+  "props": {
+    "blockClass": "department-mobile-menu-trigger"
+  }
+},
+"rich-text#department-mobile-bolsas-titulo": {
+  "props": {
+    "text": "[Bolsas e Mochilas](/bolsas-e-mochilas)",
+    "blockClass": "department-mobile-menu-title"
+  }
+},
+"disclosure-content#department-mobile-bolsas": {
+  "children": [
+    "vtex.menu@2.x:menu#department-mobile-bolsas"
+  ],
+  "props": {
+    "blockClass": "department-mobile-menu-content"
+  }
+},
+"vtex.menu@2.x:menu#department-mobile-bolsas": {
+  "props": {
+    "orientation": "vertical"
+  },
+  "children": [
+    "menu-item#bolsas-estojo-lentes",
+    "menu-item#bolsas-lista-completa"
+  ]
+},
+
+"flex-layout.col#department-mobile-audio": {
+  "children": [
+    "disclosure-layout#department-mobile-audio"
+  ]
+},
+"disclosure-layout#department-mobile-audio": {
+  "children": [
+    "disclosure-trigger#department-mobile-audio",
+    "disclosure-content#department-mobile-audio"
+  ],
+  "props": {
+    "blockClass": "department-mobile-menu-item"
+  }
+},
+"disclosure-trigger#department-mobile-audio": {
+  "children": [
+    "rich-text#department-mobile-audio-titulo"
+  ],
+  "props": {
+    "blockClass": "department-mobile-menu-trigger"
+  }
+},
+"rich-text#department-mobile-audio-titulo": {
+  "props": {
+    "text": "[Áudio](/audio)",
+    "blockClass": "department-mobile-menu-title"
+  }
+},
+"disclosure-content#department-mobile-audio": {
+  "children": [
+    "vtex.menu@2.x:menu#department-mobile-audio"
+  ],
+  "props": {
+    "blockClass": "department-mobile-menu-content"
+  }
+},
+"vtex.menu@2.x:menu#department-mobile-audio": {
+  "props": {
+    "orientation": "vertical"
+  },
+  "children": [
+    "menu-item#audio-gravadores",
+    "menu-item#audio-microfones"
+  ]
+},
+
+"flex-layout.col#department-mobile-video": {
+  "children": [
+    "disclosure-layout#department-mobile-video"
+  ]
+},
+"disclosure-layout#department-mobile-video": {
+  "children": [
+    "disclosure-trigger#department-mobile-video",
+    "disclosure-content#department-mobile-video"
+  ],
+  "props": {
+    "blockClass": "department-mobile-menu-item"
+  }
+},
+"disclosure-trigger#department-mobile-video": {
+  "children": [
+    "rich-text#department-mobile-video-titulo"
+  ],
+  "props": {
+    "blockClass": "department-mobile-menu-trigger"
+  }
+},
+"rich-text#department-mobile-video-titulo": {
+  "props": {
+    "text": "[Vídeo](/video)",
+    "blockClass": "department-mobile-menu-title"
+  }
+},
+"disclosure-content#department-mobile-video": {
+  "children": [
+    "vtex.menu@2.x:menu#department-mobile-video"
+  ],
+  "props": {
+    "blockClass": "department-mobile-menu-content"
+  }
+},
+"vtex.menu@2.x:menu#department-mobile-video": {
+  "props": {
+    "orientation": "vertical"
+  },
+  "children": [
+    "menu-item#video-estabilizadores"
+  ]
+},
+
+"flex-layout.col#department-mobile-acessorios": {
+  "children": [
+    "disclosure-layout#department-mobile-acessorios"
+  ]
+},
+"disclosure-layout#department-mobile-acessorios": {
+  "children": [
+    "disclosure-trigger#department-mobile-acessorios",
+    "disclosure-content#department-mobile-acessorios"
+  ],
+  "props": {
+    "blockClass": "department-mobile-menu-item"
+  }
+},
+"disclosure-trigger#department-mobile-acessorios": {
+  "children": [
+    "rich-text#department-mobile-acessorios-titulo"
+  ],
+  "props": {
+    "blockClass": "department-mobile-menu-trigger"
+  }
+},
+"rich-text#department-mobile-acessorios-titulo": {
+  "props": {
+    "text": "[Acessórios](/acessorios)",
+    "blockClass": "department-mobile-menu-title"
+  }
+},
+"disclosure-content#department-mobile-acessorios": {
+  "children": [
+    "vtex.menu@2.x:menu#department-mobile-acessorios"
+  ],
+  "props": {
+    "blockClass": "department-mobile-menu-content"
+  }
+},
+"vtex.menu@2.x:menu#department-mobile-acessorios": {
+  "props": {
+    "orientation": "vertical"
+  },
+  "children": [
+    "menu-item#acessorios-adaptadores",
+    "menu-item#acessorios-limpeza",
+    "menu-item#acessorios-midia",
+    "menu-item#acessorios-pilhas",
+    "menu-item#acessorios-outros"
+  ]
+},
+
+"flex-layout.col#department-mobile-analogicos": {
+  "children": [
+    "disclosure-layout#department-mobile-analogicos"
+  ]
+},
+"disclosure-layout#department-mobile-analogicos": {
+  "children": [
+    "disclosure-trigger#department-mobile-analogicos",
+    "disclosure-content#department-mobile-analogicos"
+  ],
+  "props": {
+    "blockClass": "department-mobile-menu-item"
+  }
+},
+"disclosure-trigger#department-mobile-analogicos": {
+  "children": [
+    "rich-text#department-mobile-analogicos-titulo"
+  ],
+  "props": {
+    "blockClass": "department-mobile-menu-trigger"
+  }
+},
+"rich-text#department-mobile-analogicos-titulo": {
+  "props": {
+    "text": "[Analógicos](/analogicos)",
+    "blockClass": "department-mobile-menu-title"
+  }
+},
+"disclosure-content#department-mobile-analogicos": {
+  "children": [
+    "vtex.menu@2.x:menu#department-mobile-analogicos"
+  ],
+  "props": {
+    "blockClass": "department-mobile-menu-content"
+  }
+},
+"vtex.menu@2.x:menu#department-mobile-analogicos": {
+  "props": {
+    "orientation": "vertical"
+  },
+  "children": [
+    "menu-item#analogicos-120-colorido",
+    "menu-item#analogicos-120-pb",
+    "menu-item#analogicos-135-colorido",
+    "menu-item#analogicos-135-pb",
+    "menu-item#analogicos-4x5",
+    "menu-item#analogicos-instantaneo",
+    "menu-item#analogicos-papel",
+    "menu-item#analogicos-print-120",
+    "menu-item#analogicos-print-135",
+    "menu-item#analogicos-quimicos"
+  ]
+},
+
+
+  "menu-item#item-1": {
+    "props": {
+      "id": "menu-item-cameras",
+      "blockClass": "menu-principal-item",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/faq",
-        "noFollow": true,
-        "tagTitle": "FAQ",
-        "text": "FAQ"
+        "href": "/cameras",
+        "noFollow": false,
+        "tagTitle": "Câmeras",
+        "text": "Câmeras"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#cameras"]
+  },
+
+  "vtex.menu@2.x:submenu#cameras": {
+    "children": ["vtex.menu@2.x:menu#cameras-submenu"]
+  },
+  "vtex.menu@2.x:menu#cameras-submenu": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#cameras-canon", "menu-item#cameras-descartavel", "menu-item#cameras-fujifilm",
+      "menu-item#cameras-gopro", "menu-item#cameras-nikon", "menu-item#cameras-polaroid",
+      "menu-item#cameras-sony", "menu-item#cameras-panasonic", "menu-item#cameras-olympus",
+      "menu-item#cameras-kodak"
+    ]
+  },
+  "menu-item#cameras-canon": {
+    "props": {
+      "blockClass": "menu-principal-subitem",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/cameras/canon",
+        "noFollow": false,
+        "tagTitle": "Canon",
+        "text": "Canon"
       }
     }
   },
-  "menu-item#contact-us": {
+  "menu-item#cameras-descartavel": {
     "props": {
-      "id": "menu-item-contact-us",
+      "blockClass": "menu-principal-subitem",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/cameras/descartavel",
+        "noFollow": false,
+        "tagTitle": "Descartável",
+        "text": "Descartável"
+      }
+    }
+  },
+  "menu-item#cameras-fujifilm": {
+    "props": {
+      "blockClass": "menu-principal-subitem",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/cameras/fujifilm",
+        "noFollow": false,
+        "tagTitle": "Fujifilm",
+        "text": "Fujifilm"
+      }
+    }
+  },
+  "menu-item#cameras-gopro": {
+    "props": {
+      "blockClass": "menu-principal-subitem",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/cameras/gopro",
+        "noFollow": false,
+        "tagTitle": "GoPro",
+        "text": "GoPro"
+      }
+    }
+  },
+  "menu-item#cameras-nikon": {
+    "props": {
+      "blockClass": "menu-principal-subitem",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/cameras/nikon",
+        "noFollow": false,
+        "tagTitle": "Nikon",
+        "text": "Nikon"
+      }
+    }
+  },
+  "menu-item#cameras-polaroid": {
+    "props": {
+      "blockClass": "menu-principal-subitem",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/cameras/polaroid",
+        "noFollow": false,
+        "tagTitle": "Polaroid",
+        "text": "Polaroid"
+      }
+    }
+  },
+  "menu-item#cameras-sony": {
+    "props": {
+      "blockClass": "menu-principal-subitem",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/cameras/sony",
+        "noFollow": false,
+        "tagTitle": "Sony",
+        "text": "Sony"
+      }
+    }
+  },
+  "menu-item#cameras-panasonic": {
+    "props": {
+      "blockClass": "menu-principal-subitem",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/cameras/panasonic",
+        "noFollow": false,
+        "tagTitle": "Panasonic",
+        "text": "Panasonic"
+      }
+    }
+  },
+  "menu-item#cameras-olympus": {
+    "props": {
+      "blockClass": "menu-principal-subitem",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/cameras/olympus",
+        "noFollow": false,
+        "tagTitle": "Olympus",
+        "text": "Olympus"
+      }
+    }
+  },
+  "menu-item#cameras-kodak": {
+    "props": {
+      "blockClass": "menu-principal-subitem",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/cameras/kodak",
+        "noFollow": false,
+        "tagTitle": "Kodak",
+        "text": "Kodak"
+      }
+    }
+  },
+
+
+  "menu-item#item-2": {
+    "props": {
+      "id": "menu-item-objetivas",
+      "blockClass": "menu-principal-item",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/contact-us",
-        "noFollow": true,
-        "tagTitle": "Contact Us",
-        "text": "Contact Us"
+        "href": "/objetivas",
+        "noFollow": false,
+        "tagTitle": "Objetivas",
+        "text": "Objetivas"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#objetivas"]
+  },
+
+  "vtex.menu@2.x:submenu#objetivas": {
+    "children": ["vtex.menu@2.x:menu#objetivas-submenu"]
+  },
+  "vtex.menu@2.x:menu#objetivas-submenu": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#objetivas-tokina", "menu-item#objetivas-canon", "menu-item#objetivas-fujifilm",
+      "menu-item#objetivas-nikon", "menu-item#objetivas-telescopio", "menu-item#objetivas-sony",
+      "menu-item#objetivas-panasonic"
+    ]
+  },
+  "menu-item#objetivas-tokina": {
+    "props": {
+      "blockClass": "menu-principal-subitem",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/objetivas/tokina",
+        "noFollow": false,
+        "tagTitle": "Tokina",
+        "text": "Tokina"
+      }
+    }
+  },
+  "menu-item#objetivas-canon": {
+    "props": {
+      "blockClass": "menu-principal-subitem",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/objetivas/canon",
+        "noFollow": false,
+        "tagTitle": "Canon",
+        "text": "Canon"
+      }
+    }
+  },
+  "menu-item#objetivas-fujifilm": {
+    "props": {
+      "blockClass": "menu-principal-subitem",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/objetivas/fujifilm",
+        "noFollow": false,
+        "tagTitle": "Fujifilm",
+        "text": "Fujifilm"
+      }
+    }
+  },
+  "menu-item#objetivas-nikon": {
+    "props": {
+      "blockClass": "menu-principal-subitem",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/objetivas/nikon",
+        "noFollow": false,
+        "tagTitle": "Nikon",
+        "text": "Nikon"
+      }
+    }
+  },
+  "menu-item#objetivas-telescopio": {
+    "props": {
+      "blockClass": "menu-principal-subitem",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/objetivas/telescopio",
+        "noFollow": false,
+        "tagTitle": "Telescópio",
+        "text": "Telescópio"
+      }
+    }
+  },
+  "menu-item#objetivas-sony": {
+    "props": {
+      "blockClass": "menu-principal-subitem",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/objetivas/sony",
+        "noFollow": false,
+        "tagTitle": "Sony",
+        "text": "Sony"
+      }
+    }
+  },
+  "menu-item#objetivas-panasonic": {
+    "props": {
+      "blockClass": "menu-principal-subitem",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/objetivas/panasonic",
+        "noFollow": false,
+        "tagTitle": "Panasonic",
+        "text": "Panasonic"
+      }
+    }
+  },
+
+
+  "menu-item#item-3": {
+    "props": {
+      "id": "menu-item-seminovos",
+      "blockClass": "menu-principal-item",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/seminovos",
+        "noFollow": false,
+        "tagTitle": "Seminovos",
+        "text": "Seminovos"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#seminovos"]
+  },
+
+  "vtex.menu@2.x:submenu#seminovos": {
+    "children": ["vtex.menu@2.x:menu#seminovos-submenu"]
+  },
+  "vtex.menu@2.x:menu#seminovos-submenu": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#seminovos-teleconversores", "menu-item#seminovos-fotometros", "menu-item#seminovos-cabecas",
+      "menu-item#seminovos-battery-grip", "menu-item#seminovos-objetivas", "menu-item#seminovos-flashes",
+      "menu-item#seminovos-cameras", "menu-item#seminovos-tripe", "menu-item#seminovos-binoculos",
+      "menu-item#seminovos-radio-flash", "menu-item#seminovos-visores", "menu-item#seminovos-bolsas",
+      "menu-item#seminovos-estabilizadores", "menu-item#seminovos-microfone", "menu-item#seminovos-acessorios"
+    ]
+  },
+  "menu-item#seminovos-teleconversores": {
+    "props": {
+      "blockClass": "menu-principal-subitem",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/seminovos/teleconversores-tubos-extensores-adaptadores",
+        "noFollow": false,
+        "tagTitle": "Teleconversores/Tubos Extensores/Adaptadores",
+        "text": "Teleconversores/Tubos Extensores/Adaptadores"
+      }
+    }
+  },
+  "menu-item#seminovos-fotometros": {
+    "props": {
+      "blockClass": "menu-principal-subitem",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/seminovos/fotometros",
+        "noFollow": false,
+        "tagTitle": "Fotômetros",
+        "text": "Fotômetros"
+      }
+    }
+  },
+  "menu-item#seminovos-cabecas": {
+    "props": {
+      "blockClass": "menu-principal-subitem",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/seminovos/cabecas",
+        "noFollow": false,
+        "tagTitle": "Cabeças",
+        "text": "Cabeças"
+      }
+    }
+  },
+  "menu-item#seminovos-battery-grip": {
+    "props": {
+      "blockClass": "menu-principal-subitem",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/seminovos/battery-grip",
+        "noFollow": false,
+        "tagTitle": "Battery Grip",
+        "text": "Battery Grip"
+      }
+    }
+  },
+  "menu-item#seminovos-objetivas": {
+    "props": {
+      "blockClass": "menu-principal-subitem",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/seminovos/objetivas",
+        "noFollow": false,
+        "tagTitle": "Objetivas",
+        "text": "Objetivas"
+      }
+    }
+  },
+  "menu-item#seminovos-flashes": {
+    "props": {
+      "blockClass": "menu-principal-subitem",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/seminovos/flashes",
+        "noFollow": false,
+        "tagTitle": "Flashes",
+        "text": "Flashes"
+      }
+    }
+  },
+  "menu-item#seminovos-cameras": {
+    "props": {
+      "blockClass": "menu-principal-subitem",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/seminovos/cameras",
+        "noFollow": false,
+        "tagTitle": "Câmeras",
+        "text": "Câmeras"
+      }
+    }
+  },
+  "menu-item#seminovos-tripe": {
+    "props": {
+      "blockClass": "menu-principal-subitem",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/seminovos/tripe",
+        "noFollow": false,
+        "tagTitle": "Tripé",
+        "text": "Tripé"
+      }
+    }
+  },
+  "menu-item#seminovos-binoculos": {
+    "props": {
+      "blockClass": "menu-principal-subitem",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/seminovos/binoculos",
+        "noFollow": false,
+        "tagTitle": "Binóculos",
+        "text": "Binóculos"
+      }
+    }
+  },
+  "menu-item#seminovos-radio-flash": {
+    "props": {
+      "blockClass": "menu-principal-subitem",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/seminovos/radio-flash",
+        "noFollow": false,
+        "tagTitle": "Rádio Flash",
+        "text": "Rádio Flash"
+      }
+    }
+  },
+  "menu-item#seminovos-visores": {
+    "props": {
+      "blockClass": "menu-principal-subitem",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/seminovos/visores",
+        "noFollow": false,
+        "tagTitle": "Visores",
+        "text": "Visores"
+      }
+    }
+  },
+  "menu-item#seminovos-bolsas": {
+    "props": {
+      "blockClass": "menu-principal-subitem",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/seminovos/bolsas-e-mochilas-semi-novas",
+        "noFollow": false,
+        "tagTitle": "Bolsas e Mochilas Semi Novas",
+        "text": "Bolsas e Mochilas Semi Novas"
+      }
+    }
+  },
+  "menu-item#seminovos-estabilizadores": {
+    "props": {
+      "blockClass": "menu-principal-subitem",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/seminovos/estabilizadores",
+        "noFollow": false,
+        "tagTitle": "Estabilizadores",
+        "text": "Estabilizadores"
+      }
+    }
+  },
+  "menu-item#seminovos-microfone": {
+    "props": {
+      "blockClass": "menu-principal-subitem",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/seminovos/microfone",
+        "noFollow": false,
+        "tagTitle": "Microfone",
+        "text": "Microfone"
+      }
+    }
+  },
+  "menu-item#seminovos-acessorios": {
+    "props": {
+      "blockClass": "menu-principal-subitem",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/seminovos/acessorios",
+        "noFollow": false,
+        "tagTitle": "Acessórios",
+        "text": "Acessórios"
+      }
+    }
+  },
+
+
+  "menu-item#item-4": {
+    "props": {
+      "id": "menu-item-tripes",
+      "blockClass": "menu-principal-item",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/tripes",
+        "noFollow": false,
+        "tagTitle": "Tripés",
+        "text": "Tripés"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#tripes"]
+  },
+
+  "vtex.menu@2.x:submenu#tripes": {
+    "children": ["vtex.menu@2.x:menu#tripes-submenu"]
+  },
+  "vtex.menu@2.x:menu#tripes-submenu": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": ["menu-item#tripes-iluminacao", "menu-item#tripes-monope", "menu-item#tripes-lista-completa"]
+  },
+  "menu-item#tripes-iluminacao": {
+    "props": {
+      "blockClass": "menu-principal-subitem",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/tripes/iluminacao",
+        "noFollow": false,
+        "tagTitle": "Iluminação",
+        "text": "Iluminação"
+      }
+    }
+  },
+  "menu-item#tripes-monope": {
+    "props": {
+      "blockClass": "menu-principal-subitem",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/tripes/monope",
+        "noFollow": false,
+        "tagTitle": "Monopé",
+        "text": "Monopé"
+      }
+    }
+  },
+  "menu-item#tripes-lista-completa": {
+    "props": {
+      "blockClass": "menu-principal-subitem",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/tripes",
+        "noFollow": false,
+        "tagTitle": "Lista completa",
+        "text": "Lista completa"
+      }
+    }
+  },
+
+
+  "menu-item#item-5": {
+    "props": {
+      "id": "menu-item-iluminacao",
+      "blockClass": "menu-principal-item",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/iluminacao",
+        "noFollow": false,
+        "tagTitle": "Iluminação",
+        "text": "Iluminação"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#iluminacao"]
+  },
+
+  "vtex.menu@2.x:submenu#iluminacao": {
+    "children": ["vtex.menu@2.x:menu#iluminacao-submenu"]
+  },
+  "vtex.menu@2.x:menu#iluminacao-submenu": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#iluminacao-acessorios", "menu-item#iluminacao-flashes", "menu-item#iluminacao-fotometros",
+      "menu-item#iluminacao-led", "menu-item#iluminacao-kit", "menu-item#iluminacao-radio-flash",
+      "menu-item#iluminacao-softbox"
+    ]
+  },
+  "menu-item#iluminacao-acessorios": {
+    "props": {
+      "blockClass": "menu-principal-subitem",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/iluminacao/acessorios-para-iluminacao",
+        "noFollow": false,
+        "tagTitle": "Acessórios para Iluminação",
+        "text": "Acessórios para Iluminação"
+      }
+    }
+  },
+  "menu-item#iluminacao-flashes": {
+    "props": {
+      "blockClass": "menu-principal-subitem",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/iluminacao/flashes",
+        "noFollow": false,
+        "tagTitle": "Flashes",
+        "text": "Flashes"
+      }
+    }
+  },
+  "menu-item#iluminacao-fotometros": {
+    "props": {
+      "blockClass": "menu-principal-subitem",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/iluminacao/fotometros",
+        "noFollow": false,
+        "tagTitle": "Fotômetros",
+        "text": "Fotômetros"
+      }
+    }
+  },
+  "menu-item#iluminacao-led": {
+    "props": {
+      "blockClass": "menu-principal-subitem",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/iluminacao/iluminacao-de-led",
+        "noFollow": false,
+        "tagTitle": "Iluminação de LED",
+        "text": "Iluminação de LED"
+      }
+    }
+  },
+  "menu-item#iluminacao-kit": {
+    "props": {
+      "blockClass": "menu-principal-subitem",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/iluminacao/kit-iluminacao",
+        "noFollow": false,
+        "tagTitle": "Kit Iluminação",
+        "text": "Kit Iluminação"
+      }
+    }
+  },
+  "menu-item#iluminacao-radio-flash": {
+    "props": {
+      "blockClass": "menu-principal-subitem",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/iluminacao/radio-flash",
+        "noFollow": false,
+        "tagTitle": "Rádio Flash",
+        "text": "Rádio Flash"
+      }
+    }
+  },
+  "menu-item#iluminacao-softbox": {
+    "props": {
+      "blockClass": "menu-principal-subitem",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/iluminacao/softbox-sombrinha-rebatedor-difusor",
+        "noFollow": false,
+        "tagTitle": "Softbox, Sombrinha, Rebatedor, Difusor",
+        "text": "Softbox, Sombrinha, Rebatedor, Difusor"
+      }
+    }
+  },
+
+
+  "menu-item#item-6": {
+    "props": {
+      "id": "menu-item-filtros",
+      "blockClass": "menu-principal-item",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/filtros",
+        "noFollow": false,
+        "tagTitle": "Filtros",
+        "text": "Filtros"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#filtros"]
+  },
+
+  "vtex.menu@2.x:submenu#filtros": {
+    "children": ["vtex.menu@2.x:menu#filtros-submenu"]
+  },
+  "vtex.menu@2.x:menu#filtros-submenu": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#filtros-bw", "menu-item#filtros-fujifilm", "menu-item#filtros-hoya",
+      "menu-item#filtros-kenko", "menu-item#filtros-marumi", "menu-item#filtros-nd-variavel"
+    ]
+  },
+  "menu-item#filtros-bw": {
+    "props": {
+      "blockClass": "menu-principal-subitem",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/filtros/b-w",
+        "noFollow": false,
+        "tagTitle": "B+W",
+        "text": "B+W"
+      }
+    }
+  },
+  "menu-item#filtros-fujifilm": {
+    "props": {
+      "blockClass": "menu-principal-subitem",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/filtros/fujifilm",
+        "noFollow": false,
+        "tagTitle": "FujiFilm",
+        "text": "FujiFilm"
+      }
+    }
+  },
+  "menu-item#filtros-hoya": {
+    "props": {
+      "blockClass": "menu-principal-subitem",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/filtros/hoya",
+        "noFollow": false,
+        "tagTitle": "Hoya",
+        "text": "Hoya"
+      }
+    }
+  },
+  "menu-item#filtros-kenko": {
+    "props": {
+      "blockClass": "menu-principal-subitem",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/filtros/kenko",
+        "noFollow": false,
+        "tagTitle": "Kenko",
+        "text": "Kenko"
+      }
+    }
+  },
+  "menu-item#filtros-marumi": {
+    "props": {
+      "blockClass": "menu-principal-subitem",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/filtros/marumi",
+        "noFollow": false,
+        "tagTitle": "Marumi",
+        "text": "Marumi"
+      }
+    }
+  },
+  "menu-item#filtros-nd-variavel": {
+    "props": {
+      "blockClass": "menu-principal-subitem",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/filtros/nd-variavel",
+        "noFollow": false,
+        "tagTitle": "ND variável",
+        "text": "ND variável"
+      }
+    }
+  },
+
+
+  "menu-item#item-7": {
+    "props": {
+      "id": "menu-item-bolsas",
+      "blockClass": "menu-principal-item",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/bolsas-e-mochilas",
+        "noFollow": false,
+        "tagTitle": "Bolsas e Mochilas",
+        "text": "Bolsas e Mochilas"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#bolsas"]
+  },
+
+  "vtex.menu@2.x:submenu#bolsas": {
+    "children": ["vtex.menu@2.x:menu#bolsas-submenu"]
+  },
+  "vtex.menu@2.x:menu#bolsas-submenu": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": ["menu-item#bolsas-estojo-lentes", "menu-item#bolsas-lista-completa"]
+  },
+  "menu-item#bolsas-estojo-lentes": {
+    "props": {
+      "blockClass": "menu-principal-subitem",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/bolsas-e-mochilas/estojo-para-lentes",
+        "noFollow": false,
+        "tagTitle": "Estojo para Lentes",
+        "text": "Estojo para Lentes"
+      }
+    }
+  },
+  "menu-item#bolsas-lista-completa": {
+    "props": {
+      "blockClass": "menu-principal-subitem",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/bolsas-e-mochilas",
+        "noFollow": false,
+        "tagTitle": "Lista completa",
+        "text": "Lista completa"
+      }
+    }
+  },
+
+
+  "menu-item#item-8": {
+    "props": {
+      "id": "menu-item-audio",
+      "blockClass": "menu-principal-item",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/audio",
+        "noFollow": false,
+        "tagTitle": "Áudio",
+        "text": "Áudio"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#audio"]
+  },
+
+  "vtex.menu@2.x:submenu#audio": {
+    "children": ["vtex.menu@2.x:menu#audio-submenu"]
+  },
+  "vtex.menu@2.x:menu#audio-submenu": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": ["menu-item#audio-gravadores", "menu-item#audio-microfones"]
+  },
+  "menu-item#audio-gravadores": {
+    "props": {
+      "blockClass": "menu-principal-subitem",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/audio/gravadores-de-audio",
+        "noFollow": false,
+        "tagTitle": "Gravadores de áudio",
+        "text": "Gravadores de áudio"
+      }
+    }
+  },
+  "menu-item#audio-microfones": {
+    "props": {
+      "blockClass": "menu-principal-subitem",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/audio/microfones",
+        "noFollow": false,
+        "tagTitle": "Microfones",
+        "text": "Microfones"
+      }
+    }
+  },
+
+
+  "menu-item#item-9": {
+    "props": {
+      "id": "menu-item-video",
+      "blockClass": "menu-principal-item",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/video",
+        "noFollow": false,
+        "tagTitle": "Vídeo",
+        "text": "Vídeo"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#video"]
+  },
+
+  "vtex.menu@2.x:submenu#video": {
+    "children": ["vtex.menu@2.x:menu#video-submenu"]
+  },
+  "vtex.menu@2.x:menu#video-submenu": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": ["menu-item#video-estabilizadores"]
+  },
+  "menu-item#video-estabilizadores": {
+    "props": {
+      "blockClass": "menu-principal-subitem",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/video/estabilizadores",
+        "noFollow": false,
+        "tagTitle": "Estabilizadores",
+        "text": "Estabilizadores"
+      }
+    }
+  },
+
+
+  "menu-item#item-10": {
+    "props": {
+      "id": "menu-item-acessorios",
+      "blockClass": "menu-principal-item",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/acessorios",
+        "noFollow": false,
+        "tagTitle": "Acessórios",
+        "text": "Acessórios"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#acessorios"]
+  },
+
+  "vtex.menu@2.x:submenu#acessorios": {
+    "children": ["vtex.menu@2.x:menu#acessorios-submenu"],
+    "props": {
+      "blockClass": "submenu-right-align"
+    }
+  },
+  "vtex.menu@2.x:menu#acessorios-submenu": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#acessorios-adaptadores", "menu-item#acessorios-limpeza", "menu-item#acessorios-midia",
+      "menu-item#acessorios-pilhas", "menu-item#acessorios-outros"
+    ]
+  },
+  "menu-item#acessorios-adaptadores": {
+    "props": {
+      "blockClass": "menu-principal-subitem",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/acessorios/adaptadores",
+        "noFollow": false,
+        "tagTitle": "Adaptadores",
+        "text": "Adaptadores"
+      }
+    }
+  },
+  "menu-item#acessorios-limpeza": {
+    "props": {
+      "blockClass": "menu-principal-subitem",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/acessorios/limpeza",
+        "noFollow": false,
+        "tagTitle": "Limpeza",
+        "text": "Limpeza"
+      }
+    }
+  },
+  "menu-item#acessorios-midia": {
+    "props": {
+      "blockClass": "menu-principal-subitem",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/acessorios/midia-de-armazenamento",
+        "noFollow": false,
+        "tagTitle": "Mídia de Armazenamento",
+        "text": "Mídia de Armazenamento"
+      }
+    }
+  },
+  "menu-item#acessorios-pilhas": {
+    "props": {
+      "blockClass": "menu-principal-subitem",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/acessorios/pilhas-baterias-e-carregadores",
+        "noFollow": false,
+        "tagTitle": "Pilhas, Baterias e Carregadores",
+        "text": "Pilhas, Baterias e Carregadores"
+      }
+    }
+  },
+  "menu-item#acessorios-outros": {
+    "props": {
+      "blockClass": "menu-principal-subitem",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/acessorios/outros-acessorios",
+        "noFollow": false,
+        "tagTitle": "Outros Acessórios",
+        "text": "Outros Acessórios"
+      }
+    }
+  },
+
+
+  "menu-item#item-11": {
+    "props": {
+      "id": "menu-item-analogicos",
+      "blockClass": "menu-principal-item",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/analogicos",
+        "noFollow": false,
+        "tagTitle": "Analógicos",
+        "text": "Analógicos"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#analogicos"]
+  },
+
+  "vtex.menu@2.x:submenu#analogicos": {
+    "children": ["vtex.menu@2.x:menu#analogicos-submenu"],
+    "props": {
+      "blockClass": "submenu-right-align"
+    }
+  },
+  "vtex.menu@2.x:menu#analogicos-submenu": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#analogicos-120-colorido", "menu-item#analogicos-120-pb",
+      "menu-item#analogicos-135-colorido", "menu-item#analogicos-135-pb",
+      "menu-item#analogicos-4x5", "menu-item#analogicos-instantaneo",
+      "menu-item#analogicos-papel", "menu-item#analogicos-print-120",
+      "menu-item#analogicos-print-135", "menu-item#analogicos-quimicos"
+    ]
+  },
+  "menu-item#analogicos-120-colorido": {
+    "props": {
+      "blockClass": "menu-principal-subitem",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/analogicos/filmes-formato-120-colorido",
+        "noFollow": false,
+        "tagTitle": "Filmes Formato 120 Colorido",
+        "text": "Filmes Formato 120 Colorido"
+      }
+    }
+  },
+  "menu-item#analogicos-120-pb": {
+    "props": {
+      "blockClass": "menu-principal-subitem",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/analogicos/filmes-formato120-preto-e-branco",
+        "noFollow": false,
+        "tagTitle": "Filmes Formato 120 Preto e Branco",
+        "text": "Filmes Formato 120 Preto e Branco"
+      }
+    }
+  },
+  "menu-item#analogicos-135-colorido": {
+    "props": {
+      "blockClass": "menu-principal-subitem",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/analogicos/filmes-formato-135-colorido",
+        "noFollow": false,
+        "tagTitle": "Filmes Formato 135 Colorido",
+        "text": "Filmes Formato 135 Colorido"
+      }
+    }
+  },
+  "menu-item#analogicos-135-pb": {
+    "props": {
+      "blockClass": "menu-principal-subitem",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/analogicos/filmes-formato-135-preto-e-branco",
+        "noFollow": false,
+        "tagTitle": "Filmes Formato 135 Preto e Branco",
+        "text": "Filmes Formato 135 Preto e Branco"
+      }
+    }
+  },
+  "menu-item#analogicos-4x5": {
+    "props": {
+      "blockClass": "menu-principal-subitem",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/analogicos/filmes-formato-4x5-",
+        "noFollow": false,
+        "tagTitle": "Filmes Formato 4x5\"",
+        "text": "Filmes Formato 4x5\""
+      }
+    }
+  },
+  "menu-item#analogicos-instantaneo": {
+    "props": {
+      "blockClass": "menu-principal-subitem",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/analogicos/filmes-instantaneo",
+        "noFollow": false,
+        "tagTitle": "Filmes Instantâneo",
+        "text": "Filmes Instantâneo"
+      }
+    }
+  },
+  "menu-item#analogicos-papel": {
+    "props": {
+      "blockClass": "menu-principal-subitem",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/analogicos/papel-fotografico",
+        "noFollow": false,
+        "tagTitle": "Papel Fotográfico",
+        "text": "Papel Fotográfico"
+      }
+    }
+  },
+  "menu-item#analogicos-print-120": {
+    "props": {
+      "blockClass": "menu-principal-subitem",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/analogicos/print-file-formato-120",
+        "noFollow": false,
+        "tagTitle": "Print File Formato 120",
+        "text": "Print File Formato 120"
+      }
+    }
+  },
+  "menu-item#analogicos-print-135": {
+    "props": {
+      "blockClass": "menu-principal-subitem",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/analogicos/print-file-formato-135",
+        "noFollow": false,
+        "tagTitle": "Print File Formato 135",
+        "text": "Print File Formato 135"
+      }
+    }
+  },
+  "menu-item#analogicos-quimicos": {
+    "props": {
+      "blockClass": "menu-principal-subitem",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/analogicos/quimicos-para-revelacao",
+        "noFollow": false,
+        "tagTitle": "Químicos para revelação",
+        "text": "Químicos para revelação"
       }
     }
   }

@@ -1,0 +1,196 @@
+{
+  "disclosure-layout-group#mobile-menu-mobile": {
+    "children": [
+      "flex-layout.col#footer-mobile-sobre-nos",
+      "flex-layout.col#footer-mobile-ajuda-e-suporte",
+      "flex-layout.col#footer-mobile-fale-conosco",
+      "flex-layout.col#footer-mobile-fale-conosco2"
+    ],
+    "props": {
+      "animated": true,
+      "blockClass": "footer-mobile-menu-wrapper"
+    }
+  },
+
+
+
+  
+
+  "flex-layout.col#footer-mobile-sobre-nos": {
+    "children": [
+      "disclosure-layout#footer-mobile-sobre-nos"
+    ]
+  },
+
+  "disclosure-layout#footer-mobile-sobre-nos": {
+    "children": [
+      "disclosure-trigger#footer-mobile-sobre-nos",
+      "disclosure-content#footer-mobile-sobre-nos"
+    ],
+    "props": {
+      "blockClass": "footer-mobile-menu-item"
+    }
+  },
+  "disclosure-trigger#footer-mobile-sobre-nos": {
+    "children": [
+      "rich-text#footer-mobile-sobre-nos-titulo"
+    ],
+    "props": {
+      "blockClass": "footer-mobile-menu-trigger"
+    }
+  },
+  "rich-text#footer-mobile-sobre-nos-titulo": {
+    "props": {
+      "text": "Institucional",
+      "blockClass": "footer-mobile-menu-title"
+    }
+  },
+  "disclosure-content#footer-mobile-sobre-nos": {
+    "children": [
+      "vtex.menu@2.x:menu#Institucional"
+    ],
+    "props": {
+      "blockClass": "footer-mobile-menu-content"
+    }
+  },
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  "flex-layout.col#footer-mobile-ajuda-e-suporte": {
+    "children": [
+      "disclosure-layout#footer-mobile-ajuda-e-suporte"
+    ]
+  },
+
+  "disclosure-layout#footer-mobile-ajuda-e-suporte": {
+    "children": [
+      "disclosure-trigger#footer-mobile-ajuda-e-suporte",
+      "disclosure-content#footer-mobile-ajuda-e-suporte"
+    ],
+    "props": {
+      "blockClass": "footer-mobile-menu-item"
+    }
+  },
+  "disclosure-trigger#footer-mobile-ajuda-e-suporte": {
+    "children": [
+      "rich-text#footer-mobile-ajuda-e-suporte-titulo"
+    ],
+    "props": {
+      "blockClass": "footer-mobile-menu-trigger"
+    }
+  },
+  "rich-text#footer-mobile-ajuda-e-suporte-titulo": {
+    "props": {
+      "text": "Ajuda",
+      "blockClass": "footer-mobile-menu-title"
+    }
+  },
+  "disclosure-content#footer-mobile-ajuda-e-suporte": {
+    "children": [
+      "vtex.menu@2.x:menu#Ajuda"
+    ],
+    "props": {
+      "blockClass": "footer-mobile-menu-content"
+    }
+  },
+
+  
+
+
+
+
+
+
+
+
+
+  "flex-layout.col#footer-mobile-fale-conosco": {
+    "children": [
+      "disclosure-layout#footer-mobile-fale-conosco"
+    ]
+  },
+
+  "disclosure-layout#footer-mobile-fale-conosco": {
+    "children": [
+      "disclosure-trigger#footer-mobile-fale-conosco",
+      "disclosure-content#footer-mobile-fale-conosco"
+    ],
+    "props": {
+      "blockClass": "footer-mobile-menu-item"
+    }
+  },
+  "disclosure-trigger#footer-mobile-fale-conosco": {
+    "children": [
+      "rich-text#footer-mobile-fale-conosco-titulo"
+    ],
+    "props": {
+      "blockClass": "footer-mobile-menu-trigger"
+    }
+  },
+  "rich-text#footer-mobile-fale-conosco-titulo": {
+    "props": {
+      "text": "Atendimento Loja 1",
+      "blockClass": "footer-mobile-menu-title"
+    }
+  },
+  "disclosure-content#footer-mobile-fale-conosco": {
+    "children": [
+      "vtex.menu@2.x:menu#Atendimento1"
+    ],
+    "props": {
+      "blockClass": "footer-mobile-menu-content"
+    }
+  },
+
+
+  
+  "flex-layout.col#footer-mobile-fale-conosco2": {
+    "children": [
+      "disclosure-layout#footer-mobile-fale-conosco2"
+    ]
+  },
+
+  "disclosure-layout#footer-mobile-fale-conosco2": {
+    "children": [
+      "disclosure-trigger#footer-mobile-fale-conosco2",
+      "disclosure-content#footer-mobile-fale-conosco2"
+    ],
+    "props": {
+      "blockClass": "footer-mobile-menu-item"
+    }
+  },
+  "disclosure-trigger#footer-mobile-fale-conosco2": {
+    "children": [
+      "rich-text#footer-mobile-fale-conosco-titulo2"
+    ],
+    "props": {
+      "blockClass": "footer-mobile-menu-trigger"
+    }
+  },
+  "rich-text#footer-mobile-fale-conosco-titulo2": {
+    "props": {
+      "text": "Atendimento Loja 2",
+      "blockClass": "footer-mobile-menu-title"
+    }
+  },
+  "disclosure-content#footer-mobile-fale-conosco2": {
+    "children": [
+      "vtex.menu@2.x:menu#Atendimento2"
+    ],
+    "props": {
+      "blockClass": "footer-mobile-menu-content"
+    }
+  }
+
+
+}

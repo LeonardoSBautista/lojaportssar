@@ -3,6 +3,7 @@
   "name": "store-theme",
   "version": "5.2.1",
   "builders": {
+    "assets": "0.x",
     "styles": "2.x",
     "store": "0.x",
     "sitemap": "0.x",
@@ -14,9 +15,11 @@
   },
   "dependencies": {
     "vtex.store": "2.x",
+    "vtex.category-menu": "2.x",
     "vtex.store-header": "2.x",
     "vtex.product-summary": "2.x",
     "vtex.store-footer": "2.x",
+    "vtex.store-newsletter": "1.x",
     "vtex.store-components": "3.x",
     "vtex.styleguide": "9.x",
     "vtex.slider": "0.x",
@@ -65,7 +68,10 @@
     "vtex.css-handles": "1.x"
   },
   "peerDependencies": {
-    "vtex.reviews-and-ratings": "3.x"
+    "vtex.reviews-and-ratings": "3.x",
+    "vtex.wish-list": "1.x",
+    "vtex.mega-menu": "2.x",
+    "vtex.availability-notify": "1.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

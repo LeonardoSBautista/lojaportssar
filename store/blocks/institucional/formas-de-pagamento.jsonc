@@ -1,0 +1,77 @@
+{
+  "store.custom#formas-de-pagamento": {
+    "blocks": ["flex-layout.row#pagamento-titles", "flex-layout.row#pagamento-content"]
+  },
+  "flex-layout.row#pagamento-titles": {
+    "children": [
+      "flex-layout.row#title-institucional",
+      "flex-layout.row#title-pagamento"
+    ],
+    "props": {
+      "blockClass": "titles-institucional",
+      "colGap": 2,
+      "fullWidth": true,
+      "horizontalAlign": "left",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "flex-layout.row#pagamento-content": {
+    "children": [
+      "flex-layout.col#institucional-nav-bar",
+      "flex-layout.col#pagamento"
+    ],
+    "props": {
+      "blockClass": "conteudo-institucional",
+      "colGap": 2,
+      "fullWidth": true,
+      "horizontalAlign": "left",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "flex-layout.col#pagamento": {
+    "children": ["rich-text#content-pagamento"],
+    "props": {
+      "width": "70%",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "flex-layout.row#title-institucional": {
+    "children": ["rich-text#title-institucional"],
+    "props": {
+      "width": "25%",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "flex-layout.row#title-pagamento": {
+    "children": ["rich-text#title-pagamento"],
+    "props": {
+      "width": "70%",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#title-institucional": {
+    "props": {
+      "blockClass": ["titulo-institucional", "titulo-pagamento"],
+      "text": "# Institucional"
+    }
+  },
+
+  "rich-text#title-pagamento": {
+    "props": {
+      "blockClass": ["titulo-institucional", "titulo-pagamento"],
+      "text": "# Formas de Pagamento"
+    }
+  },
+
+  "rich-text#content-pagamento": {
+    "props": {
+      "blockClass": ["texto-institucional", "texto-pagamento"],
+      "text": "## Formas de Pagamento Aceitas pela Portssar\n\nA Portssar oferece múltiplas opções de pagamento para que você compre com segurança, praticidade e no formato que preferir. Confira as modalidades disponíveis:\n\n## PIX\n\nPague via PIX e aproveite 7% de desconto à vista. Ao finalizar sua compra, selecione a opção PIX: um código de pagamento será gerado na tela. Abra o app do seu banco, acesse a área PIX e escaneie o código ou insira a chave fornecida. Simples, rápido e seguro.\n\nImportante: a reserva do produto será confirmada após a aprovação do pagamento pela instituição financeira.\n\n## Depósito Bancário\n\nPague por depósito bancário e aproveite 7% de desconto à vista. Após finalizar o pedido, você receberá os dados bancários para efetuar o depósito.\n\nO pedido é processado somente após o envio do comprovante de pagamento por e-mail ou fax. Pedidos sem confirmação em até 3 dias corridos são cancelados automaticamente. Sugerimos utilizar o Internet Banking para mais comodidade.\n\nAtenção: informe seu CPF/CNPJ ao realizar o depósito.\n\n## Boleto Bancário\n\nO boleto bancário é gerado automaticamente ao finalizar sua compra. Pague em qualquer banco, lotérica ou pelo Internet Banking.\n\nO vencimento é de 3 dias úteis após o fechamento do pedido. Após o vencimento, o boleto perde a validade e um novo pode ser emitido, também com 3 dias úteis de validade. O pedido permanece válido por 4 dias corridos a partir do fechamento.\n\nA confirmação do pagamento é feita automaticamente pelo banco em até 3 dias úteis (não é necessário enviar comprovante). Pagamentos realizados com cheque acrescentam 4 dias úteis ao prazo de entrega.\n\nEsta modalidade não permite parcelamento. Aproveite: pagando à vista com boleto ou depósito, você tem 7% de desconto.\n\n## Cartão de Crédito\n\nParcele em até 6x sem juros, com parcela mínima de R$ 10,00. A Portssar aceita: Visa, MasterCard, Diners Club, Amex, Aura e Hipercard.\n\nO processo de autorização é 100% seguro: o site utiliza criptografia avançada e os dados do cartão não são armazenados pela Portssar. Após a confirmação, o pedido é liberado para entrega imediatamente.\n\nEm casos específicos, poderemos solicitar documentação adicional para validar a transação, medida adotada exclusivamente em benefício da sua segurança.\n\n## Cartão de Débito\n\nAo selecionar esta opção, você será redirecionado ao ambiente seguro do seu banco para autorizar a transação. O processo conta com criptografia avançada e, após a confirmação, o pedido é liberado para entrega.\n\n## PagSeguro, BCash e Mercado Pago\n\nTodas as modalidades acima também estão disponíveis via PagSeguro (Grupo UOL), BCash (Grupo Buscapé) e Mercado Pago (Grupo Mercado Livre). Os cartões Aura e Hipercard estão disponíveis exclusivamente por estas plataformas.\n\nO Mercado Pago oferece garantia de devolução do valor pago em até 14 dias, caso o produto não seja entregue no prazo ou esteja em desacordo com o pedido."
+    }
+  }
+}

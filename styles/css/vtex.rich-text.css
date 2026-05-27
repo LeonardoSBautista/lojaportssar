@@ -4,6 +4,128 @@
   justify-content: center;
 }
 
+.paragraph--newsletter-form-title {
+  margin: 0px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333333
+}
+
+.paragraph--footer-copyright {
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+
+.paragraph--footer-title::before {
+  content: url("assets/images/arrow.png");
+  margin-right: 7px;
+}
+
+.paragraph--footer-item-link--telefone::before {
+  content: url("assets/images/phone-icon.png");
+  margin-right: 7px;
+}
+
+.paragraph--footer-item-link--whatsapp::before {
+  content: url("assets/images/whatsapp-icon.png");
+  margin-right: 7px;
+}
+
+.wrapper--shelfTitle-bold {
+  color: #171717;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+  font-size: 35px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.paragraph--footer-item-link--atendimento {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  margin-top: 0px;
+}
+
+.paragraph--footer-item-link--telefone {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+
+.paragraph--footer-item-link--whatsapp {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  margin-top: 0px;
+}
+
+.paragraph--newsletter-title {
+  color: #171717;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 700;
+  margin-top: 0px;
+  line-height: 22px;
+  margin-bottom: 0px;
+}
+
+.paragraph--newsletter-subtitle {
+  color: #333333;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 400;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.paragraph--shelfTitle-subtitle {
+  margin-bottom: 0px;
+}
+
+.container--shelfTitle-subtitle {
+  font-family: "Open Sans", sans-serif;
+  color: #E84E42;
+  font-weight: 500;
+  justify-content: center;
+  font-size: 13px;
+}
+
+.paragraph--about-title {
+  color: #171717;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+  font-size: 35px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 40px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.wrapper--about-subtitle {
+  font-family: "Open Sans", sans-serif;
+  color: #E84E42;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.wrapper--about-text {
+  color: #171717;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  text-align: justify;
+  font-weight: 600;
+}
+
 .container--shelfTitle {
   color: #727273;
   justify-content: center;
@@ -67,6 +189,86 @@
   font-weight: 700;
 }
 
+.paragraph--footer-title {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+
+.paragraph--layout-option {
+  display: none;
+}
+
+.paragraph--empty-search-title {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  color: black;
+}
+
+.wrapper--not-found-button {
+  background-color: #c00913;
+  color: #fff;
+  font-family: "Open sans", sans-serif;
+  width: 40%;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.link--not-found-button {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.container--texto-institucional {
+  margin-left: 5%;
+}
+
+.paragraph--institucional-nav-bar-sub-title {
+  font-family: "Open sans", sans-serif;
+  color: #000;
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.headingLevel1--titulo-institucional {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  color: black;
+}
+
+.wrapper--texto-institucional {
+  font-family: "Open Sans", sans-serif;
+  text-align: justify;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.paragraph--menu-title {
+  color: #171717;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  margin-top: 0px
+}
+
+.headingLevel2--texto-institucional {
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+}
+
+.tableTd--texto-loja {
+  padding-right: 25px;
+}
+
+.listItem--texto-institucional {
+  color: black;
+  line-height: 25px;
+}
+
 @media only screen and (min-width: 640px) {
   .container--question .strong {
     font-size: 40px;
@@ -86,5 +288,117 @@
 
   .container--title .paragraph {
     line-height: 1.3em;
+  }
+}
+
+
+@media only screen and (max-width: 1000px) {
+  .paragraph--shelfTitle-bold {
+    text-align: center;
+    font-size: 28px;
+  }
+
+  .container--shelfTitle-subtitle {
+    font-size: 13px;
+  }
+
+  .paragraph--newsletter-title {
+    text-align: center
+  }
+
+  .paragraph--about-title {
+    font-size: 26px;
+    text-align: center;
+    line-height: 30px;
+  }
+
+  .wrapper--about-title {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .wrapper--about-subtitle {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .wrapper--about-text {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .wrapper--newsletter-title {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .wrapper--newsletter-form-title {
+    display: none;
+  }
+
+  .wrapper--newsletter-subtitle {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .paragraph--footer-mobile-menu-title {
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+  }
+
+  .wrapper--footer-copyright {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .container--texto-institucional {
+    margin-left: auto;
+    width: 90%;
+    margin-right: auto;
+  }
+
+  .container--titulo-troca-e-devolucao {
+    display: none;
+  }
+
+  .container--titulo-institucional {
+    width: 90%;
+  }
+
+  .paragraph--newsletter-subtitle {
+    font-size: 12px
+  }
+
+  .paragraph--footer-mobile-menu-title::before {
+    content: url("https://lojaportssar.vtexassets.com/assets/vtex/assets-builder/lojaportssar.store-theme/5.2.1/images/arrow___9e25293….png");
+    margin-right: 7px;
+  }
+
+  .paragraph--footer-title {
+    margin-left: 5px;
+  }
+
+  .paragraph--menu-title::before {
+    content: url("https://lojaportssar.vtexassets.com/assets/vtex/assets-builder/lojaportssar.store-theme/5.2.1/images/arrow___9e25293….png");
+    margin-right: 7px;
+  }
+
+  .wrapper--menu-title {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .container--department-mobile-menu-title {
+    position: relative;
+  }
+
+  .container--artigos-exclusivos {
+    display: flex!important
   }
 }

@@ -2,12 +2,11 @@
   "product-summary.shelf": {
     "children": [
       "stack-layout#prodsum",
+      "product-summary-brand",
       "product-summary-name",
-      "flex-layout.col#productRating",
-      "product-summary-space",
-      "product-list-price#summary",
+      "condition-layout.product#hasBestPrice",
       "flex-layout.row#selling-price-savings",
-      "product-installments#summary",
+      "flex-layout.row#pix-price",
       "add-to-cart-button"
     ]
   },
@@ -21,8 +20,8 @@
   "stack-layout#prodsum": {
     "children": [
       "product-summary-image#shelf",
-      "vtex.product-highlights@2.x:product-highlights#collection",
-      "modal-trigger#quickview" // Check quickview.jsonc
+      "add-to-list-btn",
+      "vtex.product-highlights@2.x:product-highlights#collection"
     ]
   },
 
@@ -30,7 +29,7 @@
     "props": {
       "showBadge": false,
       "aspectRatio": "1:1",
-      "maxHeight": 300
+      "maxHeight": 200
     }
   },
 
@@ -65,13 +64,26 @@
       "marginBottom": 4
     },
     "children": [
-      "product-selling-price#summary",
-      "product-price-savings#summary"
+      "product-spot-price",
+      "product-installments#summary"
     ]
   },
+
+    "flex-layout.row#pix-price": {
+    "props": {
+      "colGap": 2,
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "marginBottom": 4,
+      "blockClass": "pix-price"
+    }
+  },
+
+
   "product-installments#summary": {
     "props": {
-      "blockClass": "summary"
+      "blockClass": "summary",
+      "message": "Em até {installmentsNumber}x de {installmentValue}"
     }
   },
   "product-selling-price#summary": {
@@ -85,6 +97,45 @@
         "discount"
       ],
       "blockClass": "summary"
+    }
+  },
+  "add-to-cart-button": {
+    "props": {
+      "text": "COMPRAR",
+      "blockClass": "shelf-buy-button"
+    }
+  },
+
+    "add-to-list-btn": {
+    "props": {
+      "blockClass": "add-to-wishlist-shelf"
+    }
+  },
+
+  "condition-layout.product#hasBestPrice": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "hasBestPrice"
+        }
+      ],
+      "Then": "flex-layout.row#list-price",
+      "Else": "flex-layout.row#shelf-spacer"
+    }
+  },
+  "flex-layout.row#list-price": {
+    "children": ["product-list-price"],
+    "props": {
+      "blockClass": "hasBestPrice"
+    }
+  },
+
+  "flex-layout.row#shelf-spacer": {
+    "children":[
+      // "product-selling-price"
+    ],
+    "props": {
+      "blockClass": "hasntBestPrice"
     }
   }
 }

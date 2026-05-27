@@ -7,5 +7,40 @@
   },
   "store.custom#contact-us": {
     "path": "/contact-us"
+  },
+
+
+
+
+  "store.custom#sobre-a-portssar": {
+    "path": "/institucional/sobre-a-portssar"
+  },
+
+    "store.custom#politicas": {
+    "path": "/institucional/politicas"
+  },
+
+    "store.custom#formas-de-pagamento": {
+    "path": "/institucional/formas-de-pagamento"
+  },
+
+    "store.custom#seguranca": {
+    "path": "/institucional/seguranca"
+  },
+
+    "store.custom#trocas-e-devolucoes": {
+    "path": "/institucional/trocas-e-devolucoes"
+  },
+
+    "store.custom#prazos-de-entrega": {
+    "path": "/institucional/prazos-de-entrega"
+  },
+
+    "store.custom#garantia": {
+    "path": "/institucional/garantia"
+  },
+
+    "store.custom#nossas-lojas": {
+    "path": "/institucional/nossas-lojas"
   }
 }

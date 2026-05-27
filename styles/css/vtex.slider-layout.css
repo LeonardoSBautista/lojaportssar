@@ -1,10 +1,73 @@
 .sliderLayoutContainer {
   justify-content: center;
+  max-width: 1350px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.sliderLayoutContainer--carousel {
-  background-color: #F0F0F0;
-  min-height: 450px;
+.sliderLayoutContainer--deals {
+  background-color: transparent !important;
+}
+
+.slideChildrenContainer--shelf {
+  border: 1px solid #DCDCDC;
+  border-radius: 10px;
+}
+
+.sliderLayoutContainer--main-banner {
+  max-width: 99% ! Important;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.paginationDot {
+  height: 4px !important;
+  padding: 0px;
+  width: 17px !important;
+  border-radius: 35px;
+}
+
+.sliderLeftArrow--minibanners {
+  left: -35px;
+  top: 35%
+}
+
+.sliderRightArrow--minibanners {
+  right: -35px;
+  top: 35%
+}
+
+.sliderLeftArrow--depoimentos {
+  left: -35px;
+  top: 35%
+}
+
+.sliderRightArrow--depoimentos {
+  right: -35px;
+  top: 35%
+}
+
+
+.slideChildrenContainer--shelf:hover {
+  box-shadow: 0px 0px 4px #aaaaaa;
+}
+
+.paginationDotsContainer--shelf {
+  margin-bottom: 0px;
+}
+
+
+.sliderTrack--minibanners {
+  padding-bottom: 45px;
+}
+
+.sliderTrack--depoimentos {
+  padding-bottom: 45px;
+}
+
+.slide--carousel {
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .sliderTrackContainer {
@@ -27,5 +90,36 @@
   margin-bottom: 25px;
   padding-left: .5rem;
   padding-right: .5rem;
-  min-height: 550px;
+}
+
+.sliderTrack--bannerduplo {
+  gap: 5px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .sliderLayoutContainer {
+    padding: 0px !important
+  }
+
+  .paginationDotsContainer--deals {
+    margin-bottom: -15px;
+  }
+
+  .paginationDotsContainer--shelf {
+    margin-bottom: -5px !important
+  }
+
+  .paginationDotsContainer--bannerduplo {
+    margin-bottom: -25px;
+  }
+
+  .slideChildrenContainer--deals {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .slide--shelf {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
 }

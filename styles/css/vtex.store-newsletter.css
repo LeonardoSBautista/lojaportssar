@@ -1,0 +1,8 @@
+.emailInputContainer {
+    width: 85%;
+    margin-right: 5px;
+}
+
+.newsletterForm {
+    display: flex;
+}

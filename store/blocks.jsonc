@@ -40,15 +40,130 @@
   },
 
   "store.not-found#search": {
-    "blocks": ["rich-text#not-found"]
+    "blocks": ["flex-layout.row#search-not-found"]
   },
 
-  "rich-text#not-found": {
+  "flex-layout.row#product-not-found": {
+    "children": ["flex-layout.row#product-not-found-image", "flex-layout.col#product-not-found"]
+  },
+
+  "flex-layout.row#product-not-found-image": {
     "props": {
+      "justifyContent": "CENTER",
+      "fullWidth": true
+    },
+    "children": ["image#not-found-product"]
+  },
+
+  "image#not-found-product": {
+    "props": {
+      "src": "assets/images/404-error.png",
+      "alt": "Produto não encontrado"
+    }
+  },
+
+  "flex-layout.col#product-not-found": {
+    "children": ["rich-text#not-found-title", "rich-text#not-found-product-content", "rich-text#not-found-button"]
+  },
+
+  "rich-text#not-found-title": {
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "Oops...",
+      "blockClass": "not-found-title"
+    }
+  },
+
+  "rich-text#not-found-product-content": {
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "Não encontramos o produto que você está acessando. Ele pode ter sido removido ou estar temporariamente indisponível.",
+      "blockClass": "not-found-content"
+    }
+  },
+
+  "rich-text#not-found-button": {
+    "props": {
+      "text": "[IR PARA A HOME](/)",
       "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "text": "**PAGE NOT FOUND**",
-      "font": "t-heading-1"
+      "font": "t-body",
+      "blockClass": "not-found-button"
+    }
+  },
+
+
+  "flex-layout.row#emptysearch-not-found": {
+    "children": ["flex-layout.row#search-not-found-image", "flex-layout.col#emptysearch-not-found"],
+    "props": {
+      "blockClass": ["empty-search-page"]
+    }
+  },
+
+
+  "flex-layout.row#search-not-found-image": {
+    "props": {
+      "justifyContent": "CENTER",
+      "fullWidth": true,
+      "blockClass": ["empty-search-image"]
+    },
+    "children": ["image#not-found-search"]
+  },
+
+  "image#not-found-search": {
+    "props": {
+      "src": "assets/images/empty-search.png",
+      "alt": "Produto não encontrado"
+    }
+  },
+
+  "flex-layout.col#emptysearch-not-found": {
+    "children": ["rich-text#emptysearch-not-found-title", "rich-text#emptysearch-not-found-product-content", "rich-text#emptysearch-not-found-button"]
+  },
+
+  "rich-text#emptysearch-not-found-title": {
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "Nenhum resultado encontrado",
+      "blockClass": ["not-found-title", "empty-search-title"]
+    }
+  },
+
+  "rich-text#emptysearch-not-found-product-content": {
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "**O que eu devo fazer?**\n\n- Verifique os termos digitados.\n- Tente utilizar uma única palavra.\n- Utilize termos genéricos na busca.\n- Tente utilizar sinônimos do termo desejado.",
+      "blockClass": "not-found-content"
+    }
+  },
+
+  "rich-text#emptysearch-not-found-button": {
+    "props": {
+      "text": "[IR PARA A HOME](/)",
+      "textAlignment": "CENTER",
+      "font": "t-body",
+      "blockClass": "not-found-button"
+    }
+  },
+
+  "flex-layout.row#search-not-found": {
+    "children": ["flex-layout.row#product-not-found-image", "flex-layout.col#search-not-found"]
+  },
+
+
+  "flex-layout.col#search-not-found": {
+    "children": ["rich-text#not-found-title", "rich-text#not-found-search-content", "rich-text#not-found-button"]
+  },
+
+  "rich-text#not-found-search-content": {
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "Não encontramos a página que você está acessando. Ela pode ter sido removida ou estar temporariamente indisponível.",
+      "blockClass": "not-found-content"
     }
   }
 }

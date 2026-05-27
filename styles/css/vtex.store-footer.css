@@ -9,3 +9,7 @@
 .row--payment-methods {
   padding-top: 16px;
 }
+
+@media only screen and (max-width: 1000px) {
+
+}

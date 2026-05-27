@@ -1,0 +1,125 @@
+{
+  "flex-layout.col#institucional-nav-bar": {
+    "children": [
+      // "rich-text#institucional-nav-bar-title",
+      "rich-text#institucional-nav-bar-sub-title-1",
+      "link#institucional-nav-option-11",
+      "link#institucional-nav-option-1",
+      "link#institucional-nav-option-2",
+      "link#institucional-nav-option-4",
+      "rich-text#institucional-nav-bar-sub-title-2",
+      "link#institucional-nav-option-5",
+      "link#institucional-nav-option-6",
+      "link#institucional-nav-option-7",
+      "link#institucional-nav-option-8"
+
+    ],
+    "props": {
+      "blockClass": "institucional-nav-bar",
+      "width": "22%",
+      "preventVerticalStretch": true
+    }
+  },
+  "rich-text#institucional-nav-bar-title": {
+    "props": {
+      "blockClass": "institucional-nav-bar-title",
+      "text": "Institucional"
+    }
+  },
+  "rich-text#institucional-nav-bar-sub-title-1": {
+    "props": {
+      "blockClass": "institucional-nav-bar-sub-title",
+      "text": "Institucional"
+    }
+  },
+
+
+
+  "link#institucional-nav-option-1": {
+    "props": {
+      "blockClass": "institucional-menu-item",
+      "label": "Políticas",
+      "href": "/institucional/politicas"
+    }
+  },
+  "link#institucional-nav-option-2": {
+    "props": {
+      "blockClass": "institucional-menu-item",
+      "label": "Formas de Pagamento",
+      "href": "/institucional/formas-de-pagamento"
+    }
+  },
+  "link#institucional-nav-option-3": {
+    "props": {
+      "blockClass": "institucional-menu-item",
+      "label": "Política de Entrega",
+      "href": "/institucional/politica-de-entrega"
+    }
+  },
+  "link#institucional-nav-option-4": {
+    "props": {
+      "blockClass": "institucional-menu-item",
+      "label": "Seguranca",
+      "href": "/institucional/seguranca"
+    }
+  },
+
+  "rich-text#institucional-nav-bar-sub-title-2": {
+    "props": {
+      "blockClass": "institucional-nav-bar-sub-title",
+      "text": "Ajuda"
+    }
+  },
+
+  "link#institucional-nav-option-5": {
+    "props": {
+      "blockClass": "institucional-menu-item",
+      "label": "Trocas e Devoluções",
+      "href": "/institucional/trocas-e-devolucoes"
+    }
+  },
+
+  "link#institucional-nav-option-6": {
+    "props": {
+      "blockClass": "institucional-menu-item",
+      "label": "Prazos de Entrega",
+      "href": "/institucional/prazos-de-entrega"
+    }
+  },
+  "link#institucional-nav-option-7": {
+    "props": {
+      "blockClass": "institucional-menu-item",
+      "label": "Garantia",
+      "href": "/institucional/garantia"
+    }
+  },
+  "link#institucional-nav-option-8": {
+    "props": {
+      "blockClass": "institucional-menu-item",
+      "label": "Nossas Lojas",
+      "href": "/institucional/nossas-lojas"
+    }
+  },
+  "link#institucional-nav-option-9": {
+    "props": {
+      "blockClass": "institucional-menu-item",
+      "label": "Troca e Devolução",
+      "href": "/institucional/troca-e-devolucao"
+    }
+  },
+  "link#institucional-nav-option-10": {
+    "props": {
+      "blockClass": "institucional-menu-item",
+      "label": "Nossas Lojas",
+      "href": "/institucional/nossas-lojas"
+    }
+  },
+
+  "link#institucional-nav-option-11": {
+    "props": {
+      "blockClass": "institucional-menu-item",
+      "label": "Sobre a Portssar",
+      "href": "/institucional/sobre-a-portssar"
+    }
+  }
+}

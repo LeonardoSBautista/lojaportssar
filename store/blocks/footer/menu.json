@@ -1,73 +1,339 @@
 {
-  "vtex.menu@2.x:menu#Products": {
+  "vtex.menu@2.x:menu#Institucional": {
     "props": {
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#news",
-      "menu-item#blackfriday",
-      "menu-item#sale",
-      "menu-item#personalization"
+      "rich-text#footer-title-institucional",
+      "menu-item#sobre-a-portssar",
+      "menu-item#politicas",
+      "menu-item#formas-de-pagamento",
+      "menu-item#seguranca"
     ]
   },
-  "menu-item#news": {
+
+  "rich-text#footer-title-institucional": {
     "props": {
-      "id": "menu-item-news",
+      "text": "Institucional",
+      "blockClass": "footer-title"
+    }
+  },
+  "menu-item#sobre-a-portssar": {
+    "props": {
+      "id": "menu-item-sobre",
+      "blockClass": "menu-item-link",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/institucional/sobre-a-portssar",
         "noFollow": false,
-        "tagTitle": "News",
-        "text": "News"
+        "tagTitle": "Sobre a Portssar",
+        "text": "Sobre a Portssar"
       }
     }
   },
-  "menu-item#blackfriday": {
+  "menu-item#politicas": {
     "props": {
-      "id": "menu-item-black-friday",
+      "id": "menu-item-politicas",
+      "blockClass": "menu-item-link",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/institucional/politicas",
         "noFollow": false,
-        "tagTitle": "BlackFriday",
-        "text": "Black Friday"
+        "tagTitle": "Políticas",
+        "text": "Políticas"
       }
     }
   },
-  "menu-item#sale": {
+  "menu-item#formas-de-pagamento": {
     "props": {
-      "id": "menu-item-sale",
+      "id": "menu-item-formas-de-pagamento",
+      "blockClass": "menu-item-link",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/institucional/formas-de-pagamento",
         "noFollow": false,
-        "tagTitle": "Sale",
-        "text": "Sale"
+        "tagTitle": "Formas de Pagamento",
+        "text": "Formas de Pagamento"
       }
     }
   },
-  "menu-item#personalization": {
+  "menu-item#seguranca": {
     "props": {
-      "id": "menu-item-personalization",
+      "id": "menu-item-seguranca",
+      "blockClass": "menu-item-link",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/institucional/seguranca",
         "noFollow": false,
-        "tagTitle": "Personalization",
-        "text": "Personalization"
+        "tagTitle": "Segurança",
+        "text": "Segurança"
       }
+    }
+  },
+
+  "vtex.menu@2.x:menu#Ajuda": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "rich-text#ajuda",
+      "menu-item#trocas-e-devolucoes",
+      "menu-item#prazos-de-entrega",
+      "menu-item#garantia",
+      "menu-item#nossas-lojas"
+    ]
+  },
+
+  "rich-text#ajuda": {
+    "props": {
+      "text": "Ajuda",
+      "blockClass": "footer-title"
+    }
+  },
+  "menu-item#trocas-e-devolucoes": {
+    "props": {
+      "id": "menu-item-trocas-e-devolucoes",
+      "blockClass": "menu-item-link",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/institucional/trocas-e-devolucoes",
+        "noFollow": false,
+        "tagTitle": "Trocas e Devoluções",
+        "text": "Trocas e Devoluções"
+      }
+    }
+  },
+  "menu-item#garantia": {
+    "props": {
+      "id": "menu-item-garantia",
+      "blockClass": "menu-item-link",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/institucional/garantia",
+        "noFollow": false,
+        "tagTitle": "Garantia",
+        "text": "Garantia"
+      }
+    }
+  },
+  "menu-item#prazos-de-entrega": {
+    "props": {
+      "id": "menu-item-prazos-de-entrega",
+      "blockClass": "menu-item-link",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/institucional/prazos-de-entrega",
+        "noFollow": false,
+        "tagTitle": "Prazos de Entrega",
+        "text": "Prazos de Entrega"
+      }
+    }
+  },
+  "menu-item#nossas-lojas": {
+    "props": {
+      "id": "menu-item-nossas-lojas",
+      "blockClass": "menu-item-link",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/institucional/nossas-lojas",
+        "noFollow": false,
+        "tagTitle": "Nossas Lojas",
+        "text": "Nossas Lojas"
+      }
+    }
+  },
+
+  "vtex.menu@2.x:menu#Social": {
+    "props": {
+      "orientation": "horizontal"
+    },
+    "children": [
+      "menu-item#facebook",
+      "menu-item#instagram"
+    ]
+  },
+
+  "rich-text#footer-title-social": {
+    "props": {
+      "text": "Redes Sociais",
+      "blockClass": "footer-title"
+    }
+  },
+
+  "menu-item#facebook": {
+    "props": {
+      "id": "menu-social-facebook",
+      "blockClass": ["menu-social-link", "menu-social-facebook"],
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "external",
+        "href": "https://web.facebook.com/lojaPortssar/",
+        "noFollow": false,
+        "tagTitle": "Facebook",
+        "text": "Facebook"
+      }
+    }
+  },
+
+  "menu-item#instagram": {
+    "props": {
+      "id": "menu-social-instagram",
+      "blockClass": ["menu-social-link", "menu-social-instagram"],
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "external",
+        "href": "https://www.instagram.com/lojaportssar/",
+        "noFollow": false,
+        "tagTitle": "Instagram",
+        "text": "Instagram"
+      }
+    }
+  },
+
+  "vtex.menu@2.x:menu#Articles": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "rich-text#footer-title-articles",
+      "menu-item#blog"
+    ]
+  },
+
+  "rich-text#footer-title-articles": {
+    "props": {
+      "text": "Artigos Exclusivos",
+      "blockClass": ["footer-title", "artigos-exclusivos"]
+    }
+  },
+
+  "menu-item#blog": {
+    "props": {
+      "id": "menu-social-blog",
+      "blockClass": ["menu-social-link", "menu-social-blog"],
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "external",
+        "href": "https://blog.portssar.com.br",
+        "noFollow": false,
+        "tagTitle": "Blog",
+        "text": "Blog"
+      }
+    }
+  },
+
+
+  "vtex.menu@2.x:menu#Atendimento1": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "rich-text#footer-title-atendimento1",
+      "rich-text#footer-link-atendimento1",
+      "rich-text#footer-link-telefone1",
+      "rich-text#footer-link-whatsapp1"
+    ]
+  },
+
+  "rich-text#footer-title-atendimento1": {
+    "props": {
+      "text": "Atendimento Loja 1",
+      "blockClass": "footer-title"
+    }
+  },
+
+  "rich-text#footer-link-atendimento1": {
+    "props": {
+      "text": "Rua 7 de Abril, 97 – 3º andar\n01043-000 – República - São Paulo/SP",
+      "blockClass": ["footer-item-link","footer-item-link--atendimento"]
+
+    }
+  },
+
+  "rich-text#footer-link-telefone1": {
+    "props": {
+      "text": "(11) 3255-6067 | (11) 3257-1632 | (11) 3258-3922",
+      "blockClass": ["footer-item-link", "footer-item-link--telefone"]
+    }
+  },
+
+  "rich-text#footer-link-whatsapp1": {
+    "props": {
+      "text": "(11) 98967-6936",
+      "blockClass": ["footer-item-link", "footer-item-link--whatsapp"]
+    }
+  },
+
+
+
+  "vtex.menu@2.x:menu#Atendimento2": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "rich-text#footer-title-atendimento2",
+      "rich-text#footer-link-atendimento2",
+      "rich-text#footer-link-telefone2",
+      "rich-text#footer-link-whatsapp2"
+    ]
+  },
+
+  "rich-text#footer-title-atendimento2": {
+    "props": {
+      "text": "Atendimento Loja 2",
+      "blockClass": "footer-title"
+    }
+  },
+
+  "rich-text#footer-link-atendimento2": {
+    "props": {
+      "text": "Rua 7 de Abril, 125 – Loja 28\n01043-000 – República - São Paulo/SP",
+      "blockClass": ["footer-item-link","footer-item-link--atendimento"]
+
+    }
+  },
+
+  "rich-text#footer-link-telefone2": {
+    "props": {
+      "text": "(11) 3255-6131 | (11) 3255-2697",
+      "blockClass": ["footer-item-link", "footer-item-link--telefone"]
+    }
+  },
+
+  "rich-text#footer-link-whatsapp2": {
+    "props": {
+      "text": "(11) 98971-3274",
+      "blockClass": ["footer-item-link", "footer-item-link--whatsapp"]
     }
   },
 

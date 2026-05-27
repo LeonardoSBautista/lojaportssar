@@ -1,0 +1,77 @@
+{
+  "store.custom#prazos-de-entrega": {
+    "blocks": ["flex-layout.row#promocoes-e-descontos-titles", "flex-layout.row#promocoes-e-descontos-content"]
+  },
+  "flex-layout.row#promocoes-e-descontos-titles": {
+    "children": [
+      "flex-layout.row#title-institucional",
+      "flex-layout.row#title-promocoes-e-descontos"
+    ],
+    "props": {
+      "blockClass": "titles-institucional",
+      "colGap": 2,
+      "fullWidth": true,
+      "horizontalAlign": "left",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "flex-layout.row#promocoes-e-descontos-content": {
+    "children": [
+      "flex-layout.col#institucional-nav-bar",
+      "flex-layout.col#promocoes-e-descontos"
+    ],
+    "props": {
+      "blockClass": "conteudo-institucional",
+      "colGap": 2,
+      "fullWidth": true,
+      "horizontalAlign": "left",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "flex-layout.col#promocoes-e-descontos": {
+    "children": ["rich-text#content-promocoes-e-descontos"],
+    "props": {
+      "width": "70%",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "flex-layout.row#title-institucional": {
+    "children": ["rich-text#title-institucional"],
+    "props": {
+      "width": "25%",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "flex-layout.row#title-promocoes-e-descontos": {
+    "children": ["rich-text#title-promocoes-e-descontos"],
+    "props": {
+      "width": "70%",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#title-institucional": {
+    "props": {
+      "blockClass": ["titulo-institucional", "titulo-promocoes-e-descontos"],
+      "text": "# Institucional"
+    }
+  },
+
+  "rich-text#title-promocoes-e-descontos": {
+    "props": {
+      "blockClass": ["titulo-institucional", "titulo-promocoes-e-descontos"],
+      "text": "# Prazos de Entrega"
+    }
+  },
+
+  "rich-text#content-promocoes-e-descontos": {
+    "props": {
+      "blockClass": ["texto-institucional", "texto-promocoes-e-descontos"],
+      "text": "A Portssar trabalha com as modalidades Sedex, E-Sedex e PAC para entrega em todo o Brasil. Todos os pedidos são processados e entregues em até 15 dias úteis após a confirmação do pagamento.\n\nO prazo de entrega começa a ser contado a partir da confirmação do pagamento, que pode variar de acordo com a modalidade escolhida.\n\n## Prazo de Confirmação de Pagamento\n\nConfira abaixo o tempo estimado para confirmação de cada forma de pagamento:\n\n* PIX: **Até 24 horas**\n* Cartão de Crédito: **Até 48 horas**\n* Boleto Bancário: **Até 3 dias úteis**\n\n## Dica: Escolha o Pagamento Mais Rápido\n\nPara receber seu equipamento fotográfico o mais rapidamente possível, opte por PIX ou cartão de crédito: as modalidades com confirmação mais ágil. Boletos pagos em cheque ou depósitos em cheque possuem os maiores prazos de confirmação e devem ser considerados caso o prazo de entrega não seja urgente."
+    }
+  }
+}

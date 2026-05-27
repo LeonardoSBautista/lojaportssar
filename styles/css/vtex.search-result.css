@@ -1,3 +1,31 @@
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #c00913;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #c00913;
+}
+
+::-webkit-scrollbar-button {
+  display: none !important;
+}
+
+
 .galleryLayoutOptionButton {
   background-color: #F0F0F0;
   color: #3F3F40;
@@ -18,5 +46,142 @@
 }
 
 .galleryItem--list {
-  border-bottom: 1px #E7E9EE solid;
+  border: 1px solid #DCDCDC;
+  border-radius: 10px;
+}
+
+.galleryTitle--layout {
+  color: #171717;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+  font-size: 25px;
+}
+
+.filter__container--title {
+  display: none;
+}
+
+.totalProducts--layout {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  color: #000;
+  font-weight: 700;
+  text-transform: lowercase;
+  padding: 17px 10px;
+}
+
+.totalProductsMessage {
+  color: black;
+}
+
+.filterItem {
+  font-family: "Open Sans", sans-serif;
+  color: #000;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.filterTitleSpan {
+  font-family: "Open Sans", sans-serif;
+  color: #000;
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.filterTemplateOverflow {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.orderByButton {
+  background-color: #fafafa;
+  border: 1px solid #dfdfdf;
+  padding: 8px 10px;
+  border-radius: 3px;
+}
+
+.orderByText {
+  display: none;
+}
+
+.filterPopupTitle {
+  text-transform: capitalize;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.galleryLayoutOptionButton--selected {
+  background-color: #1D1D1D;
+  color: #fff;
+  border-radius: 0;
+  padding: 10px 15px;
+}
+
+.gallery {
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.filterIcon {
+  color: black;
+  scale: 0.7;
+  padding-right: 0px;
+  margin-right: -4px;
+}
+
+.filterAvailable {
+  padding-bottom: 0px;
+}
+
+.gallery--grid {
+  padding-left: 10px;
+}
+
+.buttonShowMore--layout {
+  margin-top: 40px;
+}
+
+@media only screen and (min-width: 1100px) {
+  .galleryItem--grid {
+    border: 1px solid #DCDCDC;
+    border-radius: 10px;
+    flex-basis: calc(25% - 10px) !important;
+    max-width: calc(25% - 10px) !important;
+    padding: 0px;
+  }
+}
+
+
+@media only screen and (max-width: 1000px) {
+  .galleryItem--grid {
+    border: 1px solid #DCDCDC;
+    border-radius: 10px;
+    padding: 0px;
+  }
+
+  .totalProducts--layout {
+    padding: 20px 20px;
+    text-align: end;
+  }
+
+  .filterPopupButton {
+    background: #333333;
+    height: 40px;
+    width: 90%;
+    border-radius: 5px;
+    border-left: none;
+    border-right: none;
+  }
+
+  .galleryItem {
+    flex-basis: calc(50% - 5px) !important;
+    max-width: calc(50% - 5px) !important;
+  }
+
+  .filterPopupArrowIcon {
+    padding: 0px 5px;
+  }
+
 }

@@ -15,3 +15,22 @@
 .star--empty {
   color: #FFB100;
 }
+
+.reviewsHeading {
+  display: none;
+}
+
+.graphBarContainer {
+  height: 28px;
+  background: #e6e6e6;
+  border-radius: 5px;
+}
+
+.reviewsOrderBy {
+  gap: 10px;
+  margin-top: 2rem;
+}
+
+.summaryTotalReviews {
+  display: none;
+}

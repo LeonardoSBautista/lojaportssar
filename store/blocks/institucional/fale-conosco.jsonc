@@ -1,0 +1,219 @@
+{
+  "store.custom#fale-conosco": {
+    "blocks": ["flex-layout.row#fale-conosco-titles", "flex-layout.row#fale-conosco-content"]
+  },
+  "flex-layout.row#fale-conosco-titles": {
+    "children": [
+      "flex-layout.row#title-institucional",
+      "flex-layout.row#title-fale-conosco"
+    ],
+    "props": {
+      "blockClass": "titles-institucional",
+      "colGap": 2,
+      "fullWidth": true,
+      "horizontalAlign": "left",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "flex-layout.row#fale-conosco-content": {
+    "children": [
+      "flex-layout.col#institucional-nav-bar",
+      "flex-layout.col#fale-conosco"
+    ],
+    "props": {
+      "blockClass": "conteudo-institucional",
+      "colGap": 2,
+      "fullWidth": true,
+      "horizontalAlign": "left",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "flex-layout.col#fale-conosco": {
+    "children": ["rich-text#content-fale-conosco", "flex-layout.row#form"],
+    "props": {
+      "width": "70%",
+      "preventVerticalStretch": true
+    }
+  },
+
+
+  "flex-layout.row#title-institucional": {
+    "children": ["rich-text#title-institucional"],
+    "props": {
+      "width": "25%",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "flex-layout.row#title-fale-conosco": {
+    "children": ["rich-text#title-fale-conosco"],
+    "props": {
+      "width": "70%",
+      "preventVerticalStretch": true
+    }
+  },
+
+
+  "rich-text#title-institucional": {
+    "props": {
+      "blockClass": ["titulo-institucional", "titulo-fale-conosco"],
+      "text": "# Institucional"
+    }
+  },
+
+  "rich-text#title-fale-conosco": {
+    "props": {
+      "blockClass": ["titulo-institucional", "titulo-fale-conosco"],
+      "text": "# Fale Conosco"
+    }
+  },
+  "rich-text#content-fale-conosco": {
+    "props": {
+      "blockClass": ["texto-institucional", "texto-fale-conosco"],
+      "text": "Você pode entrar em contato com a Escariz pelos seguintes meios:\n\n**E-mail:** [escariz@escariz.com.br](mailto:escariz@escariz.com.br)\n📞 **WhatsApp/Telefone:** [(79) 99129-3236](https://wa.me/5579991293236?text=Ol%C3%A1!%20Acessei%20a%20loja%20online%20da%20Escariz%20e%20gostaria%20de%20falar%20com%20um%20atendente.)\n\nou pelo formulário abaixo:"
+    }
+  },
+
+  "flex-layout.row#form": {
+    "children": ["form"],
+    "props": {
+      "blockClass": ["contact-form"]
+    }
+  },
+
+  "form": {
+    "props": {
+      "entity": "CO",
+      "schema": "contactform"
+    },
+    "children": [
+      "flex-layout.row#form-row-1",
+      "flex-layout.row#form-row-2",
+      "flex-layout.row#form-row-3",
+      "flex-layout.row#form-row-4",
+      "flex-layout.row#form-row-5",
+      "flex-layout.row#form-row-6"
+    ],
+    "blocks": ["form-success"]
+  },
+
+  "flex-layout.row#form-row-1":{
+    "children": ["form-input.text#Nome", "form-input.text#Email"],
+    "props": {
+      "blockClass": "form-row"
+    }
+  },
+
+  "form-input.text#Nome": {
+    "props": {
+      "pointer": "#/properties/Nome"
+    }
+  },
+
+    "form-input.text#Email": {
+    "props": {
+      "pointer": "#/properties/Email"
+    }
+  },
+
+
+
+
+    "flex-layout.row#form-row-2":{
+    "children": ["form-input.text#Telefone", "form-input.text#Whatsapp"],
+    "props": {
+      "blockClass": "form-row"
+    }
+  },
+
+  "form-input.text#Telefone": {
+    "props": {
+      "pointer": "#/properties/Telefone"
+    }
+  },
+
+    "form-input.text#Whatsapp": {
+    "props": {
+      "pointer": "#/properties/Whatsapp"
+    }
+  },
+
+
+
+
+  "flex-layout.row#form-row-3":{
+    "children": ["form-input.text#Cidade", "form-input.text#Estado"],
+    "props": {
+      "blockClass": "form-row"
+    }
+  },
+
+  "form-input.text#Cidade": {
+    "props": {
+      "pointer": "#/properties/Cidade"
+    }
+  },
+
+    "form-input.text#Estado": {
+    "props": {
+      "pointer": "#/properties/Estado"
+    }
+  },
+
+
+
+
+
+    "flex-layout.row#form-row-4":{
+    "children": ["form-input.text#Pedido", "form-input.text#Assunto"],
+    "props": {
+      "blockClass": "form-row"
+    }
+  },
+
+  "form-input.text#Pedido": {
+    "props": {
+      "pointer": "#/properties/Pedido"
+    }
+  },
+
+    "form-input.text#Assunto": {
+    "props": {
+      "pointer": "#/properties/Assunto"
+    }
+  },
+
+      "flex-layout.row#form-row-5":{
+    "children": ["form-input.textarea#Mensagem"],
+    "props": {
+      "blockClass": "form-row"
+    }
+  },
+
+  "form-input.textarea#Mensagem": {
+    "props": {
+      "pointer": "#/properties/Mensagem"
+    }
+  },
+
+  "flex-layout.row#form-row-6": {
+    "children": ["form-submit"]
+  },
+
+    "form-success": {
+    "children": [
+      "rich-text#successSubmit"
+    ]
+  },
+  "rich-text#successSubmit": {
+    "props": {
+      "text": "Formulário enviado com sucesso!",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "blockClass": "send-success"
+    }
+  }
+
+}

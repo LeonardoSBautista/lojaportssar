@@ -1,0 +1,77 @@
+{
+  "store.custom#trocas-e-devolucoes": {
+    "blocks": ["flex-layout.row#troca-e-devolucao-titles", "flex-layout.row#troca-e-devolucao-content"]
+  },
+  "flex-layout.row#troca-e-devolucao-titles": {
+    "children": [
+      "flex-layout.row#title-institucional",
+      "flex-layout.row#title-troca-e-devolucao"
+    ],
+    "props": {
+      "blockClass": "titles-institucional",
+      "colGap": 2,
+      "fullWidth": true,
+      "horizontalAlign": "left",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "flex-layout.row#troca-e-devolucao-content": {
+    "children": [
+      "flex-layout.col#institucional-nav-bar",
+      "flex-layout.col#troca-e-devolucao"
+    ],
+    "props": {
+      "blockClass": "conteudo-institucional",
+      "colGap": 2,
+      "fullWidth": true,
+      "horizontalAlign": "left",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "flex-layout.col#troca-e-devolucao": {
+    "children": ["rich-text#content-troca-e-devolucao"],
+    "props": {
+      "width": "70%",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "flex-layout.row#title-institucional": {
+    "children": ["rich-text#title-institucional"],
+    "props": {
+      "width": "25%",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "flex-layout.row#title-troca-e-devolucao": {
+    "children": ["rich-text#title-troca-e-devolucao"],
+    "props": {
+      "width": "70%",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#title-institucional": {
+    "props": {
+      "blockClass": ["titulo-institucional", "titulo-troca-e-devolucao"],
+      "text": "# Institucional"
+    }
+  },
+
+  "rich-text#title-troca-e-devolucao": {
+    "props": {
+      "blockClass": ["titulo-institucional", "titulo-troca-e-devolucao"],
+      "text": "# Trocas e Devoluções"
+    }
+  },
+
+"rich-text#content-troca-e-devolucao": {
+  "props": {
+    "blockClass": ["texto-institucional", "texto-troca-e-devolucao"],
+    "text": "A Portssar é comprometida com a satisfação dos seus clientes. Nossa Política de Trocas e Devoluções é baseada no Código de Defesa do Consumidor e tem como objetivo garantir uma experiência de compra segura e transparente.\n\nA troca ou devolução somente será processada mediante o cumprimento das condições descritas abaixo.\n\n## Como Solicitar Troca ou Devolução\n\nEntre em contato com nossa Central de Atendimento por e-mail ou telefone para iniciar a solicitação. Nosso time irá orientar você sobre os próximos passos.\n\n## Prazos por Motivo\n\n**Desistência ou Arrependimento**\n\nAté 7 dias a partir do recebimento do produto, conforme Art. 49 do Código de Defesa do Consumidor.\n\n**Defeito Técnico ou de Fabricação**\n\nAté 7 dias a partir do recebimento do produto, conforme Arts. 18 e 26 do Código de Defesa do Consumidor.\n\n**Avaria (produto danificado na entrega)**\n\nRecuse o produto no ato da entrega ou solicite a troca/devolução em até 24 horas após o recebimento.\n\n**Produto em Desacordo com o Pedido**\n\nRecuse no ato da entrega ou solicite em até 7 dias após o recebimento, conforme Art. 49 do Código de Defesa do Consumidor.\n\n## Condições para Troca ou Devolução\n\nO produto deve estar:\n\n* Acompanhado da 1ª via da Nota Fiscal de Venda ou Cupom Fiscal\n* Na embalagem original\n* Sem sinais de dano por mau uso\n* Com todos os acessórios e manual incluídos\n\n## Prazo de Reembolso e Garantia\n\nO prazo máximo para devolução dos valores pagos é de 30 dias após a solicitação formal.\n\nPara produtos que apresentem defeito após 30 dias do recebimento, mas dentro do prazo de garantia do fabricante, o cliente deve contatar diretamente o fabricante. A garantia contratual é de responsabilidade do fabricante, cujas condições constam no Termo de Garantia do produto.\n\n## Formas de Restituição\n\n**Cupom de Troca**\n\nPermite utilizar o valor reembolsado em novas compras no site da Portssar.\n\n**Estorno no Cartão de Crédito**\n\nExclusivo para pedidos pagos em cartão de crédito. O prazo segue as regras da administradora do cartão, de uma a duas faturas, dependendo da data de vencimento.\n\n**Reembolso em Conta Corrente**\n\nPara pedidos pagos em boleto. O valor é transferido para conta de mesma titularidade (CPF idêntico ao do pedido). O prazo depende da acurácia dos dados e das regras do banco recebedor. Caso o solicitante não possua conta em nenhum banco, o valor será disponibilizado em agência Itaú para saque após confirmação."
+  }
+}
+}

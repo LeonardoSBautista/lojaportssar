@@ -1,0 +1,77 @@
+{
+  "store.custom#politicas": {
+    "blocks": ["flex-layout.row#politica-de-compra-titles", "flex-layout.row#politica-de-compra-content"]
+  },
+  "flex-layout.row#politica-de-compra-titles": {
+    "children": [
+      "flex-layout.row#title-institucional",
+      "flex-layout.row#title-politica-de-compra"
+    ],
+    "props": {
+      "blockClass": "titles-institucional",
+      "colGap": 2,
+      "fullWidth": true,
+      "horizontalAlign": "left",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "flex-layout.row#politica-de-compra-content": {
+    "children": [
+      "flex-layout.col#institucional-nav-bar",
+      "flex-layout.col#politica-de-compra"
+    ],
+    "props": {
+      "blockClass": "conteudo-institucional",
+      "colGap": 2,
+      "fullWidth": true,
+      "horizontalAlign": "left",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "flex-layout.col#politica-de-compra": {
+    "children": ["rich-text#content-politica-de-compra"],
+    "props": {
+      "width": "70%",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "flex-layout.row#title-institucional": {
+    "children": ["rich-text#title-institucional"],
+    "props": {
+      "width": "25%",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "flex-layout.row#title-politica-de-compra": {
+    "children": ["rich-text#title-politica-de-compra"],
+    "props": {
+      "width": "70%",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#title-institucional": {
+    "props": {
+      "blockClass": ["titulo-institucional", "titulo-politica-de-compra"],
+      "text": "# Institucional"
+    }
+  },
+
+  "rich-text#title-politica-de-compra": {
+    "props": {
+      "blockClass": ["titulo-institucional", "titulo-politica-de-compra"],
+      "text": "# Políticas"
+    }
+  },
+
+"rich-text#content-politica-de-compra": {
+  "props": {
+    "blockClass": ["texto-institucional", "texto-politica-de-compra"],
+    "text": "## Política de Privacidade — Portssar\n\nA Portssar tem o compromisso de proteger sua privacidade em toda a sua navegação. Esta página explica, de forma clara e transparente, como tratamos os dados pessoais que você nos confia ao utilizar o site lojaportssar.com.br.\n\nAo acessar a loja, enviar comunicações ou fornecer qualquer dado pessoal, você declara estar ciente e de acordo com esta Política de Privacidade.\n\n## Quem Somos (identificação legal)\n\nPortssar Comércio de Equipamentos Fotográficos LTDA, pessoa jurídica de direito privado, com sede na Rua 7 de Abril, 97 — 3º andar, República, São Paulo/SP — CEP 01043-000. CNPJ: 18.780.027/0001-00.\nDúvidas sobre o uso de dados pessoais: [vendas@portssar.com.br](mailto:vendas@portssar.com.br)\n\n## Segurança e Privacidade dos seus Dados\n\nSeus dados pessoais são registrados de forma automatizada, sem manipulação humana. Garantimos que suas informações não serão trocadas ou vendidas a afiliados ou terceiros sem sua prévia autorização.\n\nPara manter sua conta segura, recomendamos não compartilhar sua senha com ninguém, inclusive amigos e familiares. Eventuais alterações nesta política serão informadas neste espaço.\n\n## Quando Coletamos seus Dados?\n\n* No cadastro de compra na loja\n* No cadastro em promoções\n* Ao responder pesquisas\n* No cadastro para recebimento de novidades e ofertas por e-mail\n\n## Como Usamos seus Dados?\n\nSeus dados são utilizados para viabilizar a entrega do seu pedido com segurança e para aperfeiçoar continuamente nossos produtos, serviços e conteúdos. A Portssar mantém suas informações em sigilo absoluto.\n\nTambém utilizamos seus dados para: confirmar ou corrigir informações cadastrais; personalizar sua experiência de navegação; enviar comunicações de seu interesse; e entrar em contato por telefone, SMS, e-mail ou outros meios disponíveis, conforme previsto em lei.\n\n## Cookies\n\nUtilizamos cookies exclusivamente para armazenar informações do seu carrinho de compras, facilitando e agilizando sua experiência de compra.\n\n## Links e Sites de Terceiros\n\nEsta política não se aplica a aplicativos, produtos, serviços ou mídias sociais de terceiros acessados por meio da nossa loja. Recomendamos que você revise a política de privacidade de qualquer site externo com o qual interaja.\n\n## Definições Importantes\n\n* **Dados Pessoais:** Qualquer informação que identifique ou possa identificar uma pessoa natural (nome, CPF, endereço IP, etc.)\n* **Dados Pessoais Sensíveis:** Informações sobre origem étnica, convicções religiosas, dados de saúde, dados biométricos, entre outros\n* **Tratamento de Dados:** Qualquer operação realizada com dados pessoais: coleta, armazenamento, uso, compartilhamento ou exclusão\n* **Legislação aplicável:** Lei nº 13.709/18 — Lei Geral de Proteção de Dados Pessoais (LGPD)"
+  }
+}
+}

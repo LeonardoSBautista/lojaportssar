@@ -6,6 +6,10 @@
   text-decoration: underline;
 }
 
+.imageElement--main-banner {
+  border-radius: 20px;
+}
+
 .infoCardContainer--info-card-home {
   max-width: 1520px;
   margin: 0 auto;
@@ -65,19 +69,103 @@
   margin: 1rem 0;
 }
 
+.imageElement--minibanners:hover {
+  scale: 0.95;
+}
+
+.imageElement--minibanners:hover {
+  object-fit: cover;
+  transition: transform 0.5s ease;
+
+}
+
+.imageElement--bannerduplo:hover {
+  opacity: 0.8;
+}
+
+.productImage {
+  border: 1px solid #D8D8D8;
+  border-radius: 10px;
+  padding: 10px;
+  margin-right: 5px;
+}
+
+.productBrandName {
+  color: #707070;
+  text-transform: capitalize;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.productImagesThumb {
+  width: 100px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+.shippingTableLabel {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  color: #000000;
+}
+
+.shippingTable {
+  margin-bottom: 15px;
+}
+
+.currencyContainer {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  color: #656565
+}
+
+.shippingTableCellDeliveryPrice {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  color: #656565
+}
+
+.shippingTableCellDeliveryEstimate {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  color: #656565;
+}
+
+.carouselGaleryThumbs {
+  width: fit-content !Important;
+}
+
+.swiperBullet {
+  height: 4px !important;
+  padding: 0px;
+  width: 17px !important;
+  border-radius: 35px;
+}
+
 @media only screen and (min-width: 640px) {
   .newsletter .container {
     padding: 140px;
   }
+
   .label {
-     font-size: 40px;
+    font-size: 40px;
   }
+
   .infoCardContainer--info-card-home .infoCardTextContainer {
     width: 30%;
   }
+
   .infoCardContainer--info-card-home .infoCardImageContainer {
     width: 70%;
   }
+
   .imageElement--storePrint {
     margin-bottom: 0px;
     max-height: 600px;
@@ -103,11 +191,84 @@
 }
 
 .productNameContainer {
-  color: #3f3f40;
+  color: #171717;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 27px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.productDescriptionTitle {
+  display: none;
 }
 
 .image {
   image-rendering: -webkit-optimize-contrast;
+}
+
+.content {
+  font-family: "Open Sans", sans-serif;
+  color: #313131;
+  text-align: justify;
+}
+
+.showMoreButton {
+  background-color: #1D1D1D;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  padding: 7px 20px;
+  border-radius: 5px;
+}
+
+.shippingContainer {
+  border: 1px solid #d8d8d8;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.shippingContainer {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+
+.shareContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.shareLabel {
+  font-family: "Open Sans", sans-serif;
+  color: #000;
+  font-weight: 700;
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+.carouselGaleryCursor {
+  padding-left: 0px;
+  margin-right: 25px;
+}
+
+
+.imageElement--imagem-loja {
+  margin-left: 20px;
+  max-height: 250px;
+}
+
+.imageElement--about-image {
+  border-radius: 10px;
+}
+
+
+@media only screen and (max-width: 1000px) {
+  .menuItem--menu-principal-item {
+    border-top: 1px solid #e4e4e4;
+    padding: 15px;
+  }
+
+  .menuItem--menu-principal-item {
+    border-top: 1px solid #e4e4e4;
+    padding: 15px;
+  }
 }

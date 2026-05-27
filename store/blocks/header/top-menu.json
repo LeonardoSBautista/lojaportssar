@@ -13,7 +13,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/institucional/nossas-lojas",
         "noFollow": false,
         "tagTitle": "Atendimento",
         "text": "Atendimento"
@@ -29,7 +29,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/institucional/nossas-lojas",
         "noFollow": true,
         "tagTitle": "Nossas lojas",
         "text": "Nossas lojas"
@@ -50,7 +50,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/account",
         "noFollow": false,
         "tagTitle": "Meus pedidos",
         "text": "Meus pedidos"

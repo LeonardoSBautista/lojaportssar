@@ -2,36 +2,64 @@
   "store.home": {
     "blocks": [
       "list-context.image-list#demo",
-      /* You can make references to blocks defined in other files.
-       * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
       "flex-layout.row#deals",
       "__fold__",
-      "rich-text#shelf-title",
-      "flex-layout.row#shelf",
-      "info-card#home",
-      "rich-text#question",
-      "rich-text#link",
-      "newsletter"
+      "flex-layout.row#minibanners",
+      "flex-layout.row#shelf-1",
+      "flex-layout.row#marcas",
+      "flex-layout.row#shelf-2",
+      "flex-layout.row#bannerduplo",
+      "flex-layout.row#shelf-3",
+      "flex-layout.row#sobre",
+      "flex-layout.row#depoimentos"
     ]
   },
 
-  "list-context.image-list#demo": {
-    "children": ["slider-layout#demo-images"],
-    "props": {
-      "height": 570,
-      "preload": true,
-      "images": [
-        {
-          "image": "https://i.ibb.co/r2YbQ1M9/Portssar-Mar-o-2026-BN-4.png",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-mobile.png"
-        },
-        {
-          "image": "https://i.ibb.co/r2YbQ1M9/Portssar-Mar-o-2026-BN-4.png",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-decoration-mobile.png"
-        }
-      ]
-    }
-  },
+"list-context.image-list#demo": {
+  "children": ["slider-layout#demo-images"],
+  "props": {
+    "height": 570,
+    "preload": true,
+    "blockClass": "main-banner",
+    "images": [
+      {
+        "image": "https://i.ibb.co/8DX6cG58/Portssar-Maio-2026-BN-1.png",
+        "mobileImage": "https://i.ibb.co/nNcWLYxN/Portssar-BN-MB-1.png",
+        "link": { "url": "/cameras?utm_source=banner_dsrl-ou-mirrorless" }
+      },
+      {
+        "image": "https://i.ibb.co/TD4WVSpJ/Portssar-Maio-2026-BN-2.png",
+        "mobileImage": "https://i.ibb.co/tMXknVzY/Portssar-BN-MB-2.png",
+        "link": { "url": "/instax%20mini?_q=instax%20mini&map=ft&order=OrderByBestDiscountDESC&utm_source=banner_cameras-leves-praticas" }
+      },
+      {
+        "image": "https://i.ibb.co/ycYBtHQT/Portssar-Maio-2026-BN-3.png",
+        "mobileImage": "https://i.ibb.co/60XbtbrZ/Portssar-BN-MB-3.png",
+        "link": { "url": "/seminovos?utm_source=banner_seminovos-revisados" }
+      },
+      {
+        "image": "https://i.ibb.co/cKJPGv43/Portssar-Maio-2026-BN-4.png",
+        "mobileImage": "https://i.ibb.co/7dx4ShQz/Portssar-BN-MB-4.png",
+        "link": { "url": "/objetivas?utm_source=banner_objetivas-de-alto-desempenho" }
+      },
+      {
+        "image": "https://i.ibb.co/63TjvHB/Portssar-Maio-2026-BN-5.png",
+        "mobileImage": "https://i.ibb.co/27FJvxFG/Portssar-BN-MB-5.png",
+        "link": { "url": "https://api.whatsapp.com/send/?phone=5511989713274&text=Ol%C3%A1%21+Acessei+o+site+da+Loja+Portssar+e+gostaria+de+um+contato+comercial.&type=phone_number&app_absent=0&utm_source=banner_condi%C3%A7%C3%B5es-pensadas-para-facilitar-sua-decisao" }
+      },
+      {
+        "image": "https://i.ibb.co/cKQ0D8m5/Portssar-Maio-2026-BN-6.png",
+        "mobileImage": "https://i.ibb.co/cXNh2YDW/Portssar-BN-MB-6.png",
+        "link": { "url": "/cameras/mirrorless?utm_source=banner_leve-no-corpo-mais-velocidade" }
+      },
+      {
+        "image": "https://i.ibb.co/qM4g8M3n/Portssar-Maio-2026-BN-7.png",
+        "mobileImage": "https://i.ibb.co/4nMntDTK/Portssar-BN-MB-7.png",
+        "link": { "url": "/analogicos?utm_source=banner_charme-do-filme" }
+      }
+    ]
+  }
+},
   "slider-layout#demo-images": {
     "props": {
       "itemsPerPage": {
@@ -41,18 +69,446 @@
       },
       "infinite": true,
       "showNavigationArrows": "desktopOnly",
-      "blockClass": "carousel"
+      "blockClass": "main-banner"
     }
   },
 
-  "rich-text#shelf-title": {
+  // DEALS
+
+  "flex-layout.row#deals": {
+    "children": ["list-context.image-list#deals"],
     "props": {
-      "text": "## Summer",
-      "blockClass": "shelfTitle"
+      "blockClass": "deals"
     }
   },
-  "flex-layout.row#shelf": {
-    "children": ["list-context.product-list#demo1"]
+
+  "list-context.image-list#deals": {
+    "children": ["slider-layout#deals"],
+    "props": {
+      "preload": true,
+      "loading": "lazy",
+      "height": 40,
+      "images": [{
+          "image": "assets/images/pitbar-1.png",
+          "mobileImage": "assets/images/pitbar-1.png",
+          "link": {
+            "url": "/livro-impresso"
+          }
+        },
+        {
+          "image": "assets/images/pitbar-2.png",
+          "mobileImage": "assets/images/pitbar-2.png",
+          "link": {
+            "url": "/livro-impresso"
+          }
+        },
+        {
+          "image": "assets/images/pitbar-3.png",
+          "mobileImage": "assets/images/pitbar-3.png",
+          "link": {
+            "url": "/livro-impresso"
+          }
+        },
+        {
+          "image": "assets/images/pitbar-4.png",
+          "mobileImage": "assets/images/pitbar-4.png",
+          "link": {
+            "url": "/livro-impresso"
+          }
+        }
+      ]
+    }
+  },
+  "slider-layout#deals": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 4,
+        "phone": 2
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "blockClass": ["carousel", "deals"],
+      "showPaginationDots": "desktopOnly",
+      "centerMode": {
+        "desktop": "disabled",
+        "mobile": "disabled"
+      },
+      "centerModeSlidesGap": 8
+    }
+  },
+
+  // Minibanners
+
+  "flex-layout.row#minibanners": {
+    "children": ["flex-layout.col#minibanners"],
+    "props": {
+      "blockClass": "minibanners"
+    }
+  },
+
+  "flex-layout.col#minibanners": {
+    "children": ["flex-layout.row#subtitle-row-minibanner", "flex-layout.row#title-row-minibanner", "list-context.image-list#minibanners"]
+  },
+
+  "list-context.image-list#minibanners": {
+    "children": ["slider-layout#minibanners"],
+    "props": {
+      "preload": true,
+      "loading": "lazy",
+      "images": [{
+          "image": "assets/images/minibanner-1.png",
+          "mobileImage": "assets/images/minibanner-1.png",
+          "link": {
+            "url": "/objetivas"
+          }
+        },
+        {
+          "image": "assets/images/minibanner-2.png",
+          "mobileImage": "assets/images/minibanner-2.png",
+          "link": {
+            "url": "/cameras"
+          }
+        },
+        {
+          "image": "assets/images/minibanner-3.png",
+          "mobileImage": "assets/images/minibanner-3.png",
+          "link": {
+            "url": "/audio"
+          }
+        },
+        {
+          "image": "assets/images/minibanner-4.png",
+          "mobileImage": "assets/images/minibanner-4.png",
+          "link": {
+            "url": "/iluminacao"
+          }
+        },
+        {
+          "image": "assets/images/minibanner-5.png",
+          "mobileImage": "assets/images/minibanner-5.png",
+          "link": {
+            "url": "/bolsas-e-mochilas"
+          }
+        },
+        {
+          "image": "assets/images/minibanner-6.png",
+          "mobileImage": "assets/images/minibanner-6.png",
+          "link": {
+            "url": "/analogicos"
+          }
+        },
+        {
+          "image": "assets/images/minibanner-7.png",
+          "mobileImage": "assets/images/minibanner-7.png",
+          "link": {
+            "url": "/acessorios"
+          }
+        },
+        {
+          "image": "assets/images/minibanner-8.png",
+          "mobileImage": "assets/images/minibanner-8.png",
+          "link": {
+            "url": "/filtros"
+          }
+        }
+      ]
+    }
+  },
+  "slider-layout#minibanners": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 4,
+        "phone": 2
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": ["carousel", "minibanners"],
+      "showPaginationDots": "always",
+      "centerMode": {
+        "desktop": "disabled",
+        "mobile": "disabled"
+      },
+      "centerModeSlidesGap": 8
+    }
+  },
+
+  "flex-layout.row#subtitle-row-minibanner": {
+    "children": ["rich-text#minibanner-1-subtitle"],
+    "props": {
+      "blockClass": "title-row"
+    }
+  },
+
+  "rich-text#minibanner-1-subtitle": {
+    "props": {
+      "text": "CATEGORIAS EM DESTAQUE",
+      "blockClass": "shelfTitle-subtitle"
+    }
+  },
+
+  "flex-layout.row#title-row-minibanner": {
+    "children": ["rich-text#minibanner-1-title"],
+    "props": {
+      "blockClass": "title-row"
+    }
+  },
+
+  "rich-text#minibanner-1-title": {
+    "props": {
+      "text": "Escolha seu equipamento",
+      "blockClass": "shelfTitle-bold"
+    }
+  },
+
+
+  // MARCAS
+
+  "flex-layout.row#marcas": {
+    "children": ["flex-layout.col#marcas"],
+    "props": {
+      "blockClass": "minibanners"
+    }
+  },
+
+  "flex-layout.col#marcas": {
+    "children": ["flex-layout.row#subtitle-row-marcas", "flex-layout.row#title-row-marcas", "list-context.image-list#marcas"]
+  },
+
+  "list-context.image-list#marcas": {
+    "children": ["slider-layout#marcas"],
+    "props": {
+      "preload": true,
+      "loading": "lazy",
+      "images": [{
+          "image": "assets/images/marca-1.png",
+          "mobileImage": "assets/images/marca-1.png",
+          "link": {
+            "url": "/fujifilm"
+          }
+        },
+        {
+          "image": "assets/images/marca-2.png",
+          "mobileImage": "assets/images/marca-2.png",
+          "link": {
+            "url": "/canon"
+          }
+        },
+        {
+          "image": "assets/images/marca-3.png",
+          "mobileImage": "assets/images/marca-3.png",
+          "link": {
+            "url": "/nikon"
+          }
+        },
+        {
+          "image": "assets/images/marca-4.png",
+          "mobileImage": "assets/images/marca-4.png",
+          "link": {
+            "url": "/sony"
+          }
+        },
+        {
+          "image": "assets/images/marca-5.png",
+          "mobileImage": "assets/images/marca-5.png",
+          "link": {
+            "url": "/boya"
+          }
+        },
+        {
+          "image": "assets/images/marca-6.png",
+          "mobileImage": "assets/images/marca-6.png",
+          "link": {
+            "url": "/godox"
+          }
+        },
+        {
+          "image": "assets/images/marca-7.png",
+          "mobileImage": "assets/images/marca-7.png",
+          "link": {
+            "url": "/lumix"
+          }
+        },
+        {
+          "image": "assets/images/marca-8.png",
+          "mobileImage": "assets/images/marca-8.png",
+          "link": {
+            "url": "/leica"
+          }
+        },
+        {
+          "image": "assets/images/marca-9.png",
+          "mobileImage": "assets/images/marca-9.png",
+          "link": {
+            "url": "/dji"
+          }
+        },
+        {
+          "image": "assets/images/marca-10.png",
+          "mobileImage": "assets/images/marca-10.png",
+          "link": {
+            "url": "/manfrotto"
+          }
+        },
+        {
+          "image": "assets/images/marca-11.png",
+          "mobileImage": "assets/images/marca-11.png",
+          "link": {
+            "url": "/tokina"
+          }
+        },
+        {
+          "image": "assets/images/marca-12.png",
+          "mobileImage": "assets/images/marca-12.png",
+          "link": {
+            "url": "/yongnuo"
+          }
+        }
+      ]
+    }
+  },
+  "slider-layout#marcas": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 6,
+        "tablet": 6,
+        "phone": 3
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": ["carousel", "minibanners"],
+      "showPaginationDots": "always",
+      "centerMode": {
+        "desktop": "disabled",
+        "mobile": "disabled"
+      },
+      "centerModeSlidesGap": 8
+    }
+  },
+
+  "flex-layout.row#subtitle-row-marcas": {
+    "children": ["rich-text#marcas-1-subtitle"],
+    "props": {
+      "blockClass": "title-row"
+    }
+  },
+
+  "rich-text#marcas-1-subtitle": {
+    "props": {
+      "text": "PARCEIROS OFICIAIS",
+      "blockClass": "shelfTitle-subtitle"
+    }
+  },
+
+  "flex-layout.row#title-row-marcas": {
+    "children": ["rich-text#marcas-1-title"],
+    "props": {
+      "blockClass": "title-row"
+    }
+  },
+
+  "rich-text#marcas-1-title": {
+    "props": {
+      "text": "Marcas que confiamos",
+      "blockClass": "shelfTitle-bold"
+    }
+  },
+
+  // BANNER DUPLO
+
+  "flex-layout.row#bannerduplo": {
+    "children": ["flex-layout.col#bannerduplo"],
+    "props": {
+      "blockClass": ["bannerduplo"]
+    }
+  },
+
+  "flex-layout.col#bannerduplo": {
+    "children": ["list-context.image-list#bannerduplo"]
+  },
+
+  "list-context.image-list#bannerduplo": {
+    "children": ["slider-layout#bannerduplo"],
+    "props": {
+      "preload": true,
+      "loading": "lazy",
+      "images": [{
+          "image": "assets/images/banner-duplo-2.png",
+          "mobileImage": "assets/images/banner-duplo-2.png",
+          "link": {
+            "url": "https://www.portssar.com.br/"
+          }
+        },
+        {
+          "image": "assets/images/banner-duplo-1.png",
+          "mobileImage": "assets/images/banner-duplo-1.png",
+          "link": {
+            "url": "/seminovos"
+          }
+        }
+      ]
+    }
+  },
+  "slider-layout#bannerduplo": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 2,
+        "tablet": 2,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "blockClass": ["carousel", "bannerduplo"],
+      "showPaginationDots": "mobileOnly",
+      "centerMode": {
+        "desktop": "disabled",
+        "mobile": "disabled"
+      },
+      "centerModeSlidesGap": 10
+    }
+  },
+
+  // SHELF 1
+
+  "flex-layout.row#shelf-1": {
+    "children": ["flex-layout.col#shelf-1"]
+  },
+
+  "flex-layout.col#shelf-1": {
+    "children": ["flex-layout.row#subtitle-row-shelf-1", "flex-layout.row#title-row-shelf-1", "list-context.product-list#demo1"],
+    "props": {
+      "blockClass": "shelf-1-col"
+    }
+  },
+
+
+  "flex-layout.row#subtitle-row-shelf-1": {
+    "children": ["rich-text#shelf-1-subtitle"],
+    "props": {
+      "blockClass": "title-row"
+    }
+  },
+
+  "rich-text#shelf-1-subtitle": {
+    "props": {
+      "text": "PREÇOS IMPERDÍVEIS",
+      "blockClass": "shelfTitle-subtitle"
+    }
+  },
+
+  "flex-layout.row#title-row-shelf-1": {
+    "children": ["rich-text#shelf-1-title"],
+    "props": {
+      "blockClass": "title-row"
+    }
+  },
+
+  "rich-text#shelf-1-title": {
+    "props": {
+      "text": "Melhores Ofertas",
+      "blockClass": "shelfTitle-bold"
+    }
   },
   "list-context.product-list#demo1": {
     "blocks": ["product-summary.shelf"],
@@ -66,11 +522,111 @@
       "itemsPerPage": {
         "desktop": 4,
         "tablet": 3,
-        "phone": 1
+        "phone": 2
       },
+      "showNavigationArrows": "desktopOnly",
       "infinite": true,
       "fullWidth": false,
       "blockClass": "shelf"
+    }
+  },
+
+
+
+  // SHELF 2
+
+  "flex-layout.row#shelf-2": {
+    "children": ["flex-layout.col#shelf-2"]
+  },
+
+  "flex-layout.col#shelf-2": {
+    "children": ["flex-layout.row#subtitle-row-shelf-2", "flex-layout.row#title-row-shelf-2", "list-context.product-list#demo2"],
+    "props": {
+      "blockClass": "shelf-1-col"
+    }
+  },
+
+  "flex-layout.row#subtitle-row-shelf-2": {
+    "children": ["rich-text#shelf-2-subtitle"],
+    "props": {
+      "blockClass": "title-row"
+    }
+  },
+
+  "rich-text#shelf-2-subtitle": {
+    "props": {
+      "text": "O MELHOR DA NOSSA LOJA",
+      "blockClass": "shelfTitle-subtitle"
+    }
+  },
+
+  "flex-layout.row#title-row-shelf-2": {
+    "children": ["rich-text#shelf-2-title"],
+    "props": {
+      "blockClass": "title-row"
+    }
+  },
+
+  "rich-text#shelf-2-title": {
+    "props": {
+      "text": "Em Destaque",
+      "blockClass": "shelfTitle-bold"
+    }
+  },
+  "list-context.product-list#demo2": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+
+
+  // SHELF 3
+
+  "flex-layout.row#shelf-3": {
+    "children": ["flex-layout.col#shelf-3"]
+  },
+
+  "flex-layout.col#shelf-3": {
+    "children": ["flex-layout.row#subtitle-row-shelf-3", "flex-layout.row#title-row-shelf-3", "list-context.product-list#demo3"],
+    "props": {
+      "blockClass": "shelf-1-col"
+    }
+  },
+
+  "flex-layout.row#subtitle-row-shelf-3": {
+    "children": ["rich-text#shelf-3-subtitle"],
+    "props": {
+      "blockClass": "title-row"
+    }
+  },
+
+  "rich-text#shelf-3-subtitle": {
+    "props": {
+      "text": "OS FAVORITOS DOS PROFISSIONAIS",
+      "blockClass": "shelfTitle-subtitle"
+    }
+  },
+
+  "flex-layout.row#title-row-shelf-3": {
+    "children": ["rich-text#shelf-3-title"],
+    "props": {
+      "blockClass": "title-row"
+    }
+  },
+
+  "rich-text#shelf-3-title": {
+    "props": {
+      "text": "Mais Vendidos",
+      "blockClass": "shelfTitle-bold"
+    }
+  },
+  "list-context.product-list#demo3": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
     }
   },
 
@@ -95,10 +651,187 @@
     }
   },
 
-  "rich-text#link": {
+  "flex-layout.row#sobre": {
+    "children": ["flex-layout.row#image", "flex-layout.col#about-info"],
     "props": {
-      "text": "\n**Reach us at**\nwww.vtex.com.br",
-      "blockClass": "link"
+      "blockClass": "sobre"
+    }
+  },
+
+  "flex-layout.row#image": {
+    "children": ["image#about-image"],
+    "props": {
+      "blockClass": "image-row"
+    }
+  },
+
+  "image#about-image": {
+    "props": {
+      "src": "assets/images/imagem-loja-portssar.png",
+      "mobileSrc": "assets/images/imagem-loja-portssar.png",
+      "alt": "Loja Portssar",
+      "blockClass": "about-image"
+    }
+  },
+
+  "flex-layout.col#about-info": {
+    "children": ["rich-text#about-subtitle", "rich-text#about-title", "rich-text#about-text", "flex-layout.row#about-numbers"],
+    "props": {
+      "blockClass": "about-info"
+    }
+  },
+
+
+  "flex-layout.row#about-numbers": {
+    "children": ["image#about-number-1"],
+    "props": {
+      "blockClass": "about-numbers"
+    }
+  },
+
+  "image#about-number-1": {
+    "props": {
+      "src": "assets/images/sobre-numero.png",
+      "mobileSrc": "assets/images/sobre-numero.png",
+      "alt": "Numero 1",
+      "blockClass": "about-number"
+    }
+  },
+
+  "rich-text#about-subtitle": {
+    "props": {
+      "text": "NOSSA HISTÓRIA",
+      "textAlignment": "LEFT",
+      "blockClass": "about-subtitle"
+    }
+  },
+
+
+  "rich-text#about-title": {
+    "props": {
+      "text": "Desde 1997, referência em\nequipamentos fotográficos no Brasil",
+      "textAlignment": "LEFT",
+      "font": "t-body",
+      "blockClass": "about-title"
+    }
+  },
+
+
+  "rich-text#about-text": {
+    "props": {
+      "text": "Há mais de 25 anos, a Portssar é referência em equipamentos fotográficos no Brasil. Movidos pela paixão pela fotografia, construímos uma trajetória de excelência, oferecendo câmeras, lentes, acessórios e conhecimento especializado que só quem vive o mundo da imagem pode proporcionar.\n\nDa era analógica à revolução digital, acompanhamos cada evolução da fotografia ao lado de fotógrafos profissionais e amadores, garantindo soluções completas para registrar momentos com qualidade e precisão.",
+      "textAlignment": "LEFT",
+      "font": "t-body",
+      "blockClass": "about-text"
+    }
+  },
+
+  // DEPOIMENTOS
+  "flex-layout.row#depoimentos": {
+    "children": ["flex-layout.col#depoimentos"],
+    "props": {
+      "blockClass": "depoimentos"
+    }
+  },
+
+  "flex-layout.col#depoimentos": {
+    "children": ["flex-layout.row#subtitle-row-depoimentos", "flex-layout.row#title-row-depoimentos", "list-context.image-list#depoimentos"]
+  },
+
+  "list-context.image-list#depoimentos": {
+    "children": ["slider-layout#depoimentos"],
+    "props": {
+      "preload": true,
+      "loading": "lazy",
+      "images": [{
+          "image": "assets/images/depoimento-1.png",
+          "mobileImage": "assets/images/depoimento-1.png",
+          "link": {
+            "url": "/livro-impresso"
+          }
+        },
+        {
+          "image": "assets/images/depoimento-2.png",
+          "mobileImage": "assets/images/depoimento-2.png",
+          "link": {
+            "url": "/livro-impresso"
+          }
+        },
+        {
+          "image": "assets/images/depoimento-3.png",
+          "mobileImage": "assets/images/depoimento-3.png",
+          "link": {
+            "url": "/livro-impresso"
+          }
+        },
+        {
+          "image": "assets/images/depoimento-1.png",
+          "mobileImage": "assets/images/depoimento-1.png",
+          "link": {
+            "url": "/livro-impresso"
+          }
+        },
+        {
+          "image": "assets/images/depoimento-2.png",
+          "mobileImage": "assets/images/depoimento-2.png",
+          "link": {
+            "url": "/livro-impresso"
+          }
+        },
+        {
+          "image": "assets/images/depoimento-3.png",
+          "mobileImage": "assets/images/depoimento-3.png",
+          "link": {
+            "url": "/livro-impresso"
+          }
+        }
+      ]
+    }
+  },
+  "slider-layout#depoimentos": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": ["carousel", "depoimentos"],
+      "showPaginationDots": "always",
+      "centerMode": {
+        "desktop": "disabled",
+        "mobile": "disabled"
+      },
+      "centerModeSlidesGap": 8
+    }
+  },
+
+  "flex-layout.row#subtitle-row-depoimentos": {
+    "children": ["rich-text#depoimentos-1-subtitle"],
+    "props": {
+      "blockClass": "title-row"
+    }
+  },
+
+  "rich-text#depoimentos-1-subtitle": {
+    "props": {
+      "text": "O QUE NOSSOS CLIENTES DIZEM",
+      "blockClass": "shelfTitle-subtitle"
+    }
+  },
+
+  "flex-layout.row#title-row-depoimentos": {
+    "children": ["rich-text#depoimentos-1-title"],
+    "props": {
+      "blockClass": "title-row"
+    }
+  },
+
+  "rich-text#depoimentos-1-title": {
+    "props": {
+      "text": "Experiências em Foco",
+      "blockClass": "shelfTitle-bold"
     }
   }
 }
