@@ -72,6 +72,26 @@
   width: auto;
 }
 
+/* Desktop: esconde e exibe no hover */
+:global(.vtex-product-summary-2-x-element button[class*='vtex-add-to-cart']),
+:global(.vtex-product-summary-2-x-element button[class*='vtex-button']:last-of-type) {
+  visibility: hidden;
+  transition: visibility 0.2s;
+}
+
+:global(.vtex-product-summary-2-x-element:hover button[class*='vtex-add-to-cart']),
+:global(.vtex-product-summary-2-x-element:hover button[class*='vtex-button']:last-of-type) {
+  visibility: visible;
+}
+
+/* Mobile: sempre visível */
+@media (max-width: 1024px) {
+  :global(.vtex-product-summary-2-x-element button[class*='vtex-add-to-cart']),
+  :global(.vtex-product-summary-2-x-element button[class*='vtex-button']:last-of-type) {
+    visibility: visible;
+  }
+}
+
 :global(.vtex-slider-layout-0-x-paginationDot--shelf) {
   height: 4px !important;
   padding: 0px;

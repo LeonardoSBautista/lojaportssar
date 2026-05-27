@@ -667,8 +667,8 @@
 
   "image#about-image": {
     "props": {
-      "src": "assets/images/imagem-loja-portssar.png",
-      "mobileSrc": "assets/images/imagem-loja-portssar.png",
+      "src": "assets/images/loja-portssar.png",
+      "mobileSrc": "assets/images/loja-portssar.png",
       "alt": "Loja Portssar",
       "blockClass": "about-image"
     }
