@@ -7,6 +7,7 @@
       "link#institucional-nav-option-1",
       "link#institucional-nav-option-2",
       "link#institucional-nav-option-4",
+      "link#institucional-nav-option-9",
       "rich-text#institucional-nav-bar-sub-title-2",
       "link#institucional-nav-option-5",
       "link#institucional-nav-option-6",
@@ -103,8 +104,8 @@
   "link#institucional-nav-option-9": {
     "props": {
       "blockClass": "institucional-menu-item",
-      "label": "Troca e Devolução",
-      "href": "/institucional/troca-e-devolucao"
+      "label": "Campanha Panasonic Trade In",
+      "href": "/institucional/campanha-panasonic-portssar"
     }
   },
   "link#institucional-nav-option-10": {

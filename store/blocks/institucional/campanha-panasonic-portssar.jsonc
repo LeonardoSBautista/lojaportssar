@@ -1,0 +1,77 @@
+{
+  "store.custom#campanha-panasonic-portssar": {
+    "blocks": ["flex-layout.row#campanha-panasonic-portssar-titles", "flex-layout.row#campanha-panasonic-portssar-content"]
+  },
+  "flex-layout.row#campanha-panasonic-portssar-titles": {
+    "children": [
+      "flex-layout.row#title-institucional",
+      "flex-layout.row#title-campanha-panasonic-portssar"
+    ],
+    "props": {
+      "blockClass": "titles-institucional",
+      "colGap": 2,
+      "fullWidth": true,
+      "horizontalAlign": "left",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "flex-layout.row#campanha-panasonic-portssar-content": {
+    "children": [
+      "flex-layout.col#institucional-nav-bar",
+      "flex-layout.col#campanha-panasonic-portssar"
+    ],
+    "props": {
+      "blockClass": "conteudo-institucional",
+      "colGap": 2,
+      "fullWidth": true,
+      "horizontalAlign": "left",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "flex-layout.col#campanha-panasonic-portssar": {
+    "children": ["rich-text#content-campanha-panasonic-portssar"],
+    "props": {
+      "width": "70%",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "flex-layout.row#title-institucional": {
+    "children": ["rich-text#title-institucional"],
+    "props": {
+      "width": "25%",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "flex-layout.row#title-campanha-panasonic-portssar": {
+    "children": ["rich-text#title-campanha-panasonic-portssar"],
+    "props": {
+      "width": "70%",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#title-institucional": {
+    "props": {
+      "blockClass": ["titulo-institucional", "titulo-campanha-panasonic-portssar"],
+      "text": "# Institucional"
+    }
+  },
+
+  "rich-text#title-campanha-panasonic-portssar": {
+    "props": {
+      "blockClass": ["titulo-institucional", "titulo-campanha-panasonic-portssar"],
+      "text": "# Trade In Panasonic na Portssar"
+    }
+  },
+
+"rich-text#content-campanha-panasonic-portssar": {
+  "props": {
+    "blockClass": ["texto-institucional", "texto-campanha-panasonic-portssar"],
+    "text": "Sua câmera usada pode valer parte do seu upgrade para uma nova LUMIX\n\nSe você sente que seu equipamento já não acompanha o nível que você precisa, este é o momento ideal para evoluir.\n\nCom o Trade In Panasonic na Portssar, você pode levar sua câmera usada (de qualquer marca) e garantir condições especiais na compra de uma nova câmera ou objetiva Panasonic LUMIX.\n\nTudo isso com avaliação técnica, transparência e orientação especializada de quem entende de fotografia desde 1997.\n\n## Como funciona\n\n1. Leve sua câmera usada até a Portssar\n2. Nossa equipe realiza uma avaliação técnica do equipamento\n3. Se aprovada, você escolhe uma câmera ou objetiva LUMIX participante\n4. Finalize sua compra com condições especiais da campanha:\n\n* 15% OFF na câmera ou objetiva LUMIX escolhida\n* 3 anos de garantia oficial Panasonic\n\nTodo o processo acontece diretamente na loja, de forma simples, transparente e segura.\n\n## Por que fazer seu upgrade com a Portssar\n\n* Atendimento especializado com profissionais do mercado\n* Avaliação técnica do seu equipamento\n* Apoio na escolha da câmera e lente ideais\n* Segurança de uma empresa referência desde 1997\n* Lojas físicas em São Paulo e atendimento para todo o Brasil\n\nAqui, você não compra apenas um equipamento, você investe na evolução da sua qualidade de imagem com orientação especializada.\n\n## Quem pode participar\n\n* Pessoas físicas maiores de 18 anos\n* Portadores de câmera usada em funcionamento\n* Equipamento com número de série legível\n* Apresentação da nota fiscal original\n\nA participação está sujeita à avaliação técnica realizada pela loja.\n\n## Condições importantes\n\n* A avaliação e definição do valor da câmera usada são feitas pela Portssar;\n* A Panasonic não participa da avaliação dos equipamentos;\n* O desconto não pode ser convertido em dinheiro, crédito ou reembolso;\n* A campanha não é cumulativa com outras promoções, salvo indicação expressa;\n* A participação depende da disponibilidade de estoque e do período promocional;\n* A ausência de nota fiscal pode impedir a participação.\n\n## Faça seu upgrade com mais segurança\n\nAproveite a oportunidade para evoluir seu equipamento com mais tecnologia, qualidade e confiança.\n\nFale com a equipe da Portssar e descubra as condições disponíveis para sua troca.\n\n[Quero falar com um especialista](https://api.whatsapp.com/send/?phone=5511989154342&text=Ol%C3%83%C2%A1!%20Acessei%20o%20site%20da%20Loja%20Portssar%20e%20gostaria%20de%20um%20contato%20com%20o%20SAC.&type=phone_number&app_absent=0)\n\n## Perguntas Frequentes (FAQ)\n\n**Preciso ter nota fiscal da câmera usada?**\n\nSim. A apresentação da nota fiscal original é um requisito obrigatório para participar do Trade In.\n\n**Posso participar sem nota fiscal?**\n\nA ausência de nota fiscal pode impossibilitar a participação na campanha.\n\n**Posso enviar minha câmera pelo correio?**\n\nO processo de avaliação acontece diretamente na loja participante. Para entender as possibilidades de atendimento e envio, o ideal é falar com a equipe da Portssar pelo WhatsApp.\n\n**O equipamento precisa estar funcionando?**\n\nSim. A câmera usada precisa estar em funcionamento, com número de série legível e em condições de passar pela avaliação técnica."
+  }
+}
+}

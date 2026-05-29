@@ -42,5 +42,9 @@
 
     "store.custom#nossas-lojas": {
     "path": "/institucional/nossas-lojas"
+  },
+
+    "store.custom#campanha-panasonic-portssar": {
+    "path": "/institucional/campanha-panasonic-portssar"
   }
 }

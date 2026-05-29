@@ -8,7 +8,8 @@
       "menu-item#sobre-a-portssar",
       "menu-item#politicas",
       "menu-item#formas-de-pagamento",
-      "menu-item#seguranca"
+      "menu-item#seguranca",
+      "menu-item#campanha-panasonic-trade-in"
     ]
   },
 
@@ -67,6 +68,40 @@
     }
   },
   "menu-item#seguranca": {
+    "props": {
+      "id": "menu-item-seguranca",
+      "blockClass": "menu-item-link",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/institucional/seguranca",
+        "noFollow": false,
+        "tagTitle": "Segurança",
+        "text": "Segurança"
+      }
+    }
+  },
+
+    "menu-item#campanha-panasonic-trade-in": {
+    "props": {
+      "id": "menu-item-campanha",
+      "blockClass": "menu-item-link",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/institucional/campanha-panasonic-portssar",
+        "noFollow": false,
+        "tagTitle": "Campanha Panasonic Trade In",
+        "text": "Campanha Panasonic Trade In"
+      }
+    }
+  },
+
+    "menu-item#campanha": {
     "props": {
       "id": "menu-item-seguranca",
       "blockClass": "menu-item-link",
