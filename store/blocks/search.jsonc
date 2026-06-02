@@ -67,6 +67,7 @@
   "search-result-layout.desktop": {
     "children": [
       "flex-layout.row#searchbread",
+      "flex-layout.row#banner-cluster",
       "flex-layout.row#result"
     ],
     "props": {
@@ -196,9 +197,20 @@
     "blocks": ["gallery", "not-found"]
   },
 
+    "flex-layout.row#banner-cluster": {
+    "props": {
+      "colGap": 2,
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "marginBottom": 4,
+      "blockClass": "banner-cluster"
+    }
+  },
+
   "search-result-layout.mobile": {
     "children": [
       "flex-layout.row#searchbread",
+      "flex-layout.row#banner-cluster",
       "flex-layout.row#titleandcount",
       "flex-layout.row#searchinfomobile",
       "flex-layout.row#contentmobile",
