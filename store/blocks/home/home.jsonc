@@ -73,6 +73,7 @@
       },
       "infinite": true,
       "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "never",
       "blockClass": "main-banner"
     }
   },
