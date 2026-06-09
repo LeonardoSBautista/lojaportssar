@@ -84,6 +84,14 @@
   visibility: visible;
 }
 
+
+:global(.vtex-slider-layout-0-x-sliderArrows--main-banner) {
+    background-color: #ffffff5e !important;
+    border-radius: 25px;
+    height: 30px;
+    width: 30px;
+}
+
 /* Mobile: sempre visível */
 @media (max-width: 1024px) {
   :global(.vtex-product-summary-2-x-element button[class*='vtex-add-to-cart']),
