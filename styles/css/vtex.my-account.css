@@ -72,6 +72,13 @@
   width: auto;
 }
 
+:global(.vtex-product-identifier-0-x-product-identifier--skuReferenceId) {
+  font-family: "Open Sans", sans-serif;
+  color: black;
+  font-size: 13px;
+  font-weight: 600;
+}
+
 /* Desktop: esconde e exibe no hover */
 :global(.vtex-product-summary-2-x-element button[class*='vtex-add-to-cart']),
 :global(.vtex-product-summary-2-x-element button[class*='vtex-button']:last-of-type) {
@@ -86,14 +93,15 @@
 
 
 :global(.vtex-slider-layout-0-x-sliderArrows--main-banner) {
-    background-color: #ffffff5e !important;
-    border-radius: 25px;
-    height: 30px;
-    width: 30px;
+  background-color: #ffffff5e !important;
+  border-radius: 25px;
+  height: 30px;
+  width: 30px;
 }
 
 /* Mobile: sempre visível */
 @media (max-width: 1024px) {
+
   :global(.vtex-product-summary-2-x-element button[class*='vtex-add-to-cart']),
   :global(.vtex-product-summary-2-x-element button[class*='vtex-button']:last-of-type) {
     visibility: visible;
@@ -1237,4 +1245,3 @@
     max-width: unset !important;
   }
 }
-

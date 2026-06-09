@@ -160,6 +160,7 @@
     "children": [
       "vtex.store-components:product-brand",
       "flex-layout.row#product-name",
+      "product-identifier.product",
       "product-rating-summary",
       "flex-layout.row#list-price-savings-pdp",
       "flex-layout.row#selling-price",
@@ -275,6 +276,17 @@
       "flex-layout.row#availability"
     ]
   },
+
+
+  "product-identifier.product": {
+  "props": {
+    "label": "custom",
+    "customLabel": "Referência",
+    "idField": "skuReferenceId" 
+  }
+},
+
+
   "flex-layout.row#availability": {
     "props": {
       "blockClass": "message-availability"
