@@ -13,7 +13,6 @@
       "menu-item#item-6",
       "menu-item#item-7",
       "menu-item#item-8",
-      "menu-item#item-9",
       "menu-item#item-10",
       "menu-item#item-11"
     ]
@@ -54,7 +53,6 @@
       "menu-item#dept-filtros",
       "menu-item#dept-bolsas",
       "menu-item#dept-audio",
-      "menu-item#dept-video",
       "menu-item#dept-acessorios",
       "menu-item#dept-analogicos"
     ]
@@ -322,10 +320,10 @@
       "type": "custom",
       "itemProps": {
         "type": "internal",
-        "href": "/audio",
+        "href": "/audio---video",
         "noFollow": false,
-        "tagTitle": "Áudio",
-        "text": "Áudio"
+        "tagTitle": "Áudio / Vídeo",
+        "text": "Áudio / Vídeo"
       }
     },
     "blocks": ["vtex.menu@2.x:submenu#dept-audio"]
@@ -342,7 +340,7 @@
     "props": {
       "orientation": "vertical"
     },
-    "children": ["menu-item#audio-gravadores", "menu-item#audio-microfones"]
+    "children": ["menu-item#audio-gravadores", "menu-item#audio-microfones", "menu-item#audio-estabilizadores" ]
   },
 
   "menu-item#dept-video": {
@@ -1961,10 +1959,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/audio",
+        "href": "/audio---video",
         "noFollow": false,
-        "tagTitle": "Áudio",
-        "text": "Áudio"
+        "tagTitle": "Áudio e Vídeo",
+        "text": "Áudio e Vídeo"
       }
     },
     "blocks": ["vtex.menu@2.x:submenu#audio"]
@@ -1977,7 +1975,7 @@
     "props": {
       "orientation": "vertical"
     },
-    "children": ["menu-item#audio-gravadores", "menu-item#audio-microfones"]
+    "children": ["menu-item#audio-gravadores", "menu-item#audio-microfones", "menu-item#audio-estabilizadores"]
   },
   "menu-item#audio-gravadores": {
     "props": {
@@ -1985,10 +1983,10 @@
       "type": "custom",
       "itemProps": {
         "type": "internal",
-        "href": "/audio/gravadores-de-audio",
+        "href": "/audio---video/gravadores-de-audio",
         "noFollow": false,
-        "tagTitle": "Gravadores de áudio",
-        "text": "Gravadores de áudio"
+        "tagTitle": "Gravadores",
+        "text": "Gravadores"
       }
     }
   },
@@ -1998,10 +1996,24 @@
       "type": "custom",
       "itemProps": {
         "type": "internal",
-        "href": "/audio/microfones",
+        "href": "/audio---video/microfones",
         "noFollow": false,
         "tagTitle": "Microfones",
         "text": "Microfones"
+      }
+    }
+  },
+
+    "menu-item#audio-estabilizadores": {
+    "props": {
+      "blockClass": "menu-principal-subitem",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/audio---video/estabilizadores",
+        "noFollow": false,
+        "tagTitle": "Estabilizadores",
+        "text": "Estabilizadores"
       }
     }
   },
