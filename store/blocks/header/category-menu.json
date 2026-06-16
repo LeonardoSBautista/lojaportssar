@@ -512,7 +512,6 @@
     "flex-layout.col#department-mobile-filtros",
     "flex-layout.col#department-mobile-bolsas",
     "flex-layout.col#department-mobile-audio",
-    "flex-layout.col#department-mobile-video",
     "flex-layout.col#department-mobile-acessorios",
     "flex-layout.col#department-mobile-analogicos"
   ],
@@ -904,7 +903,7 @@
 },
 "rich-text#department-mobile-audio-titulo": {
   "props": {
-    "text": "[Áudio](/audio)",
+    "text": "[Áudio e Vídeo](/audio---video)",
     "blockClass": "department-mobile-menu-title"
   }
 },
@@ -922,7 +921,8 @@
   },
   "children": [
     "menu-item#audio-gravadores",
-    "menu-item#audio-microfones"
+    "menu-item#audio-microfones",
+    "menu-item#audio-estabilizadores"
   ]
 },
 
@@ -1983,7 +1983,7 @@
       "type": "custom",
       "itemProps": {
         "type": "internal",
-        "href": "/audio---video/gravadores-de-audio",
+        "href": "/audio---video/gravadores",
         "noFollow": false,
         "tagTitle": "Gravadores",
         "text": "Gravadores"
