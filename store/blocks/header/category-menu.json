@@ -311,7 +311,7 @@
     "props": {
       "orientation": "vertical"
     },
-    "children": ["menu-item#bolsas-estojo-lentes", "menu-item#bolsas-lista-completa"]
+    "children": ["menu-item#bolsas-bolsas", "menu-item#bolsas-mochilas", "menu-item#bolsas-estojo-lentes"]
   },
 
   "menu-item#dept-audio": {
@@ -874,8 +874,9 @@
     "orientation": "vertical"
   },
   "children": [
-    "menu-item#bolsas-estojo-lentes",
-    "menu-item#bolsas-lista-completa"
+    "menu-item#bolsas-bolsas",
+    "menu-item#bolsas-mochilas",
+    "menu-item#bolsas-estojo-lentes"
   ]
 },
 
@@ -1920,7 +1921,35 @@
     "props": {
       "orientation": "vertical"
     },
-    "children": ["menu-item#bolsas-estojo-lentes", "menu-item#bolsas-lista-completa"]
+    "children": ["menu-item#bolsas-bolsas", "menu-item#bolsas-mochilas","menu-item#bolsas-estojo-lentes"]
+  },
+
+    "menu-item#bolsas-bolsas": {
+    "props": {
+      "blockClass": "menu-principal-subitem",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/bolsas-e-mochilas/bolsas",
+        "noFollow": false,
+        "tagTitle": "Bolsas",
+        "text": "Bolsas"
+      }
+    }
+  },
+
+    "menu-item#bolsas-mochilas": {
+    "props": {
+      "blockClass": "menu-principal-subitem",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/bolsas-e-mochilas/mochilas",
+        "noFollow": false,
+        "tagTitle": "Mochilas",
+        "text": "Mochilas"
+      }
+    }
   },
   "menu-item#bolsas-estojo-lentes": {
     "props": {
@@ -1928,26 +1957,14 @@
       "type": "custom",
       "itemProps": {
         "type": "internal",
-        "href": "/bolsas-e-mochilas/estojo-para-lentes",
+        "href": "/bolsas-e-mochilas/estojos",
         "noFollow": false,
-        "tagTitle": "Estojo para Lentes",
-        "text": "Estojo para Lentes"
+        "tagTitle": "Estojos",
+        "text": "Estojos"
       }
     }
   },
-  "menu-item#bolsas-lista-completa": {
-    "props": {
-      "blockClass": "menu-principal-subitem",
-      "type": "custom",
-      "itemProps": {
-        "type": "internal",
-        "href": "/bolsas-e-mochilas",
-        "noFollow": false,
-        "tagTitle": "Lista completa",
-        "text": "Lista completa"
-      }
-    }
-  },
+
 
 
   "menu-item#item-8": {
