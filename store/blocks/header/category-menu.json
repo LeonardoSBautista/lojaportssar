@@ -187,10 +187,10 @@
       "type": "custom",
       "itemProps": {
         "type": "internal",
-        "href": "/tripes",
+        "href": "/tripe---monope",
         "noFollow": false,
-        "tagTitle": "Tripés",
-        "text": "Tripés"
+        "tagTitle": "Tripé / Monopé",
+        "text": "Tripé / Monopé"
       }
     },
     "blocks": ["vtex.menu@2.x:submenu#dept-tripes"]
@@ -207,7 +207,7 @@
     "props": {
       "orientation": "vertical"
     },
-    "children": ["menu-item#tripes-iluminacao", "menu-item#tripes-monope", "menu-item#tripes-lista-completa"]
+    "children": ["menu-item#tripes-lista-completa", "menu-item#tripes-monope", "menu-item#tripes-iluminacao"]
   },
 
   "menu-item#dept-iluminacao": {
@@ -726,9 +726,10 @@
     "orientation": "vertical"
   },
   "children": [
-    "menu-item#tripes-iluminacao",
+    "menu-item#tripes-lista-completa",
     "menu-item#tripes-monope",
-    "menu-item#tripes-lista-completa"
+    "menu-item#tripes-iluminacao"
+
   ]
 },
 
@@ -1619,7 +1620,7 @@
     "props": {
       "orientation": "vertical"
     },
-    "children": ["menu-item#tripes-iluminacao", "menu-item#tripes-monope", "menu-item#tripes-lista-completa"]
+    "children": ["menu-item#tripes-lista-completa", "menu-item#tripes-monope", "menu-item#tripes-iluminacao"]
   },
   "menu-item#tripes-iluminacao": {
     "props": {
@@ -1627,7 +1628,7 @@
       "type": "custom",
       "itemProps": {
         "type": "internal",
-        "href": "/tripes/iluminacao",
+        "href": "/tripe---monope/iluminacao",
         "noFollow": false,
         "tagTitle": "Iluminação",
         "text": "Iluminação"
@@ -1640,7 +1641,7 @@
       "type": "custom",
       "itemProps": {
         "type": "internal",
-        "href": "/tripes/monope",
+        "href": "/tripe---monope/monope",
         "noFollow": false,
         "tagTitle": "Monopé",
         "text": "Monopé"
@@ -1653,10 +1654,10 @@
       "type": "custom",
       "itemProps": {
         "type": "internal",
-        "href": "/tripes",
+        "href": "/tripe---monope/tripe",
         "noFollow": false,
-        "tagTitle": "Lista completa",
-        "text": "Lista completa"
+        "tagTitle": "Tripé",
+        "text": "Tripé"
       }
     }
   },
