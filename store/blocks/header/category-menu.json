@@ -216,10 +216,10 @@
       "type": "custom",
       "itemProps": {
         "type": "internal",
-        "href": "/iluminacao",
+        "href": "/estudio---iluminacao",
         "noFollow": false,
-        "tagTitle": "Iluminação",
-        "text": "Iluminação"
+        "tagTitle": "Estúdio / Iluminação",
+        "text": "Estúdio / Iluminação"
       }
     },
     "blocks": ["vtex.menu@2.x:submenu#dept-iluminacao"]
@@ -239,11 +239,7 @@
     "children": [
       "menu-item#iluminacao-acessorios",
       "menu-item#iluminacao-flashes",
-      "menu-item#iluminacao-fotometros",
-      "menu-item#iluminacao-led",
-      "menu-item#iluminacao-kit",
-      "menu-item#iluminacao-radio-flash",
-      "menu-item#iluminacao-softbox"
+      "menu-item#iluminacao-fotometros"
     ]
   },
 
@@ -757,7 +753,7 @@
 },
 "rich-text#department-mobile-iluminacao-titulo": {
   "props": {
-    "text": "[Iluminação](/iluminacao)",
+    "text": "[Estúdio / Iluminação](/estudio---iluminacao)",
     "blockClass": "department-mobile-menu-title"
   }
 },
@@ -776,11 +772,7 @@
   "children": [
     "menu-item#iluminacao-acessorios",
     "menu-item#iluminacao-flashes",
-    "menu-item#iluminacao-fotometros",
-    "menu-item#iluminacao-led",
-    "menu-item#iluminacao-kit",
-    "menu-item#iluminacao-radio-flash",
-    "menu-item#iluminacao-softbox"
+    "menu-item#iluminacao-fotometros"
   ]
 },
 
@@ -1672,10 +1664,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/iluminacao",
+        "href": "/estudio---iluminacao",
         "noFollow": false,
-        "tagTitle": "Iluminação",
-        "text": "Iluminação"
+        "tagTitle": "Estúdio / Iluminação",
+        "text": "Estúdio / Iluminação"
       }
     },
     "blocks": ["vtex.menu@2.x:submenu#iluminacao"]
@@ -1689,9 +1681,7 @@
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#iluminacao-acessorios", "menu-item#iluminacao-flashes", "menu-item#iluminacao-fotometros",
-      "menu-item#iluminacao-led", "menu-item#iluminacao-kit", "menu-item#iluminacao-radio-flash",
-      "menu-item#iluminacao-softbox"
+      "menu-item#iluminacao-acessorios", "menu-item#iluminacao-flashes", "menu-item#iluminacao-fotometros"
     ]
   },
   "menu-item#iluminacao-acessorios": {
@@ -1700,7 +1690,7 @@
       "type": "custom",
       "itemProps": {
         "type": "internal",
-        "href": "/iluminacao/acessorios-para-iluminacao",
+        "href": "/estudio---iluminacao/acessorios-para-iluminacao",
         "noFollow": false,
         "tagTitle": "Acessórios para Iluminação",
         "text": "Acessórios para Iluminação"
@@ -1713,7 +1703,7 @@
       "type": "custom",
       "itemProps": {
         "type": "internal",
-        "href": "/iluminacao/flashes",
+        "href": "/estudio---iluminacao/flashes",
         "noFollow": false,
         "tagTitle": "Flashes",
         "text": "Flashes"
@@ -1726,10 +1716,10 @@
       "type": "custom",
       "itemProps": {
         "type": "internal",
-        "href": "/iluminacao/fotometros",
+        "href": "/estudio---iluminacao/luz-continua",
         "noFollow": false,
-        "tagTitle": "Fotômetros",
-        "text": "Fotômetros"
+        "tagTitle": "Luz Contínua",
+        "text": "Luz Contínua"
       }
     }
   },
