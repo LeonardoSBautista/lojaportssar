@@ -397,10 +397,11 @@
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#acessorios-adaptadores",
-      "menu-item#acessorios-limpeza",
       "menu-item#acessorios-midia",
+      "menu-item#acessorios-baterias",
+      "menu-item#acessorios-filtros",
       "menu-item#acessorios-pilhas",
+      "menu-item#acessorios-limpeza",
       "menu-item#acessorios-outros"
     ]
   },
@@ -1006,11 +1007,12 @@
     "orientation": "vertical"
   },
   "children": [
-    "menu-item#acessorios-adaptadores",
-    "menu-item#acessorios-limpeza",
-    "menu-item#acessorios-midia",
-    "menu-item#acessorios-pilhas",
-    "menu-item#acessorios-outros"
+      "menu-item#acessorios-midia",
+      "menu-item#acessorios-baterias",
+      "menu-item#acessorios-filtros",
+      "menu-item#acessorios-pilhas",
+      "menu-item#acessorios-limpeza",
+      "menu-item#acessorios-outros"
   ]
 },
 
@@ -2098,8 +2100,12 @@
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#acessorios-adaptadores", "menu-item#acessorios-limpeza", "menu-item#acessorios-midia",
-      "menu-item#acessorios-pilhas", "menu-item#acessorios-outros"
+      "menu-item#acessorios-midia",
+      "menu-item#acessorios-baterias",
+      "menu-item#acessorios-filtros",
+      "menu-item#acessorios-pilhas",
+      "menu-item#acessorios-limpeza",
+      "menu-item#acessorios-outros"
     ]
   },
   "menu-item#acessorios-adaptadores": {
@@ -2121,10 +2127,10 @@
       "type": "custom",
       "itemProps": {
         "type": "internal",
-        "href": "/acessorios/limpeza",
+        "href": "/acessorios/kit-limpeza",
         "noFollow": false,
-        "tagTitle": "Limpeza",
-        "text": "Limpeza"
+        "tagTitle": "Kit Limpeza",
+        "text": "Kit Limpeza"
       }
     }
   },
@@ -2141,16 +2147,44 @@
       }
     }
   },
+
+    "menu-item#acessorios-baterias": {
+    "props": {
+      "blockClass": "menu-principal-subitem",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/acessorios/baterias",
+        "noFollow": false,
+        "tagTitle": "Baterias",
+        "text": "Baterias"
+      }
+    }
+  },
+
+      "menu-item#acessorios-filtros": {
+    "props": {
+      "blockClass": "menu-principal-subitem",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/acessorios/filtros",
+        "noFollow": false,
+        "tagTitle": "Filtros",
+        "text": "Filtros"
+      }
+    }
+  },
   "menu-item#acessorios-pilhas": {
     "props": {
       "blockClass": "menu-principal-subitem",
       "type": "custom",
       "itemProps": {
         "type": "internal",
-        "href": "/acessorios/pilhas-baterias-e-carregadores",
+        "href": "/acessorios/pilhas",
         "noFollow": false,
-        "tagTitle": "Pilhas, Baterias e Carregadores",
-        "text": "Pilhas, Baterias e Carregadores"
+        "tagTitle": "Pilhas",
+        "text": "Pilhas"
       }
     }
   },
@@ -2160,10 +2194,10 @@
       "type": "custom",
       "itemProps": {
         "type": "internal",
-        "href": "/acessorios/outros-acessorios",
+        "href": "/acessorios/diversos",
         "noFollow": false,
-        "tagTitle": "Outros Acessórios",
-        "text": "Outros Acessórios"
+        "tagTitle": "Diversos",
+        "text": "Diversos"
       }
     }
   },
