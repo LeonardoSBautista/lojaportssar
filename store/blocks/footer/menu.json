@@ -9,7 +9,8 @@
       "menu-item#politicas",
       "menu-item#formas-de-pagamento",
       "menu-item#seguranca",
-      "menu-item#campanha-panasonic-trade-in"
+      "menu-item#campanha-panasonic-trade-in",
+      "menu-item#campanha-lumix-25-anos"
     ]
   },
 
@@ -97,6 +98,23 @@
         "noFollow": false,
         "tagTitle": "Campanha Panasonic Trade In",
         "text": "Campanha Panasonic Trade In"
+      }
+    }
+  },
+
+      "menu-item#campanha-lumix-25-anos": {
+    "props": {
+      "id": "menu-item-campanha",
+      "blockClass": "menu-item-link",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/institucional/campanha-lumix-25-anos",
+        "noFollow": false,
+        "tagTitle": "Campanha Lumix 25 Anos",
+        "text": "Campanha Lumix 25 Anos"
       }
     }
   },

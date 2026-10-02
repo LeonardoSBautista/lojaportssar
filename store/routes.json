@@ -46,5 +46,10 @@
 
     "store.custom#campanha-panasonic-portssar": {
     "path": "/institucional/campanha-panasonic-portssar"
+  },
+
+  
+    "store.custom#campanha-lumix-25-anos": {
+    "path": "/institucional/campanha-lumix-25-anos"
   }
 }
