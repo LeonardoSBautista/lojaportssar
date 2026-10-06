@@ -410,10 +410,10 @@
       "type": "custom",
       "itemProps": {
         "type": "internal",
-        "href": "/analogicos",
+        "href": "/fotografia-analogica",
         "noFollow": false,
-        "tagTitle": "Analógicos",
-        "text": "Analógicos"
+        "tagTitle": "Fotografia Analógica",
+        "text": "Fotografia Analógica"
       }
     },
     "blocks": ["vtex.menu@2.x:submenu#dept-analogicos"]
@@ -431,15 +431,11 @@
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#analogicos-120-colorido",
-      "menu-item#analogicos-120-pb",
-      "menu-item#analogicos-135-colorido",
-      "menu-item#analogicos-135-pb",
-      "menu-item#analogicos-4x5",
-      "menu-item#analogicos-instantaneo",
+      "menu-item#filmes-35mm",
+      "menu-item#filmes-120",
+      "menu-item#filmes-instantaneos",
       "menu-item#analogicos-papel",
-      "menu-item#analogicos-print-120",
-      "menu-item#analogicos-print-135",
+      "menu-item#analogicos-print-file",
       "menu-item#analogicos-quimicos"
     ]
   },
@@ -1037,7 +1033,7 @@
 },
 "rich-text#department-mobile-analogicos-titulo": {
   "props": {
-    "text": "[Analógicos](/analogicos)",
+    "text": "[Fotografia Analógica](/fotografia-analogica)",
     "blockClass": "department-mobile-menu-title"
   }
 },
@@ -1054,16 +1050,12 @@
     "orientation": "vertical"
   },
   "children": [
-    "menu-item#analogicos-120-colorido",
-    "menu-item#analogicos-120-pb",
-    "menu-item#analogicos-135-colorido",
-    "menu-item#analogicos-135-pb",
-    "menu-item#analogicos-4x5",
-    "menu-item#analogicos-instantaneo",
-    "menu-item#analogicos-papel",
-    "menu-item#analogicos-print-120",
-    "menu-item#analogicos-print-135",
-    "menu-item#analogicos-quimicos"
+      "menu-item#filmes-35mm",
+      "menu-item#filmes-120",
+      "menu-item#filmes-instantaneos",
+      "menu-item#analogicos-papel",
+      "menu-item#analogicos-print-file",
+      "menu-item#analogicos-quimicos"
   ]
 },
 
@@ -2209,10 +2201,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/analogicos",
+        "href": "/fotografia-analogica",
         "noFollow": false,
-        "tagTitle": "Analógicos",
-        "text": "Analógicos"
+        "tagTitle": "Fotografia Analógica",
+        "text": "Fotografia Analógica"
       }
     },
     "blocks": ["vtex.menu@2.x:submenu#analogicos"]
@@ -2229,127 +2221,77 @@
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#analogicos-120-colorido", "menu-item#analogicos-120-pb",
-      "menu-item#analogicos-135-colorido", "menu-item#analogicos-135-pb",
-      "menu-item#analogicos-4x5", "menu-item#analogicos-instantaneo",
-      "menu-item#analogicos-papel", "menu-item#analogicos-print-120",
-      "menu-item#analogicos-print-135", "menu-item#analogicos-quimicos"
+      "menu-item#filmes-35mm",
+      "menu-item#filmes-120",
+      "menu-item#filmes-instantaneos",
+      "menu-item#analogicos-papel",
+      "menu-item#analogicos-print-file",
+      "menu-item#analogicos-quimicos"
     ]
   },
-  "menu-item#analogicos-120-colorido": {
+  "menu-item#filmes-35mm": {
     "props": {
       "blockClass": "menu-principal-subitem",
       "type": "custom",
       "itemProps": {
         "type": "internal",
-        "href": "/analogicos/filmes-formato-120-colorido",
+        "href": "/fotografia-analogica/filmes-35mm",
         "noFollow": false,
-        "tagTitle": "Filmes Formato 120 Colorido",
-        "text": "Filmes Formato 120 Colorido"
+        "tagTitle": "Filmes 35mm",
+        "text": "Filmes 35mm"
       }
     }
   },
-  "menu-item#analogicos-120-pb": {
+  "menu-item#filmes-120": {
     "props": {
       "blockClass": "menu-principal-subitem",
       "type": "custom",
       "itemProps": {
         "type": "internal",
-        "href": "/analogicos/filmes-formato120-preto-e-branco",
+        "href": "/fotografia-analogica/filme-120",
         "noFollow": false,
-        "tagTitle": "Filmes Formato 120 Preto e Branco",
-        "text": "Filmes Formato 120 Preto e Branco"
+        "tagTitle": "Filme 120",
+        "text": "Filme 120"
       }
     }
   },
-  "menu-item#analogicos-135-colorido": {
+  "menu-item#filmes-instantaneos": {
     "props": {
       "blockClass": "menu-principal-subitem",
       "type": "custom",
       "itemProps": {
         "type": "internal",
-        "href": "/analogicos/filmes-formato-135-colorido",
+        "href": "/fotografia-analogica/filme-instantaneo",
         "noFollow": false,
-        "tagTitle": "Filmes Formato 135 Colorido",
-        "text": "Filmes Formato 135 Colorido"
+        "tagTitle": "Filme Instantâneo",
+        "text": "Filme Instantâneo"
       }
     }
   },
-  "menu-item#analogicos-135-pb": {
-    "props": {
-      "blockClass": "menu-principal-subitem",
-      "type": "custom",
-      "itemProps": {
-        "type": "internal",
-        "href": "/analogicos/filmes-formato-135-preto-e-branco",
-        "noFollow": false,
-        "tagTitle": "Filmes Formato 135 Preto e Branco",
-        "text": "Filmes Formato 135 Preto e Branco"
-      }
-    }
-  },
-  "menu-item#analogicos-4x5": {
-    "props": {
-      "blockClass": "menu-principal-subitem",
-      "type": "custom",
-      "itemProps": {
-        "type": "internal",
-        "href": "/analogicos/filmes-formato-4x5-",
-        "noFollow": false,
-        "tagTitle": "Filmes Formato 4x5\"",
-        "text": "Filmes Formato 4x5\""
-      }
-    }
-  },
-  "menu-item#analogicos-instantaneo": {
-    "props": {
-      "blockClass": "menu-principal-subitem",
-      "type": "custom",
-      "itemProps": {
-        "type": "internal",
-        "href": "/analogicos/filmes-instantaneo",
-        "noFollow": false,
-        "tagTitle": "Filmes Instantâneo",
-        "text": "Filmes Instantâneo"
-      }
-    }
-  },
+
   "menu-item#analogicos-papel": {
     "props": {
       "blockClass": "menu-principal-subitem",
       "type": "custom",
       "itemProps": {
         "type": "internal",
-        "href": "/analogicos/papel-fotografico",
+        "href": "/fotografia-analogica/papel-fotografico",
         "noFollow": false,
         "tagTitle": "Papel Fotográfico",
         "text": "Papel Fotográfico"
       }
     }
   },
-  "menu-item#analogicos-print-120": {
+  "menu-item#analogicos-print-file": {
     "props": {
       "blockClass": "menu-principal-subitem",
       "type": "custom",
       "itemProps": {
         "type": "internal",
-        "href": "/analogicos/print-file-formato-120",
+        "href": "/fotografia-analogica/print-file",
         "noFollow": false,
-        "tagTitle": "Print File Formato 120",
-        "text": "Print File Formato 120"
-      }
-    }
-  },
-  "menu-item#analogicos-print-135": {
-    "props": {
-      "blockClass": "menu-principal-subitem",
-      "type": "custom",
-      "itemProps": {
-        "type": "internal",
-        "href": "/analogicos/print-file-formato-135",
-        "noFollow": false,
-        "tagTitle": "Print File Formato 135",
-        "text": "Print File Formato 135"
+        "tagTitle": "Print File",
+        "text": "Print File"
       }
     }
   },
@@ -2359,10 +2301,10 @@
       "type": "custom",
       "itemProps": {
         "type": "internal",
-        "href": "/analogicos/quimicos-para-revelacao",
+        "href": "/fotografia-analogica/quimicos",
         "noFollow": false,
-        "tagTitle": "Químicos para revelação",
-        "text": "Químicos para revelação"
+        "tagTitle": "Químicos",
+        "text": "Químicos"
       }
     }
   }
