@@ -132,7 +132,7 @@
 
   "flex-layout.row#shelf-spacer": {
     "children":[
-      // "product-selling-price"
+      "product-selling-price"
     ],
     "props": {
       "blockClass": "hasntBestPrice"
