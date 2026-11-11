@@ -1,7 +1,7 @@
 {
   "vendor": "lojaportssar",
   "name": "store-theme",
-  "version": "5.2.23",
+  "version": "5.2.24",
   "builders": {
     "assets": "0.x",
     "styles": "2.x",
