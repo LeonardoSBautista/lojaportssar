@@ -4,7 +4,6 @@
       "experimentalOptimizeRendering": true
     },
     "children": [
-      "menu-item#item-all",
       "menu-item#item-1",
       "menu-item#item-2",
       "menu-item#item-3",
@@ -13,11 +12,12 @@
       "menu-item#item-7",
       "menu-item#item-8",
       "menu-item#item-10",
-      "menu-item#item-11"
+      "menu-item#item-11",
+      "menu-item#item-all"
     ]
   },
 
-  "menu-item#item-all": {
+"menu-item#item-all": {
     "props": {
       "id": "menu-item-category-apparel",
       "blockClass": ["menu-principal-item", "todos-os-departamentos"],
@@ -26,34 +26,12 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/apparel---accessories/",
+        "href": "/162?map=productClusterIds",
         "noFollow": false,
-        "tagTitle": "Mais departamentos",
-        "text": "Mais departamentos"
+        "tagTitle": "BLACK FRIDAY",
+        "text": "BLACK FRIDAY"
       }
-    },
-    "blocks": ["vtex.menu@2.x:submenu#mais-departamentos"]
-  },
-
-  "vtex.menu@2.x:submenu#mais-departamentos": {
-    "children": ["vtex.menu@2.x:menu#mais-departamentos"]
-  },
-
-  "vtex.menu@2.x:menu#mais-departamentos": {
-    "props": {
-      "orientation": "vertical"
-    },
-    "children": [
-      "menu-item#dept-cameras",
-      "menu-item#dept-objetivas",
-      "menu-item#dept-seminovos",
-      "menu-item#dept-tripes",
-      "menu-item#dept-iluminacao",
-      "menu-item#dept-bolsas",
-      "menu-item#dept-audio",
-      "menu-item#dept-acessorios",
-      "menu-item#dept-analogicos"
-    ]
+    }
   },
 
   "menu-item#dept-cameras": {
